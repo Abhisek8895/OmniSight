@@ -29,4 +29,3 @@ Thumbs.db
 # Build / distribution
 build/
 dist/
-*.egg-info/
