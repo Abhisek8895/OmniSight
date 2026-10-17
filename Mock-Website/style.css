@@ -1,0 +1,274 @@
+
+/* 1. General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* 2. Header */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* 3. Main Content */
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #172554;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+/* 4. Home Section */
+#home {
+    background-color: #dbeafe;
+    padding: 45px 30px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 32px;
+    color: #1e40af;
+}
+
+#home p {
+    font-size: 17px;
+    color: #475569;
+}
+
+/* 5. Products Section */
+#products article {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    margin: 1%;
+    padding: 22px 15px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#products article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#products article h3 {
+    color: #334155;
+    margin-bottom: 12px;
+}
+
+#products article p {
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 6. Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:focus-visible,
+nav a:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* 7. Shopping Cart */
+#cart {
+    min-height: 150px;
+}
+
+#cart p {
+    color: #64748b;
+}
+
+/* 8. Checkout Form */
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* 9. Order Confirmation */
+#confirmation {
+    text-align: center;
+    border-top: 4px solid #16a34a;
+}
+
+#confirmation h2 {
+    color: #15803d;
+}
+
+/* 10. Footer */
+footer {
+    background-color: #172554;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 35px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* 11. Tablet Responsive Design */
+@media (max-width: 900px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    #products article {
+        width: 47%;
+        margin: 1%;
+    }
+}
+
+/* 12. Mobile Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    #home {
+        padding: 30px 15px;
+    }
+
+    #home h2 {
+        font-size: 25px;
+    }
+
+    #products article {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
