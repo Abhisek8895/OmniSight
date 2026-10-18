@@ -3,50 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>OmniSight - Demo Store</title>
-
-    <!-- Connect CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header id="top">
         <h1>OmniSight Store</h1>
         <nav>
-            <a href="#home">Home</a> |
-            <a href="#products">Products</a> |
-            <a href="#cart">Cart</a> |
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart <span id="cart-count" class="badge" aria-live="polite">0</span></a>
             <a href="#checkout">Checkout</a>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h2>Welcome to OmniSight</h2>
-            <p>Explore our products and enjoy a simple shopping experience.</p>
+            <div class="hero-text">
+                <h2>Welcome to OmniSight</h2>
+                <p>Move your cursor around. Pick up gear you can see clearly, and check out in under a minute.</p>
+                <a class="cta" href="#products">Shop products</a>
+            </div>
         </section>
 
         <section id="products">
             <h2>Our Products</h2>
-
-            <article>
-                <h3>Wireless Headphones</h3>
-                <p>Price: ₹2,499</p>
-                <button type="button">Add to Cart</button>
-            </article>
-
-            <article>
-                <h3>Smart Watch</h3>
-                <p>Price: ₹3,299</p>
-                <button type="button">Add to Cart</button>
-            </article>
-
-            <article>
-                <h3>Bluetooth Speaker</h3>
-                <p>Price: ₹1,799</p>
-                <button type="button">Add to Cart</button>
-            </article>
+            <div class="tools">
+                <input type="search" id="search" placeholder="Search products" aria-label="Search products">
+                <div class="chips" id="chips" role="group" aria-label="Filter by category">
+                    <button type="button" class="chip active" data-cat="all">All</button>
+                    <button type="button" class="chip" data-cat="audio">Audio</button>
+                    <button type="button" class="chip" data-cat="wearables">Wearables</button>
+                    <button type="button" class="chip" data-cat="accessories">Accessories</button>
+                </div>
+                <select id="sort" aria-label="Sort products">
+                    <option value="default">Sort: Featured</option>
+                    <option value="low">Price: low to high</option>
+                    <option value="high">Price: high to low</option>
+                </select>
+            </div>
+            <div id="product-grid"></div>
+            <p id="no-results" hidden>No products match your search. Try a different word or category.</p>
         </section>
 
         <section id="cart">
@@ -56,22 +57,24 @@
 
         <section id="checkout">
             <h2>Checkout</h2>
+            <div class="checkout-layout">
+                <form id="checkout-form" novalidate>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                    <small class="error" data-for="name"></small>
 
-            <form>
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <small class="error" data-for="email"></small>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                    <small class="error" data-for="address"></small>
 
-                <label for="address">Delivery Address:</label>
-                <textarea id="address" name="address" required></textarea>
-                <br><br>
-
-                <button type="submit">Place Demo Order</button>
-            </form>
+                    <button type="submit" class="place">Place Demo Order</button>
+                </form>
+                <aside id="summary" aria-live="polite"></aside>
+            </div>
         </section>
 
         <section id="confirmation">
@@ -85,5 +88,7 @@
         <p>This is a mock e-commerce website for testing purposes.</p>
     </footer>
 
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
 </body>
 </html>
