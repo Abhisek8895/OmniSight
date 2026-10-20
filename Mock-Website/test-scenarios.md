@@ -34,14 +34,14 @@ Record the actual result after running each test.
 | TC-03 | Smart Watch displayed after search | Passed |
 | TC-04 | Only three audio products displayed | Passed |
 | TC-05 | Products displayed in ascending price order | Passed |
-| TC-06 | To be tested | Pending |
-| TC-07 | To be tested | Pending |
-| TC-08 | To be tested | Pending |
-| TC-09 | To be tested | Pending |
-| TC-10 | To be tested | Pending |
-| TC-11 | To be tested | Pending |
-| TC-12 | To be tested | Pending |
-| TC-13 | To be tested | Pending |
+| TC-06 | Product added successfully and cart count increased to 1 | Passed |
+| TC-07 | Product quantity increased from 1 to 2 successfully | Passed |
+| TC-08 | Product removed and cart totals updated successfully | Passed |
+| TC-09 | Empty cart checkout displays a message asking to add a product | Passed |
+| TC-10 | Validation errors displayed for invalid checkout details | Passed |
+| TC-11 | Order placed successfully with valid checkout details | Passed |
+| TC-12 | Start a new order successfully after completing checkout | Passed |
+| TC-13 | Website layout remains usable at desktop and mobile widths | Passed |
 
 ## 4. Notes
 
