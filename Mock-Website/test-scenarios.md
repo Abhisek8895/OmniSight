@@ -29,11 +29,11 @@ Record the actual result after running each test.
 
 | Test ID | Actual Result | Status |
 |---|---|---|
-| TC-01 | To be tested | Pending |
-| TC-02 | To be tested | Pending |
-| TC-03 | To be tested | Pending |
-| TC-04 | To be tested | Pending |
-| TC-05 | To be tested | Pending |
+| TC-01 | Homepage loaded successfully | Passed |
+| TC-02 | All six products displayed successfully | Passed |
+| TC-03 | Smart Watch displayed after search | Passed |
+| TC-04 | Only three audio products displayed | Passed |
+| TC-05 | Products displayed in ascending price order | Passed |
 | TC-06 | To be tested | Pending |
 | TC-07 | To be tested | Pending |
 | TC-08 | To be tested | Pending |
