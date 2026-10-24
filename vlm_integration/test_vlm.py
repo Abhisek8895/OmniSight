@@ -176,3 +176,185 @@ if __name__ == "__main__":
             print("Image preparation failed.")
     else:
         print("Please check your screenshot file.")
+
+
+# ==================================================
+# SECTION 7: PREPARE THE VLM PROMPT
+# ==================================================
+
+def build_prompt():
+    """Create instructions for analyzing the website UI."""
+
+    prompt = """
+    You are a Visual UI Analysis Assistant for OmniSight.
+
+    Analyze the provided screenshot of an e-commerce website.
+
+    Identify the following:
+
+    1. Describe the visible webpage.
+    2. Identify UI components such as buttons,
+       navigation bars, product cards, and forms.
+    3. Report any visible layout defects.
+    4. Describe the approximate location of each defect.
+    5. Explain how each defect affects the user.
+    6. Suggest a possible fix for each defect.
+    7. Mention when HTML or CSS inspection is needed.
+
+    Important rules:
+    - Report only evidence visible in the screenshot.
+    - Do not invent defects.
+    - Do not claim that hidden functionality is broken.
+    - Separate confirmed observations from suspicions.
+    - If no obvious defect is visible, state that clearly.
+    """
+
+    return prompt.strip()
+
+
+# ==================================================
+# SECTION 8: CREATE THE GROQ CLIENT
+# ==================================================
+
+from groq import Groq, APIError
+
+
+def create_groq_client():
+    """Initialize the Groq API client."""
+
+    if not check_api_key():
+        return None
+
+    try:
+        client = Groq(api_key=API_KEY)
+
+        logger.info("Groq client initialized successfully.")
+
+        return client
+
+    except Exception as error:
+        logger.error(
+            f"Failed to initialize Groq client: {error}"
+        )
+
+        return None
+
+
+# ==================================================
+# SECTION 9: SEND SCREENSHOT TO THE VLM
+# ==================================================
+
+def analyze_screenshot(client, image_path):
+    """Send the screenshot to Groq and return its analysis."""
+
+    # Convert the screenshot into Base64.
+    encoded_image = encode_image(image_path)
+
+    if encoded_image is None:
+        return None
+
+    # Identify the image format.
+    mime_type = get_image_mime_type(image_path)
+
+    if mime_type is None:
+        return None
+
+    # Prepare the image data URL.
+    image_data_url = (
+        f"data:{mime_type};base64,{encoded_image}"
+    )
+
+    # Prepare the prompt.
+    prompt = build_prompt()
+
+    try:
+        logger.info(
+            f"Sending screenshot to {MODEL_NAME}..."
+        )
+
+        # Send text and image to the vision model.
+        completion = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "You are a careful website UI "
+                        "visual analysis assistant."
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": prompt
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": image_data_url
+                            }
+                        }
+                    ]
+                }
+            ],
+            temperature=0.2,
+            max_completion_tokens=1200
+        )
+
+        # Extract the model's response.
+        response_text = (
+            completion.choices[0].message.content
+        )
+
+        if not response_text:
+            logger.error("The model returned an empty response.")
+            return None
+
+        logger.info("VLM analysis completed successfully.")
+
+        return response_text
+
+    except APIError as error:
+        logger.error(f"Groq API request failed: {error}")
+        return None
+
+    except Exception as error:
+        logger.error(f"Unexpected error: {error}")
+        return None
+
+
+# ==================================================
+# TEST PART 3: GROQ VLM INTEGRATION
+# ==================================================
+
+if __name__ == "__main__":
+
+    print("\n===== OmniSight: Part 3 =====\n")
+
+    # Validate the screenshot.
+    if not validate_screenshot(SCREENSHOT_PATH):
+        sys.exit(1)
+
+    # Initialize the Groq client.
+    client = create_groq_client()
+
+    if client is None:
+        sys.exit(1)
+
+    # Analyze the screenshot.
+    result = analyze_screenshot(
+        client,
+        SCREENSHOT_PATH
+    )
+
+    if result is None:
+        print("VLM analysis failed. Check the error above.")
+        sys.exit(1)
+
+    # Display the response.
+    print("\n===== VLM Analysis Result =====\n")
+    print(result)
+
+    print("\n===== Part 3 Completed =====\n")
