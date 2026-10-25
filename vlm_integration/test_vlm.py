@@ -1,7 +1,5 @@
 
-# ==================================================
 # SECTION 1: CONFIGURATION
-# ==================================================
 
 import os
 import logging
@@ -34,9 +32,8 @@ OUTPUT_DIR = PROJECT_DIR / "outputs"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# ==================================================
 # SECTION 2: LOGGING CONFIGURATION
-# ==================================================
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -46,9 +43,8 @@ logging.basicConfig(
 logger = logging.getLogger("OmniSight-VLM")
 
 
-# ==================================================
 # SECTION 3: CHECK API CONFIGURATION
-# ==================================================
+
 
 def check_api_key():
     """Check whether the Groq API key is configured."""
@@ -63,9 +59,8 @@ def check_api_key():
     return True
 
 
-# ==================================================
 # TEST PART 1
-# ==================================================
+
 
 if __name__ == "__main__":
     print("\nOmniSight - VLM Setup")
@@ -77,10 +72,7 @@ if __name__ == "__main__":
         print("Please configure your Groq API key.")
 
 
-
-# ==================================================
 # SECTION 4: VALIDATE SCREENSHOT
-# ==================================================
 
 def validate_screenshot(image_path):
     """Check whether the screenshot exists and is valid."""
@@ -108,9 +100,7 @@ def validate_screenshot(image_path):
     return True
 
 
-# ==================================================
 # SECTION 5: CONVERT SCREENSHOT TO BASE64
-# ==================================================
 
 import base64
 
@@ -132,9 +122,8 @@ def encode_image(image_path):
         return None
 
 
-# ==================================================
 # SECTION 6: IDENTIFY IMAGE MIME TYPE
-# ==================================================
+
 
 def get_image_mime_type(image_path):
     """Identify the image format for the API request."""
@@ -156,9 +145,7 @@ def get_image_mime_type(image_path):
     return mime_type
 
 
-# ==================================================
 # TEST PART 2
-# ==================================================
 
 if __name__ == "__main__":
     print("\nOmniSight - Part 2: Image Preparation")
@@ -178,9 +165,7 @@ if __name__ == "__main__":
         print("Please check your screenshot file.")
 
 
-# ==================================================
 # SECTION 7: PREPARE THE VLM PROMPT
-# ==================================================
 
 def build_prompt():
     """Create instructions for analyzing the website UI."""
@@ -212,9 +197,8 @@ def build_prompt():
     return prompt.strip()
 
 
-# ==================================================
 # SECTION 8: CREATE THE GROQ CLIENT
-# ==================================================
+
 
 from groq import Groq, APIError
 
@@ -240,9 +224,8 @@ def create_groq_client():
         return None
 
 
-# ==================================================
 # SECTION 9: SEND SCREENSHOT TO THE VLM
-# ==================================================
+
 
 def analyze_screenshot(client, image_path):
     """Send the screenshot to Groq and return its analysis."""
@@ -325,9 +308,8 @@ def analyze_screenshot(client, image_path):
         return None
 
 
-# ==================================================
 # TEST PART 3: GROQ VLM INTEGRATION
-# ==================================================
+
 
 if __name__ == "__main__":
 
