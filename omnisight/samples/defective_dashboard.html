@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defective dashboard (test fixture)</title>
+<!--
+  Fixture exercising: external CSS over file://, @media rules, a failed web font,
+  card text clipped by an ancestor with overflow:hidden, an invisible full-page
+  overlay (.cookie) painted over content, and a fake React fiber so the
+  component-name extraction can be tested.
+-->
+<link rel="stylesheet" href="assets/dashboard.css">
+</head>
+<body>
+<div id="root">
+  <div class="topbar">
+    <h1>Revenue dashboard</h1>
+    <span class="status">Last synced 2 minutes ago</span>
+  </div>
+  <div class="grid">
+    <div class="card" id="card-revenue"><h2>Monthly revenue</h2><div class="metric">$48,200</div>
+      <p class="notes">Up 12% on last month, driven by enterprise renewals in the EMEA region and two large expansions that closed late.</p></div>
+    <div class="card"><h2>New users</h2><div class="metric">1,284</div><p class="notes">Steady growth.</p></div>
+    <div class="card"><h2>Churn</h2><div class="metric">2.1%</div><p class="notes">Down slightly.</p></div>
+    <div class="card"><h2>Open tickets</h2><div class="metric">37</div><p class="notes">Median response 3h.</p></div>
+    <div class="card"><h2>NPS</h2><div class="metric">61</div><p class="notes">Survey sample 410.</p></div>
+    <div class="card"><h2>Uptime</h2><div class="metric">99.98%</div><p class="notes">No incidents this week.</p></div>
+  </div>
+  <div class="cookie"><div class="bar">We use cookies. <button>Accept</button></div></div>
+</div>
+<script>
+  // Fake React 18 dev fiber so the extractor's component lookup has something to find.
+  function MetricCard() {}
+  function Dashboard() {}
+  const el = document.getElementById('card-revenue');
+  const dash = { type: Dashboard, return: null, _debugSource: { fileName: 'src/Dashboard.jsx', lineNumber: 14 } };
+  el['__reactFiber$test'] = { type: MetricCard, return: dash, _debugSource: { fileName: 'src/MetricCard.jsx', lineNumber: 8 } };
+</script>
+</body>
+</html>

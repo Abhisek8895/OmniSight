@@ -1,0 +1,50 @@
+# OmniSight - Week 2 pipeline configuration.
+# Every key is optional; omitted keys fall back to the defaults in
+# src/omnisight/context_pipeline/config.py.
+# Use with:  python -m omnisight capture -c config/default.yaml
+
+# Pages to capture when none are passed on the command line.
+# Accepts URLs (http/https) or local HTML file paths.
+targets:
+  - samples/defective_login.html
+  - samples/defective_dashboard.html
+
+output_dir: outputs
+
+# --- viewports --------------------------------------------------------------
+viewports:
+  - { name: desktop, width: 1440, height: 900 }
+  - { name: tablet,  width: 768,  height: 1024 }
+  - { name: mobile,  width: 375,  height: 812, is_mobile: true }
+
+# --- page loading -----------------------------------------------------------
+wait_until: load            # load | domcontentloaded | networkidle | commit
+timeout_ms: 30000
+wait_for_selector: null     # e.g. "#root > *" so a React app has rendered
+extra_wait_ms: 300
+scroll_to_load: true        # scroll through the page to trigger lazy loading
+device_scale_factor: 1.0    # screenshots are always written in CSS pixels
+
+# --- screenshots ------------------------------------------------------------
+capture_viewport_shot: true
+capture_full_page: true
+tile_tall_pages: true       # slice tall pages into overlapping tiles for the VLM
+tile_height: 1100
+tile_overlap: 100
+max_tiles: 8
+crop_hinted_elements: 8     # zoomed crops of the worst suspects
+crop_padding: 24
+annotate: hinted            # hinted | none
+max_image_dim: 8000         # clamp for very large pages
+
+# --- HTML / CSS context -----------------------------------------------------
+max_elements: 400
+max_hints: 60
+max_rules: 3000
+max_text_len: 120
+max_html_chars: 40000
+max_css_chars: 30000
+
+# --- text view for the VLM prompt (vlm_context.md) --------------------------
+max_context_chars: 60000    # roughly 15k tokens
+suspect_detail_limit: 15

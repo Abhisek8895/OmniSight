@@ -1,0 +1,51 @@
+{
+  "target": "samples/defective_login.html",
+  "slug": "defective-login",
+  "viewports": {
+    "desktop": {
+      "dir": "outputs/sample_run/defective-login/desktop",
+      "context": "outputs/sample_run/defective-login/desktop/context.json",
+      "summary": {
+        "viewport": "desktop",
+        "document": "1440x900",
+        "elements": 23,
+        "css_rules": 17,
+        "hints": {
+          "high": 4,
+          "medium": 5,
+          "low": 1
+        }
+      }
+    },
+    "tablet": {
+      "dir": "outputs/sample_run/defective-login/tablet",
+      "context": "outputs/sample_run/defective-login/tablet/context.json",
+      "summary": {
+        "viewport": "tablet",
+        "document": "796x1024",
+        "elements": 23,
+        "css_rules": 17,
+        "hints": {
+          "high": 5,
+          "medium": 6,
+          "low": 1
+        }
+      }
+    },
+    "mobile": {
+      "dir": "outputs/sample_run/defective-login/mobile",
+      "context": "outputs/sample_run/defective-login/mobile/context.json",
+      "summary": {
+        "viewport": "mobile",
+        "document": "653x1412",
+        "elements": 23,
+        "css_rules": 17,
+        "hints": {
+          "high": 5,
+          "medium": 6,
+          "low": 1
+        }
+      }
+    }
+  }
+}

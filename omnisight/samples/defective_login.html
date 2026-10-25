@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defective login page (test fixture)</title>
+<!--
+  Deliberate UI defects used to test the context pipeline:
+   1. .submit      - text cut off (fixed width + nowrap + overflow:hidden)
+   2. .hint        - low-contrast grey text
+   3. .badge       - absolutely positioned over the heading (overlap)
+   4. .hero img    - distorted aspect ratio, and no alt text
+   5. .avatar img  - broken image
+   6. .close       - 14px tap target, .fine-print - 9px text
+   7. .icon-btn    - button with no accessible name
+   8. .wide-table  - min-width forces horizontal scroll on narrow screens
+-->
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 Arial, sans-serif; color: #222; background: #f5f7fa; }
+  .wrap { max-width: 480px; margin: 40px auto; background: #fff; padding: 32px; border-radius: 8px; position: relative; }
+  h1 { margin: 0 0 12px; font-size: 28px; }
+  .badge { position: absolute; top: 40px; left: 120px; background: #ffd54a; padding: 4px 10px; border-radius: 12px; font-size: 14px; }
+  label { display: block; margin: 12px 0 4px; font-weight: bold; }
+  input { width: 100%; padding: 10px; border: 1px solid #bbb; border-radius: 4px; font-size: 16px; }
+  .hint { color: #c8c8c8; font-size: 14px; margin: 4px 0 0; }
+  .submit { width: 90px; white-space: nowrap; overflow: hidden; background: #0b5fff; color: #fff; border: 0; padding: 12px; border-radius: 6px; margin-top: 16px; font-size: 16px; }
+  .close { position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; padding: 0; font-size: 10px; line-height: 1; border: 0; background: #eee; }
+  .icon-btn { width: 32px; height: 32px; border: 1px solid #ccc; background: #fff; margin-left: 8px; }
+  .hero img { width: 100%; height: 40px; display: block; margin-top: 16px; }
+  .avatar { margin-top: 12px; }
+  .avatar img { width: 48px; height: 48px; border-radius: 50%; }
+  .fine-print { font-size: 9px; color: #555; margin-top: 16px; }
+  .wide-table { min-width: 620px; border-collapse: collapse; margin-top: 16px; }
+  .wide-table td { border: 1px solid #ddd; padding: 6px 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <button class="close" aria-label="Close">×</button>
+  <h1>Sign in to your account</h1>
+  <span class="badge">New: passkeys</span>
+
+  <label for="email">Email</label>
+  <input id="email" type="email" placeholder="you@example.com">
+  <p class="hint">We'll never share your email with anyone.</p>
+
+  <label for="pw">Password</label>
+  <input id="pw" type="password">
+  <button class="icon-btn"></button>
+
+  <button class="submit">Sign in securely</button>
+
+  <div class="hero">
+    <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='150' cy='150' r='140' fill='%2393c5fd'/%3E%3C/svg%3E">
+  </div>
+  <div class="avatar"><img alt="Your avatar" src="does-not-exist.png"></div>
+  <p class="fine-print">By continuing you agree to the Terms of Service and Privacy Policy.</p>
+
+  <table class="wide-table">
+    <tr><td>Last login</td><td>Today 09:14</td><td>Chrome on macOS</td><td>Hyderabad, IN</td></tr>
+  </table>
+</div>
+</body>
+</html>
