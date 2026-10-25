@@ -608,3 +608,10 @@ footer p {
         scroll-behavior: auto !important;
     }
 }
+
+
+/* OmniSight VLM test: intentional UI bug 
+.checkout-layout .place {
+    display: none !important;
+}
+    */
