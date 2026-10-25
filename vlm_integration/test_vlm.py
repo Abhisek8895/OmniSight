@@ -1,6 +1,7 @@
 
 # SECTION 1: CONFIGURATION
-
+import sys
+import io
 import os
 import logging
 from pathlib import Path
@@ -283,7 +284,7 @@ def analyze_screenshot(client, image_path):
                 }
             ],
             temperature=0.2,
-            max_completion_tokens=1200
+            max_completion_tokens=800
         )
 
         # Extract the model's response.
@@ -337,6 +338,6 @@ if __name__ == "__main__":
 
     # Display the response.
     print("\n===== VLM Analysis Result =====\n")
-    print(result)
+    print(result.encode("utf-8", errors="replace").decode("utf-8"))
 
     print("\n===== Part 3 Completed =====\n")
