@@ -234,3 +234,5 @@ Follow the script's configuration requirements and check the generated output di
 During Weeks 1 and 2 of the Infotact internship, I worked on the foundational components of OmniSight. Week 1 focused on building the mock e-commerce website and defining UI test scenarios. Week 2 focused on VLM integration, screenshot analysis, AI-based fix generation, and code extraction.
 
 These components provide a foundation for the broader goal of developing an AI-powered self-healing UI testing system.
+
+Future improvements include automated defect detection, safe code patching, and validation of generated fixes through repeatable UI tests.
