@@ -1,4 +1,4 @@
 {
-    "code_type": "python",
-    "code": "print('hello')"
+    "code_type": "css",
+    "code": ".checkout-button { margin-bottom: 20px; }"
 }
