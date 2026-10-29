@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+.env
+*.env
+**/.env
+vlm_integration/outputs/
+vlm_integration/screenshot.png
+=======
+
+.env
+*.env
+
+.env
+*.env
+>>>>>>> 8491e45b8cd174930db442ce8b228d9195c71e4e
