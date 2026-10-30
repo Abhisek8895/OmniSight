@@ -151,13 +151,3 @@ It does not currently perform:
 - Verifying whether the UI defect was actually fixed
 
 These checks can be added later as the VLM repair pipeline is integrated.
-
-## Integration with Task 4
-
-Once Task 4 generates and extracts the repair code, its output can be passed directly to:
-
-```python
-prepare_fix(fix_data)
-```
-
-The validation module will then return either a validated or rejected repair result for the next stage of the OmniSight repair workflow.
