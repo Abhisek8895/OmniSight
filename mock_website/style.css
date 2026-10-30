@@ -610,8 +610,23 @@ footer p {
 }
 
 
-/* OmniSight VLM test: intentional UI bug 
+/* OmniSight VLM test: intentional UI bug 1 - Hide checkout button */
 .checkout-layout .place {
     display: none !important;
 }
-    */
+
+/* OmniSight VLM test: intentional UI bug 2 - Misalign checkout form */
+#checkout-form {
+    margin-left: 120px !important;
+}
+
+/* OmniSight VLM test: intentional UI bug 3 - Hide search input */
+#search {
+    display: none !important;
+}
+
+/* OmniSight VLM test: intentional UI bug 4 - Distort checkout input fields */
+#checkout-form input,
+#checkout-form textarea {
+    width: 25px !important;
+}
