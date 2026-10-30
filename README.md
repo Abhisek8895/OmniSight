@@ -1,236 +1,168 @@
-# OmniSight – AI-Powered Self-Healing UI Testing
 
-OmniSight is an AI-powered UI testing project designed to identify website interface issues, analyze visual defects using Vision-Language Models (VLMs), and generate potential code fixes. The project aims to support an autonomous self-healing QA pipeline.
+# OmniSight – Team Work Documentation
 
-## Project Overview
+## Week 1 – Website Development, Automation & Backend Setup
 
-This project was developed as part of the Infotact internship. My work during Weeks 1 and 2 focused on preparing a mock e-commerce website, defining UI test scenarios, integrating a VLM using Groq, and implementing AI-based fix generation and code extraction.
+**Objective:** To prepare the mock e-commerce website, automate its shopping workflow, establish backend communication, and create UI defects for testing.
 
-## Week 1: Mock Website and UI Test Scenarios
+### Task 1: Prepare the Mock Website and Define UI Test Scenarios
 
-### Work Completed
-
+**Work Completed:**
 - Created a basic mock e-commerce website.
-- Added the required pages and sections for the shopping flow.
-- Added product information and pricing.
-- Implemented cart and checkout sections.
-- Prepared the website for UI automation and testing.
-- Identified important user actions to test.
-- Defined repeatable test scenarios for the shopping flow.
+- Developed the required pages for the shopping workflow.
+- Added products and their basic information.
+- Implemented shopping cart and checkout sections.
+- Established the normal website navigation flow.
+- Identified important website interactions.
+- Created repeatable UI test scenarios.
+- Prepared the website for automation and testing.
 
-### Website Features
+**Outcome:** A functional mock e-commerce website with predefined testing scenarios.
 
-- Product display
-- Shopping cart
-- Cart quantity and total display
-- Checkout page
-- Place Order button
-- Basic shopping-flow test scenarios
+### Task 2: Set Up and Automate the Website Checkout
 
-### Objective
+**Work Completed:**
+- Configured the Python environment.
+- Installed Playwright and the required browser.
+- Verified browser execution.
+- Connected Playwright to the mock website.
+- Automated website navigation.
+- Automated product selection and cart operations.
+- Automated the checkout process.
+- Tested the complete shopping workflow.
 
-To create a functional mock website that can be used to test UI behavior, capture screenshots, identify interface defects, and support automated testing.
+**Outcome:** Automated end-to-end website checkout using Python and Playwright.
 
-## Week 2: VLM Integration, Fix Generation and Code Extraction
+### Task 3: Take Screenshots at Different Screen Sizes and Check the Layout
 
-### Task 1: VLM Setup and Integration
+**Work Completed:**
+- Selected different viewport sizes.
+- Executed the website at different screen resolutions.
+- Captured screenshots of important pages.
+- Captured screenshots during important website interactions.
+- Checked the website layout and responsiveness.
+- Identified visual and layout problems.
+- Organized screenshots for further testing.
 
-#### Work Completed
+**Outcome:** Baseline screenshots for visual comparison and UI defect analysis.
 
-- Configured the Groq API integration for VLM-based website analysis.
-- Loaded API configuration from an environment file.
-- Used a website screenshot as input for visual analysis.
-- Encoded the screenshot in Base64 format for processing.
-- Sent the screenshot to the configured vision model.
-- Processed the model response and saved the analysis report.
+### Task 4: Create the FastAPI Application and Webhook
 
-#### Output
+**Work Completed:**
+- Set up the FastAPI project.
+- Created the main application.
+- Developed a webhook endpoint.
+- Configured the endpoint to receive simulated CI/CD requests.
+- Defined request and response formats.
+- Started the FastAPI server.
+- Sent sample requests to the webhook.
+- Verified the JSON responses.
 
-The VLM analysis was saved to:
+**Outcome:** FastAPI application with a functional webhook endpoint.
 
-`vlm_integration/outputs/vlm_analysis.txt`
+### Task 5: Test the Webhook and Check the UI Bugs
 
-#### Objective
+**Work Completed:**
+- Tested valid webhook requests.
+- Tested invalid and incomplete requests.
+- Verified request handling and JSON responses.
+- Executed the predefined website test scenarios.
+- Introduced deliberate UI defects.
+- Tested overlapping text and hidden submit buttons.
+- Captured screenshots of defective elements.
+- Documented expected and actual behavior.
+- Checked whether defects could be reproduced consistently.
 
-To analyze the website's visual interface using a Vision-Language Model and obtain an AI-generated report that can help identify potential UI issues.
+**Outcome:** Tested webhook functionality and reproducible UI defects for AI-based analysis.
 
-### Task 4: Fix Generation and Code Extraction
+---
 
-#### Work Completed
+## Week 2 – AI Integration, Defect Detection & Fix Generation
 
-- Implemented a code extraction module in `fix_generation/code_extractor.py`.
-- Implemented an AI-based fix generation module in `fix_generation/fix_generator.py`.
-- Configured the language model through environment variables.
-- Processed AI-generated responses to identify code blocks.
-- Generated proposed CSS fixes based on the AI response.
-- Saved the generated response and proposed fixes in the output directory.
-- Handled API and model configuration issues during development.
+**Objective:** To integrate AI models, prepare website information for analysis, detect UI defects, generate code fixes, and prepare extracted code for validation.
 
-#### Output Files
+### Task 1: VLM Setup & Integration
 
-- `outputs/generated_fixes/ai_fix_response.txt`
-- `outputs/generated_fixes/proposed_fix_20261026_000024_1.css`
+**Work Completed:**
+- Configured the approved Vision Language Model.
+- Established the model/API connection.
+- Configured environment variables.
+- Implemented the model request and response workflow.
+- Tested model connectivity and response generation.
 
-*Note: The generated CSS is a proposed fix and should be reviewed and tested before being applied to the website.*
+**Outcome:** Successful VLM integration for screenshot analysis.
 
-#### Objective
+### Task 2: Screenshot & HTML Context Pipeline
 
-To convert AI-generated recommendations into usable code snippets that can help address potential UI defects.
+**Work Completed:**
+- Captured website screenshots.
+- Collected relevant HTML and CSS information.
+- Prepared visual and source-code context.
+- Organized the collected information.
+- Prepared the input required for VLM analysis.
 
-## Project Structure
+**Outcome:** Screenshot and HTML/CSS context prepared for AI processing.
 
-```text
-OmniSight/
-│
-├── mock_website/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── test-scenarios.md
-│
-├── vlm_integration/
-│   ├── test_vlm.py
-│   ├── screenshot.png
-│   ├── .env
-│   └── outputs/
-│       └── vlm_analysis.txt
-│
-├── fix_generation/
-│   ├── code_extractor.py
-│   └── fix_generator.py
-│
-├── outputs/
-│   └── generated_fixes/
-│       ├── ai_fix_response.txt
-│       └── proposed_fix_20261026_000024_1.css
-│
-├── .gitignore
-└── README.md
-```
+### Task 3: Prompt Engineering & Defect Detection
 
-*The structure above represents the main files and outputs from the completed tasks. Your local repository may contain additional files or directories.*
+**Work Completed:**
+- Designed prompts for UI defect detection.
+- Provided screenshots and website context to the AI model.
+- Identified visual defects using model responses.
+- Analyzed defective elements and their locations.
+- Requested explanations and possible corrections.
 
-## Technologies Used
+**Outcome:** AI-based UI defect detection and analysis.
 
-- Python
-- HTML
-- CSS
-- JavaScript
-- Groq API
-- Vision-Language Models (VLMs)
-- Large Language Models (LLMs)
-- Base64 image encoding
-- Git and GitHub
+### Task 4: Fix Generation & Code Extraction
 
-## Prerequisites
+**Work Completed:**
+- Developed the fix generation module.
+- Connected the module to the configured AI model.
+- Designed prompts for generating CSS and React fixes.
+- Processed AI-generated responses.
+- Implemented code extraction functionality.
+- Extracted code blocks from AI responses.
+- Handled responses without valid code blocks.
+- Saved generated responses and extracted fixes into output files.
 
-- Python 3.10 or a compatible Python version
-- Git
-- VS Code or another code editor
-- A Groq API key
-- Internet connectivity for API-based model requests
+**Outcome:** Automated fix generation and code extraction from AI responses.
 
-## Setup Instructions
+### Task 5: Code Validation & Fix Output
 
-### 1. Clone the Repository
+**Work Completed:**
+- Prepared extracted code for validation.
+- Checked code structure and formatting.
+- Identified invalid or incomplete code.
+- Organized the generated fixes for the next workflow stage.
 
-```bash
-git clone https://github.com/Abhisek8895/OmniSight.git
-cd OmniSight
-```
+**Outcome:** Prepared code fixes for the repair workflow.
 
-### 2. Create a Virtual Environment
+---
 
-```bash
-python -m venv .venv
-```
+## Technologies Used Across Week 1 & Week 2
 
-Activate the environment in Windows PowerShell:
+| Technology | Purpose |
+|---|---|
+| Python | Automation and backend development |
+| HTML5 | Website structure |
+| CSS3 | Website styling |
+| JavaScript | Website functionality |
+| Playwright | Browser automation |
+| FastAPI | Backend application and webhook |
+| VLM | Visual defect analysis |
+| Groq API | AI model integration |
+| Git & GitHub | Version control and team collaboration |
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+## Summary of Team Progress
 
-### 3. Install Dependencies
+| Week | Focus Area | Main Deliverables |
+|---|---|---|
+| Week 1 | Website and testing foundation | Mock website, automated checkout, screenshots, FastAPI webhook, UI defects |
+| Week 2 | AI integration and fix generation | VLM integration, screenshot context, defect detection, fix generation, code extraction and validation |
 
-Install the dependencies required by the Python modules:
+---
 
-```bash
-pip install requests python-dotenv
-```
-
-If the project contains a `requirements.txt` file, use it to install the complete dependency list:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure Environment Variables
-
-Create or update the `.env` file in the appropriate module directory and configure the API key expected by the Python scripts.
-
-Example:
-
-```env
-GROQ_API_KEY=your_groq_api_key
-```
-
-Use the exact variable names expected by your scripts. Never commit API keys or other secrets to GitHub.
-
-### 5. Run the VLM Analysis
-
-From the repository root, run:
-
-```bash
-python vlm_integration/test_vlm.py
-```
-
-Ensure that the screenshot path, environment configuration, and model settings match your local setup.
-
-### 6. Run Fix Generation
-
-Run the fix-generation script:
-
-```bash
-python fix_generation/fix_generator.py
-```
-
-Follow the script's configuration requirements and check the generated output directory for the AI response and proposed code fixes.
-
-## Workflow
-
-1. Prepare the mock e-commerce website.
-2. Define repeatable UI test scenarios.
-3. Capture a website screenshot.
-4. Submit the screenshot for VLM-based analysis.
-5. Save the AI-generated analysis report.
-6. Generate a proposed fix using an LLM.
-7. Extract relevant code blocks from the AI response.
-8. Save the proposed fixes for review and testing.
-
-## Current Progress
-
-- [x] Created the mock e-commerce website.
-- [x] Added the shopping and checkout flow.
-- [x] Defined UI test scenarios.
-- [x] Integrated VLM-based screenshot analysis.
-- [x] Generated and saved a VLM analysis report.
-- [x] Implemented the fix-generation module.
-- [x] Implemented the code-extraction module.
-- [x] Generated and saved a proposed CSS fix.
-- [ ] Validate the generated fix against the actual website.
-- [ ] Integrate the complete workflow into an autonomous self-healing QA pipeline.
-
-## Important Notes
-
-- Keep API keys in `.env` files and exclude them from version control.
-- Review AI-generated code before applying it.
-- Test proposed fixes to ensure that they do not introduce new UI issues.
-- Model availability, API limits, and token restrictions may affect execution.
-- Generated fixes are proposals; their successful application and validation require separate testing.
-
-## Conclusion
-
-During Weeks 1 and 2 of the Infotact internship, I worked on the foundational components of OmniSight. Week 1 focused on building the mock e-commerce website and defining UI test scenarios. Week 2 focused on VLM integration, screenshot analysis, AI-based fix generation, and code extraction.
-
-These components provide a foundation for the broader goal of developing an AI-powered self-healing UI testing system.
+**Documentation:** OmniSight Team Work  
+**Coverage:** Week 1 and Week 2  
+**Project Domain:** AI & Automation Engineering
