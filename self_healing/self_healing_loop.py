@@ -1,5 +1,8 @@
 MAX_RETRIES = 3
 
+SUPPORTED_TYPES = ["css", "react"]
+MAX_CODE_LENGTH = 5000
+
 
 def apply_fix(css_code, fixed_code):
     """
@@ -11,20 +14,42 @@ def apply_fix(css_code, fixed_code):
     return fixed_code
 
 
-def verify_fix(fixed_code):
+def verify_fix(fixed_code, code_type):
     """
-    Basic verification of the repaired CSS code.
+    Validate the generated repair code.
     """
+
     if not fixed_code:
-        return False
+        return {
+            "valid": False,
+            "reason": "No code provided"
+        }
 
     if not isinstance(fixed_code, str):
-        return False
+        return {
+            "valid": False,
+            "reason": "Code must be a string"
+        }
 
-    return True
+    if code_type not in SUPPORTED_TYPES:
+        return {
+            "valid": False,
+            "reason": "Unsupported code type"
+        }
+
+    if len(fixed_code) > MAX_CODE_LENGTH:
+        return {
+            "valid": False,
+            "reason": "Code exceeds maximum length"
+        }
+
+    return {
+        "valid": True,
+        "reason": "Code passed basic validation"
+    }
 
 
-def self_healing_loop(css_code, fixed_code):
+def self_healing_loop(css_code, fixed_code, code_type):
     """
     Try to apply and verify a generated fix.
     """
@@ -34,17 +59,22 @@ def self_healing_loop(css_code, fixed_code):
 
         repaired_code = apply_fix(css_code, fixed_code)
 
-        result = verify_fix(repaired_code)
+        validation_result = verify_fix(
+            repaired_code,
+            code_type
+        )
 
-        if result:
+        if validation_result["valid"]:
             return {
                 "status": "success",
                 "attempt": attempt,
-                "repaired_code": repaired_code
+                "repaired_code": repaired_code,
+                "validation": validation_result
             }
 
     return {
         "status": "failed",
         "attempts": MAX_RETRIES,
-        "repaired_code": None
+        "repaired_code": None,
+        "validation": validation_result
     }
