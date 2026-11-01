@@ -84,3 +84,156 @@ Use exactly this JSON structure:
   "reason": "Why this status was selected"
 }}
 """.strip()
+
+
+def parse_verification_response(response_text):
+    """Extract and validate the JSON returned by the VLM."""
+    text = response_text.strip()
+
+    # Remove optional Markdown code fences.
+    text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s*```$", "", text)
+
+    try:
+        result = json.loads(text)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+        if not match:
+            raise ValueError("The VLM did not return valid JSON.")
+        result = json.loads(match.group(0))
+
+    allowed_statuses = {"FIXED", "NOT_FIXED", "INCONCLUSIVE"}
+    status = str(result.get("status", "")).strip().upper()
+
+    if status not in allowed_statuses:
+        raise ValueError(f"Unexpected verification status: {status}")
+
+    confidence = str(result.get("confidence", "LOW")).strip().upper()
+    if confidence not in {"HIGH", "MEDIUM", "LOW"}:
+        confidence = "LOW"
+
+    return {
+        "status": status,
+        "confidence": confidence,
+        "defect": str(result.get("defect", "")),
+        "evidence": str(result.get("evidence", "")),
+        "reason": str(result.get("reason", "")),
+    }
+
+
+def verify_repair(client, screenshot_path, defect_description):
+    """Send the post-fix screenshot and defect context to the VLM."""
+    mime_type = validate_screenshot(screenshot_path)
+    encoded_image = encode_screenshot(screenshot_path)
+    image_data_url = f"data:{mime_type};base64,{encoded_image}"
+
+    prompt = build_verification_prompt(defect_description)
+
+    logger.info("Sending post-fix screenshot to %s...", MODEL_NAME)
+
+    completion = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are a careful visual UI repair verifier. "
+                    "Judge only what is supported by the screenshot."
+                ),
+            },
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {
+                        "type": "image_url",
+                        "image_url": {"url": image_data_url},
+                    },
+                ],
+            },
+        ],
+        temperature=0.1,
+        max_completion_tokens=700,
+    )
+
+    response_text = completion.choices[0].message.content
+    if not response_text:
+        raise ValueError("The VLM returned an empty response.")
+
+    return parse_verification_response(response_text), response_text
+
+
+def save_verification_report(result, screenshot_path, defect_description, raw_response):
+    """Save a timestamped JSON verification report."""
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    report = {
+        "created_at": timestamp,
+        "model": MODEL_NAME,
+        "screenshot": str(screenshot_path),
+        "original_defect": defect_description,
+        "verification": result,
+        "raw_vlm_response": raw_response,
+    }
+
+    report_path = RESULTS_DIR / f"verification_{timestamp}.json"
+    report_path.write_text(
+        json.dumps(report, indent=4, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    return report_path
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Verify an applied UI fix using the OmniSight VLM."
+    )
+    parser.add_argument(
+        "--screenshot",
+        type=Path,
+        default=DEFAULT_SCREENSHOT,
+        help="Path to the screenshot captured after applying the fix.",
+    )
+    parser.add_argument(
+        "--defect",
+        required=True,
+        help="Description of the original UI defect.",
+    )
+    args = parser.parse_args()
+
+    if not API_KEY:
+        raise ValueError(
+            f"GROQ_API_KEY was not found. Check your environment file: {ENV_PATH}"
+        )
+
+    client = Groq(api_key=API_KEY)
+
+    result, raw_response = verify_repair(
+        client,
+        args.screenshot.resolve(),
+        args.defect,
+    )
+
+    report_path = save_verification_report(
+        result,
+        args.screenshot.resolve(),
+        args.defect,
+        raw_response,
+    )
+
+    print("\n===== OmniSight Repair Verification =====")
+    print(f"Status     : {result['status']}")
+    print(f"Confidence : {result['confidence']}")
+    print(f"Evidence   : {result['evidence']}")
+    print(f"Reason     : {result['reason']}")
+    print(f"\nReport saved: {report_path}")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as error:
+        logger.error("Repair verification failed: %s", error)
+        raise SystemExit(1)
