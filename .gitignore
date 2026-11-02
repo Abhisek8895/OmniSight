@@ -29,3 +29,5 @@ Thumbs.db
 # Build / distribution
 build/
 dist/
+
+*.png
