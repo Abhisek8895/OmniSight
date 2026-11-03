@@ -1,0 +1,34 @@
+/* Make sure the checkout button is rendered and not clipped */
+.checkout-button {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 10;
+}
+
+/* Allow parent containers to show overflow content */
+.checkout-section,
+.checkout-container,
+.main-content {
+  overflow: visible !important;
+}
+
+/* Keep the button anchored to the right side in flex layouts */
+.checkout-section {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+
+/* Responsive fix – prevent layout overflow on small screens */
+@media (max-width: 480px) {
+  .checkout-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .checkout-button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
