@@ -1,0 +1,1279 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "version": "0.2.0",
+    "stage": "week2-screenshot-html-context",
+    "browser": "chromium 153.0.8010.12"
+  },
+  "created_at": "2026-10-25T09:32:56+00:00",
+  "target": {
+    "input": "samples/defective_login.html",
+    "url": "file:///home/claude/omnisight/samples/defective_login.html"
+  },
+  "viewport": {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "is_mobile": false
+  },
+  "page": {
+    "url": "file:///home/claude/omnisight/samples/defective_login.html",
+    "title": "Defective login page (test fixture)",
+    "lang": "en",
+    "viewport": {
+      "width": 768,
+      "height": 1024,
+      "client_width": 768,
+      "client_height": 1024
+    },
+    "document": {
+      "scroll_width": 796,
+      "scroll_height": 1024
+    },
+    "device_pixel_ratio": 1,
+    "total_dom_elements": 23,
+    "rendered_elements": 23,
+    "recorded_elements": 23,
+    "images": 2,
+    "fonts_used": [
+      {
+        "family": "Arial",
+        "text_elements": 12
+      }
+    ],
+    "font_faces": [],
+    "horizontal_overflow": {
+      "scrollWidth": 796,
+      "clientWidth": 768,
+      "extra": 28
+    }
+  },
+  "screenshots": {
+    "viewport": {
+      "path": "screenshot_viewport.png",
+      "width": 768,
+      "height": 1024,
+      "description": "Above-the-fold view exactly as a user first sees it."
+    },
+    "full_page": {
+      "path": "screenshot_full.png",
+      "width": 796,
+      "height": 1024,
+      "description": "Entire scrollable page.",
+      "truncated": false
+    },
+    "tiles": [],
+    "annotated": {
+      "path": "screenshot_annotated.png",
+      "width": 796,
+      "height": 1024,
+      "description": "Same page with numbered boxes (H<n>) marking elements flagged by the layout checks. Colour: red=high, orange=medium, blue=low severity."
+    },
+    "crops": [
+      {
+        "path": "crops/h02_text-clipped.png",
+        "width": 138,
+        "height": 90,
+        "hint_id": 2,
+        "element_id": 11,
+        "hint_type": "text-clipped",
+        "region": {
+          "x": 196,
+          "y": 291,
+          "w": 138,
+          "h": 90
+        }
+      },
+      {
+        "path": "crops/h03_overlap.png",
+        "width": 464,
+        "height": 90,
+        "hint_id": 3,
+        "element_id": 3,
+        "hint_type": "overlap",
+        "region": {
+          "x": 152,
+          "y": 48,
+          "w": 464,
+          "h": 90
+        }
+      },
+      {
+        "path": "crops/h04_low-contrast.png",
+        "width": 464,
+        "height": 69,
+        "hint_id": 4,
+        "element_id": 7,
+        "hint_type": "low-contrast",
+        "region": {
+          "x": 152,
+          "y": 174,
+          "w": 464,
+          "h": 69
+        }
+      },
+      {
+        "path": "crops/h05_image-broken.png",
+        "width": 145,
+        "height": 72,
+        "hint_id": 5,
+        "element_id": 15,
+        "hint_type": "image-broken",
+        "region": {
+          "x": 152,
+          "y": 401,
+          "w": 145,
+          "h": 72
+        }
+      },
+      {
+        "path": "crops/h06_viewport-overflow.png",
+        "width": 644,
+        "height": 86,
+        "hint_id": 6,
+        "element_id": 17,
+        "hint_type": "viewport-overflow",
+        "region": {
+          "x": 152,
+          "y": 470,
+          "w": 644,
+          "h": 86
+        }
+      },
+      {
+        "path": "crops/h08_small-tap-target.png",
+        "width": 62,
+        "height": 62,
+        "hint_id": 8,
+        "element_id": 2,
+        "hint_type": "small-tap-target",
+        "region": {
+          "x": 578,
+          "y": 24,
+          "w": 62,
+          "h": 62
+        }
+      },
+      {
+        "path": "crops/h09_empty-interactive.png",
+        "width": 80,
+        "height": 80,
+        "hint_id": 9,
+        "element_id": 10,
+        "hint_type": "empty-interactive",
+        "region": {
+          "x": 160,
+          "y": 287,
+          "w": 80,
+          "h": 80
+        }
+      },
+      {
+        "path": "crops/h10_image-distorted.png",
+        "width": 464,
+        "height": 88,
+        "hint_id": 10,
+        "element_id": 13,
+        "hint_type": "image-distorted",
+        "region": {
+          "x": 152,
+          "y": 349,
+          "w": 464,
+          "h": 88
+        }
+      }
+    ]
+  },
+  "hints": [
+    {
+      "id": 1,
+      "type": "horizontal-scroll",
+      "severity": "high",
+      "element_id": null,
+      "related_id": null,
+      "message": "Page scrolls horizontally: content is 796px wide in a 768px viewport.",
+      "details": {
+        "scrollWidth": 796,
+        "clientWidth": 768,
+        "extra": 28,
+        "offenders": 1
+      }
+    },
+    {
+      "id": 2,
+      "type": "text-clipped",
+      "severity": "high",
+      "element_id": 11,
+      "related_id": null,
+      "message": "Text is cut off by its own box: \"Sign in securely\".",
+      "details": {
+        "spill_px": {
+          "right": 35,
+          "bottom": -13,
+          "left": -12,
+          "top": -12
+        },
+        "white_space": "nowrap",
+        "overflow": "hidden/hidden"
+      }
+    },
+    {
+      "id": 3,
+      "type": "overlap",
+      "severity": "high",
+      "element_id": 3,
+      "related_id": 4,
+      "message": "Overlaps body > div.wrap > span.badge (100% of the smaller element).",
+      "details": {
+        "overlap_ratio": 1,
+        "other": "body > div.wrap > span.badge"
+      }
+    },
+    {
+      "id": 4,
+      "type": "low-contrast",
+      "severity": "high",
+      "element_id": 7,
+      "related_id": null,
+      "message": "Contrast 1.7:1 is below 4.5:1 for \"We'll never share your email with anyon…\".",
+      "details": {
+        "ratio": 1.7,
+        "required": 4.5,
+        "color": "rgb(200, 200, 200)",
+        "background": "rgb(255, 255, 255)",
+        "uncertain": false
+      }
+    },
+    {
+      "id": 5,
+      "type": "image-broken",
+      "severity": "high",
+      "element_id": 15,
+      "related_id": null,
+      "message": "Image failed to load.",
+      "details": {
+        "src": "file:///home/claude/omnisight/samples/does-not-exist.png"
+      }
+    },
+    {
+      "id": 6,
+      "type": "viewport-overflow",
+      "severity": "medium",
+      "element_id": 17,
+      "related_id": null,
+      "message": "Extends 28px beyond the right edge of the viewport.",
+      "details": {
+        "right": 796,
+        "viewport_width": 768
+      }
+    },
+    {
+      "id": 7,
+      "type": "container-overflow",
+      "severity": "medium",
+      "element_id": 17,
+      "related_id": 1,
+      "message": "Sticks out 172px beyond its parent body > div.wrap, which has a visible background/border.",
+      "details": {
+        "parent": "body > div.wrap",
+        "overflow_px": {
+          "right": 172,
+          "left": -32,
+          "bottom": -32,
+          "top": -454.5
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "small-tap-target",
+      "severity": "medium",
+      "element_id": 2,
+      "related_id": null,
+      "message": "Interactive target is only 14×14px (WCAG 2.2 minimum is 24×24).",
+      "details": {
+        "width": 14,
+        "height": 14
+      }
+    },
+    {
+      "id": 9,
+      "type": "empty-interactive",
+      "severity": "medium",
+      "element_id": 10,
+      "related_id": null,
+      "message": "Interactive element has no visible text or accessible name.",
+      "details": {}
+    },
+    {
+      "id": 10,
+      "type": "image-distorted",
+      "severity": "medium",
+      "element_id": 13,
+      "related_id": null,
+      "message": "Image is stretched: natural size 300×300, rendered 416×40.",
+      "details": {
+        "natural": [
+          300,
+          300
+        ],
+        "rendered": [
+          416,
+          40
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "type": "tiny-text",
+      "severity": "medium",
+      "element_id": 16,
+      "related_id": null,
+      "message": "Font size 9px is hard to read: \"By continuing you agree to the Terms of…\".",
+      "details": {
+        "font_size": 9
+      }
+    },
+    {
+      "id": 12,
+      "type": "image-missing-alt",
+      "severity": "low",
+      "element_id": 13,
+      "related_id": null,
+      "message": "Image has no alt attribute.",
+      "details": {
+        "src": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='150' cy='150…"
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": 1,
+      "selector": "body > div.wrap",
+      "tag": "div",
+      "attrs": {
+        "class": "wrap"
+      },
+      "text": "",
+      "bbox": {
+        "x": 144,
+        "y": 40,
+        "w": 480,
+        "h": 524.5
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {
+        "position": "relative",
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "max-width": "480px",
+        "margin": "40px 144px",
+        "padding": "32px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-radius": "8px"
+      },
+      "rule_ids": [
+        1,
+        3
+      ],
+      "flags": [],
+      "html_snippet": "<div class=\"wrap\" data-omni-id=\"1\"> <button aria-label=\"Close\" class=\"close\" data-omni-id=\"2\">×</button> <h1 data-omni-id=\"3\">Sign in to your account</h1> <span class=\"badge\" data-omni-id=\"4\">New: passkeys</span> <label data-omni-id=\"5\" for=\"email\">Email</label> <input data-omni-id=\"6\" id=\"email\" placeholder=\"you@example.com\" type=\"email\"/> <p class=\"hint\" data-omni-id=\"7\">We'll never share your email with anyone.</p> <label data-omni-id=\"8\" for=\"pw\">Password</label> <input data-omni-id=\"9\" id=\"pw\" type=\"password\"/> <button class=\"icon-btn\" data-omni-id=\"10\"></button> <button class=\"submit\" data-omni-id=\"11\">Sign in securely</button> <div class=\"hero\" data-omni-id=\"12\"> <img data-omni-id=\"1…"
+    },
+    {
+      "id": 2,
+      "selector": "body > div.wrap > button.close:nth-of-type(1)",
+      "tag": "button",
+      "attrs": {
+        "class": "close",
+        "aria-label": "Close"
+      },
+      "text": "×",
+      "bbox": {
+        "x": 602,
+        "y": 48,
+        "w": 14,
+        "h": 14
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "top": "8px",
+        "right": "8px",
+        "bottom": "502.5px",
+        "left": "458px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(238, 238, 238)",
+        "font-family": "Arial",
+        "font-size": "10px",
+        "line-height": "10px",
+        "text-align": "center"
+      },
+      "rule_ids": [
+        1,
+        10
+      ],
+      "flags": [
+        "small-tap-target"
+      ],
+      "html_snippet": "<button aria-label=\"Close\" class=\"close\" data-omni-id=\"2\">×</button>"
+    },
+    {
+      "id": 3,
+      "selector": "body > div.wrap > h1",
+      "tag": "h1",
+      "attrs": {},
+      "text": "Sign in to your account",
+      "bbox": {
+        "x": 176,
+        "y": 72,
+        "w": 416,
+        "h": 42
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "margin": "0px 0px 12px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700",
+        "line-height": "42px"
+      },
+      "rule_ids": [
+        1,
+        4
+      ],
+      "flags": [
+        "overlap"
+      ],
+      "html_snippet": "<h1 data-omni-id=\"3\">Sign in to your account</h1>"
+    },
+    {
+      "id": 4,
+      "selector": "body > div.wrap > span.badge",
+      "tag": "span",
+      "attrs": {
+        "class": "badge"
+      },
+      "text": "New: passkeys",
+      "bbox": {
+        "x": 264,
+        "y": 80,
+        "w": 114.2,
+        "h": 29
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "top": "40px",
+        "right": "245.844px",
+        "bottom": "455.5px",
+        "left": "120px",
+        "padding": "4px 10px",
+        "color": "rgb(34, 34, 34)",
+        "background-color": "rgb(255, 213, 74)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "14px",
+        "line-height": "21px",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        1,
+        5
+      ],
+      "flags": [],
+      "html_snippet": "<span class=\"badge\" data-omni-id=\"4\">New: passkeys</span>"
+    },
+    {
+      "id": 5,
+      "selector": "body > div.wrap > label:nth-of-type(1)",
+      "tag": "label",
+      "attrs": {
+        "for": "email"
+      },
+      "text": "Email",
+      "bbox": {
+        "x": 176,
+        "y": 126,
+        "w": 416,
+        "h": 24
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "block",
+        "margin": "12px 0px 4px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        6
+      ],
+      "flags": []
+    },
+    {
+      "id": 6,
+      "selector": "#email",
+      "tag": "input",
+      "attrs": {
+        "id": "email",
+        "type": "email",
+        "placeholder": "you@example.com"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 154,
+        "w": 416,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "inline-block",
+        "padding": "10px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "font-family": "Arial",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "border": "1px solid rgb(187, 187, 187)",
+        "border-radius": "4px",
+        "cursor": "text"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 7,
+      "selector": "body > div.wrap > p.hint:nth-of-type(1)",
+      "tag": "p",
+      "attrs": {
+        "class": "hint"
+      },
+      "text": "We'll never share your email with anyone.",
+      "bbox": {
+        "x": 176,
+        "y": 198,
+        "w": 416,
+        "h": 21
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "margin": "4px 0px 0px",
+        "color": "rgb(200, 200, 200)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "14px",
+        "line-height": "21px"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": [
+        "low-contrast"
+      ],
+      "html_snippet": "<p class=\"hint\" data-omni-id=\"7\">We'll never share your email with anyone.</p>"
+    },
+    {
+      "id": 8,
+      "selector": "body > div.wrap > label:nth-of-type(2)",
+      "tag": "label",
+      "attrs": {
+        "for": "pw"
+      },
+      "text": "Password",
+      "bbox": {
+        "x": 176,
+        "y": 231,
+        "w": 416,
+        "h": 24
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "block",
+        "margin": "12px 0px 4px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        6
+      ],
+      "flags": []
+    },
+    {
+      "id": 9,
+      "selector": "#pw",
+      "tag": "input",
+      "attrs": {
+        "id": "pw",
+        "type": "password"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 259,
+        "w": 416,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "inline-block",
+        "padding": "10px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "font-family": "Arial",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "border": "1px solid rgb(187, 187, 187)",
+        "border-radius": "4px",
+        "cursor": "text"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 10,
+      "selector": "body > div.wrap > button.icon-btn:nth-of-type(2)",
+      "tag": "button",
+      "attrs": {
+        "class": "icon-btn"
+      },
+      "text": "",
+      "bbox": {
+        "x": 184,
+        "y": 311,
+        "w": 32,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "inline-block",
+        "margin": "0px 0px 0px 8px",
+        "padding": "1px 6px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "font-family": "Arial",
+        "font-size": "13.3333px",
+        "text-align": "center",
+        "border": "1px solid rgb(204, 204, 204)"
+      },
+      "rule_ids": [
+        1,
+        11
+      ],
+      "flags": [
+        "empty-interactive"
+      ],
+      "html_snippet": "<button class=\"icon-btn\" data-omni-id=\"10\"></button>"
+    },
+    {
+      "id": 11,
+      "selector": "body > div.wrap > button.submit:nth-of-type(3)",
+      "tag": "button",
+      "attrs": {
+        "class": "submit"
+      },
+      "text": "Sign in securely",
+      "bbox": {
+        "x": 220.5,
+        "y": 315,
+        "w": 90,
+        "h": 42
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "inline-block",
+        "margin": "16px 0px 0px",
+        "padding": "12px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(11, 95, 255)",
+        "font-family": "Arial",
+        "font-size": "16px",
+        "text-align": "center",
+        "white-space": "nowrap",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "6px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": [
+        "text-clipped"
+      ],
+      "html_snippet": "<button class=\"submit\" data-omni-id=\"11\">Sign in securely</button>"
+    },
+    {
+      "id": 12,
+      "selector": "body > div.wrap > div.hero:nth-of-type(1)",
+      "tag": "div",
+      "attrs": {
+        "class": "hero"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 373,
+        "w": 416,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {},
+      "rule_ids": [
+        1
+      ],
+      "flags": []
+    },
+    {
+      "id": 13,
+      "selector": "body > div.wrap > div.hero:nth-of-type(1) > img",
+      "tag": "img",
+      "attrs": {
+        "src": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='150' cy='150' r='140' fill='%2393c5fd'/%3E%3C/svg%3E"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 373,
+        "w": 416,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 12,
+      "styles": {
+        "display": "block",
+        "margin": "16px 0px 0px",
+        "overflow-x": "clip",
+        "overflow-y": "clip"
+      },
+      "rule_ids": [
+        1,
+        12
+      ],
+      "flags": [
+        "image-distorted",
+        "image-missing-alt"
+      ],
+      "html_snippet": "<img data-omni-id=\"13\" src=\"data:image/svg+xml;utf8,…(135 chars)\"/>"
+    },
+    {
+      "id": 14,
+      "selector": "body > div.wrap > div.avatar:nth-of-type(2)",
+      "tag": "div",
+      "attrs": {
+        "class": "avatar"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 425,
+        "w": 416,
+        "h": 24
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "margin": "12px 0px 0px"
+      },
+      "rule_ids": [
+        1,
+        13
+      ],
+      "flags": []
+    },
+    {
+      "id": 15,
+      "selector": "body > div.wrap > div.avatar:nth-of-type(2) > img",
+      "tag": "img",
+      "attrs": {
+        "src": "does-not-exist.png",
+        "alt": "Your avatar"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 425,
+        "w": 97.3,
+        "h": 24
+      },
+      "in_viewport": true,
+      "parent": 14,
+      "styles": {
+        "display": "inline",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "border-radius": "50%"
+      },
+      "rule_ids": [
+        1,
+        14
+      ],
+      "flags": [
+        "image-broken"
+      ],
+      "html_snippet": "<img alt=\"Your avatar\" data-omni-id=\"15\" src=\"does-not-exist.png\"/>"
+    },
+    {
+      "id": 16,
+      "selector": "body > div.wrap > p.fine-print:nth-of-type(2)",
+      "tag": "p",
+      "attrs": {
+        "class": "fine-print"
+      },
+      "text": "By continuing you agree to the Terms of Service and Privacy Policy.",
+      "bbox": {
+        "x": 176,
+        "y": 465,
+        "w": 416,
+        "h": 13.5
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "margin": "16px 0px 9px",
+        "color": "rgb(85, 85, 85)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "9px",
+        "line-height": "13.5px"
+      },
+      "rule_ids": [
+        1,
+        15
+      ],
+      "flags": [
+        "tiny-text"
+      ],
+      "html_snippet": "<p class=\"fine-print\" data-omni-id=\"16\">By continuing you agree to the Terms of Service and Privacy Policy.</p>"
+    },
+    {
+      "id": 17,
+      "selector": "body > div.wrap > table.wide-table",
+      "tag": "table",
+      "attrs": {
+        "class": "wide-table"
+      },
+      "text": "",
+      "bbox": {
+        "x": 176,
+        "y": 494.5,
+        "w": 620,
+        "h": 38
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "table",
+        "min-width": "620px",
+        "margin": "16px 0px 0px"
+      },
+      "rule_ids": [
+        1,
+        16
+      ],
+      "flags": [
+        "viewport-overflow",
+        "container-overflow"
+      ],
+      "html_snippet": "<table class=\"wide-table\" data-omni-id=\"17\"> <tbody data-omni-id=\"18\"><tr data-omni-id=\"19\"><td data-omni-id=\"20\">Last login</td><td data-omni-id=\"21\">Today 09:14</td><td data-omni-id=\"22\">Chrome on macOS</td><td data-omni-id=\"23\">Hyderabad, IN</td></tr> </tbody></table>"
+    },
+    {
+      "id": 18,
+      "selector": "body > div.wrap > table.wide-table > tbody",
+      "tag": "tbody",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 176.5,
+        "y": 495,
+        "w": 619,
+        "h": 37
+      },
+      "in_viewport": true,
+      "parent": 17,
+      "styles": {
+        "display": "table-row-group"
+      },
+      "rule_ids": [
+        1
+      ],
+      "flags": []
+    },
+    {
+      "id": 19,
+      "selector": "body > div.wrap > table.wide-table > tbody > tr",
+      "tag": "tr",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 176.5,
+        "y": 495,
+        "w": 619,
+        "h": 37
+      },
+      "in_viewport": true,
+      "parent": 18,
+      "styles": {
+        "display": "table-row"
+      },
+      "rule_ids": [
+        1
+      ],
+      "flags": []
+    },
+    {
+      "id": 20,
+      "selector": "body > div.wrap > table.wide-table > tbody > tr > td:nth-of-type(1)",
+      "tag": "td",
+      "attrs": {},
+      "text": "Last login",
+      "bbox": {
+        "x": 176.5,
+        "y": 495,
+        "w": 115.5,
+        "h": 37
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "table-cell",
+        "padding": "6px 10px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "16px",
+        "border": "1px solid rgb(221, 221, 221)"
+      },
+      "rule_ids": [
+        1,
+        17
+      ],
+      "flags": []
+    },
+    {
+      "id": 21,
+      "selector": "body > div.wrap > table.wide-table > tbody > tr > td:nth-of-type(2)",
+      "tag": "td",
+      "attrs": {},
+      "text": "Today 09:14",
+      "bbox": {
+        "x": 292,
+        "y": 495,
+        "w": 139.6,
+        "h": 37
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "table-cell",
+        "padding": "6px 10px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "16px",
+        "border": "1px solid rgb(221, 221, 221)"
+      },
+      "rule_ids": [
+        1,
+        17
+      ],
+      "flags": []
+    },
+    {
+      "id": 22,
+      "selector": "body > div.wrap > table.wide-table > tbody > tr > td:nth-of-type(3)",
+      "tag": "td",
+      "attrs": {},
+      "text": "Chrome on macOS",
+      "bbox": {
+        "x": 431.5,
+        "y": 495,
+        "w": 203.8,
+        "h": 37
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "table-cell",
+        "padding": "6px 10px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "16px",
+        "border": "1px solid rgb(221, 221, 221)"
+      },
+      "rule_ids": [
+        1,
+        17
+      ],
+      "flags": []
+    },
+    {
+      "id": 23,
+      "selector": "body > div.wrap > table.wide-table > tbody > tr > td:nth-of-type(4)",
+      "tag": "td",
+      "attrs": {},
+      "text": "Hyderabad, IN",
+      "bbox": {
+        "x": 635.3,
+        "y": 495,
+        "w": 160.2,
+        "h": 37
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "table-cell",
+        "padding": "6px 10px",
+        "color": "rgb(34, 34, 34)",
+        "font-family": "Arial, sans-serif",
+        "font-size": "16px",
+        "border": "1px solid rgb(221, 221, 221)"
+      },
+      "rule_ids": [
+        1,
+        17
+      ],
+      "flags": []
+    }
+  ],
+  "css": {
+    "rules": [
+      {
+        "id": 1,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "*",
+        "css": "box-sizing: border-box;",
+        "matches": 30,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 2,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "body",
+        "css": "margin: 0px; font: 16px / 1.5 Arial, sans-serif; color: rgb(34, 34, 34); background: rgb(245, 247, 250);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 3,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".wrap",
+        "css": "max-width: 480px; margin: 40px auto; background: rgb(255, 255, 255); padding: 32px; border-radius: 8px; position: relative;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 4,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "h1",
+        "css": "margin: 0px 0px 12px; font-size: 28px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 5,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".badge",
+        "css": "position: absolute; top: 40px; left: 120px; background: rgb(255, 213, 74); padding: 4px 10px; border-radius: 12px; font-size: 14px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 6,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "label",
+        "css": "display: block; margin: 12px 0px 4px; font-weight: bold;",
+        "matches": 2,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 7,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "input",
+        "css": "width: 100%; padding: 10px; border: 1px solid rgb(187, 187, 187); border-radius: 4px; font-size: 16px;",
+        "matches": 2,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 8,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".hint",
+        "css": "color: rgb(200, 200, 200); font-size: 14px; margin: 4px 0px 0px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 9,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".submit",
+        "css": "width: 90px; white-space: nowrap; overflow: hidden; background: rgb(11, 95, 255); color: rgb(255, 255, 255); border: 0px; padding: 12px; border-radius: 6px; margin-top: 16px; font-size: 16px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 10,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".close",
+        "css": "position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; padding: 0px; font-size: 10px; line-height: 1; border: 0px; background: rgb(238, 238, 238);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 11,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".icon-btn",
+        "css": "width: 32px; height: 32px; border: 1px solid rgb(204, 204, 204); background: rgb(255, 255, 255); margin-left: 8px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 12,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".hero img",
+        "css": "width: 100%; height: 40px; display: block; margin-top: 16px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 13,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".avatar",
+        "css": "margin-top: 12px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 14,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".avatar img",
+        "css": "width: 48px; height: 48px; border-radius: 50%;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 15,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".fine-print",
+        "css": "font-size: 9px; color: rgb(85, 85, 85); margin-top: 16px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 16,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".wide-table",
+        "css": "min-width: 620px; border-collapse: collapse; margin-top: 16px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 17,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".wide-table td",
+        "css": "border: 1px solid rgb(221, 221, 221); padding: 6px 10px;",
+        "matches": 4,
+        "media_active": true,
+        "states": false
+      }
+    ],
+    "text": "/* ===== <style>#1 ===== */\n/* r1 */ * { box-sizing: border-box; }\n/* r2 */ body { margin: 0px; font: 16px / 1.5 Arial, sans-serif; color: rgb(34, 34, 34); background: rgb(245, 247, 250); }\n/* r3 */ .wrap { max-width: 480px; margin: 40px auto; background: rgb(255, 255, 255); padding: 32px; border-radius: 8px; position: relative; }\n/* r4 */ h1 { margin: 0px 0px 12px; font-size: 28px; }\n/* r5 */ .badge { position: absolute; top: 40px; left: 120px; background: rgb(255, 213, 74); padding: 4px 10px; border-radius: 12px; font-size: 14px; }\n/* r6 */ label { display: block; margin: 12px 0px 4px; font-weight: bold; }\n/* r7 */ input { width: 100%; padding: 10px; border: 1px solid rgb(187, 187, 187); border-radius: 4px; font-size: 16px; }\n/* r8 */ .hint { color: rgb(200, 200, 200); font-size: 14px; margin: 4px 0px 0px; }\n/* r9 */ .submit { width: 90px; white-space: nowrap; overflow: hidden; background: rgb(11, 95, 255); color: rgb(255, 255, 255); border: 0px; padding: 12px; border-radius: 6px; margin-top: 16px; font-size: 16px; }\n/* r10 */ .close { position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; padding: 0px; font-size: 10px; line-height: 1; border: 0px; background: rgb(238, 238, 238); }\n/* r11 */ .icon-btn { width: 32px; height: 32px; border: 1px solid rgb(204, 204, 204); background: rgb(255, 255, 255); margin-left: 8px; }\n/* r12 */ .hero img { width: 100%; height: 40px; display: block; margin-top: 16px; }\n/* r13 */ .avatar { margin-top: 12px; }\n/* r14 */ .avatar img { width: 48px; height: 48px; border-radius: 50%; }\n/* r15 */ .fine-print { font-size: 9px; color: rgb(85, 85, 85); margin-top: 16px; }\n/* r16 */ .wide-table { min-width: 620px; border-collapse: collapse; margin-top: 16px; }\n/* r17 */ .wide-table td { border: 1px solid rgb(221, 221, 221); padding: 6px 10px; }\n",
+    "stats": {
+      "sheets": 1,
+      "total": 17,
+      "kept": 17,
+      "matched": 17,
+      "dropped_unmatched": 0,
+      "unparsable": 0,
+      "unavailable": [],
+      "keyframes": [],
+      "font_faces": []
+    },
+    "file": "styles.css"
+  },
+  "html": {
+    "text": "<!DOCTYPE html>\n<html lang=\"en\">\n <head>\n  <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\"/>\n  <title>\n   Defective login page (test fixture)\n  </title>\n </head>\n <body>\n  <div class=\"wrap\" data-omni-id=\"1\">\n   <button aria-label=\"Close\" class=\"close\" data-omni-id=\"2\">\n    ×\n   </button>\n   <h1 data-omni-id=\"3\">\n    Sign in to your account\n   </h1>\n   <span class=\"badge\" data-omni-id=\"4\">\n    New: passkeys\n   </span>\n   <label data-omni-id=\"5\" for=\"email\">\n    Email\n   </label>\n   <input data-omni-id=\"6\" id=\"email\" placeholder=\"you@example.com\" type=\"email\"/>\n   <p class=\"hint\" data-omni-id=\"7\">\n    We'll never share your email with anyone.\n   </p>\n   <label data-omni-id=\"8\" for=\"pw\">\n    Password\n   </label>\n   <input data-omni-id=\"9\" id=\"pw\" type=\"password\"/>\n   <button class=\"icon-btn\" data-omni-id=\"10\">\n   </button>\n   <button class=\"submit\" data-omni-id=\"11\">\n    Sign in securely\n   </button>\n   <div class=\"hero\" data-omni-id=\"12\">\n    <img data-omni-id=\"13\" src=\"data:image/svg+xml;utf8,…(135 chars)\"/>\n   </div>\n   <div class=\"avatar\" data-omni-id=\"14\">\n    <img alt=\"Your avatar\" data-omni-id=\"15\" src=\"does-not-exist.png\"/>\n   </div>\n   <p class=\"fine-print\" data-omni-id=\"16\">\n    By continuing you agree to the Terms of Service and Privacy Policy.\n   </p>\n   <table class=\"wide-table\" data-omni-id=\"17\">\n    <tbody data-omni-id=\"18\">\n     <tr data-omni-id=\"19\">\n      <td data-omni-id=\"20\">\n       Last login\n      </td>\n      <td data-omni-id=\"21\">\n       Today 09:14\n      </td>\n      <td data-omni-id=\"22\">\n       Chrome on macOS\n      </td>\n      <td data-omni-id=\"23\">\n       Hyderabad, IN\n      </td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n </body>\n</html>\n",
+    "file": "page.cleaned.html",
+    "chars": 1714,
+    "original_chars": 1714,
+    "omitted_subtrees": 0
+  },
+  "diagnostics": {
+    "console_errors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    ],
+    "page_errors": [],
+    "failed_requests": [
+      {
+        "url": "file:///home/claude/omnisight/samples/does-not-exist.png",
+        "type": "image",
+        "error": "net::ERR_FILE_NOT_FOUND"
+      },
+      {
+        "url": "file:///home/claude/omnisight/samples/does-not-exist.png",
+        "type": "image",
+        "error": "net::ERR_FILE_NOT_FOUND"
+      }
+    ],
+    "http_errors": []
+  },
+  "vlm_context_file": "vlm_context.md"
+}

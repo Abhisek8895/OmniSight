@@ -1,0 +1,14 @@
+/* ===== <style>#1 ===== */
+/* r1 */ :root { --ink: #1f2937; --brand: #1d4ed8; }
+/* r2 */ * { box-sizing: border-box; }
+/* r3 */ body { margin: 0px; font: 16px / 1.5 system-ui, sans-serif; color: var(--ink); background: rgb(255, 255, 255); }
+/* r4 */ header { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid rgb(229, 231, 235); }
+/* r5 */ header nav { display: flex; gap: 16px; }
+/* r6 */ header a { color: var(--brand); text-decoration: none; padding: 8px 12px; }
+/* r7 */ main { max-width: 720px; margin: 0px auto; padding: 32px 24px; }
+/* r8 */ h1 { font-size: 32px; margin: 0px 0px 8px; }
+/* r9 */ p { margin: 0px 0px 16px; }
+/* r10 */ .card { border: 1px solid rgb(229, 231, 235); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+/* r11 */ .btn { display: inline-block; background: var(--brand); color: rgb(255, 255, 255); padding: 10px 20px; border-radius: 6px; border: 0px; font-size: 16px; cursor: pointer; }
+/* r12 */ img { max-width: 100%; height: auto; display: block; }
+/* r13 */ footer { padding: 24px; text-align: center; color: rgb(75, 85, 99); font-size: 14px; }

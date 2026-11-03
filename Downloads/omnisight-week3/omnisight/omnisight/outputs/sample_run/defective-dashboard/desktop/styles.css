@@ -1,0 +1,17 @@
+/* ===== file:///home/claude/omnisight/samples/assets/dashboard.css ===== */
+/* r1 */ * { box-sizing: border-box; }
+/* r2 */ body { margin: 0px; font-family: "Brand Sans", Helvetica, Arial, sans-serif; background: rgb(15, 23, 42); color: rgb(226, 232, 240); }
+/* r3 */ .topbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; background: rgb(30, 41, 59); }
+/* r4 */ .topbar h1 { font-size: 20px; margin: 0px; }
+/* r5 */ .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 20px; }
+/* r6 */ .card { background: rgb(30, 41, 59); border-radius: 10px; padding: 16px; height: 120px; overflow: hidden; }
+/* r7 */ .card h2 { font-size: 14px; margin: 0px 0px 8px; color: rgb(148, 163, 184); }
+/* r8 */ .metric { font-size: 28px; font-weight: 700; }
+/* r9 */ .card .notes { margin: 8px 0px 0px; font-size: 13px; line-height: 1.4; }
+/* r10 */ .card:hover { background: rgb(39, 52, 73); }  /* pseudo-state/element */
+/* r11 */ .status { color: rgb(71, 85, 105); }
+/* r12 */ @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }  /* inactive at this viewport */
+/* r13 */ @media (max-width: 600px) { .topbar h1 { font-size: 16px; } }  /* inactive at this viewport */
+/* r14 */ @media (min-width: 1800px) { .grid { grid-template-columns: repeat(6, 1fr); } }  /* inactive at this viewport */
+/* r15 */ .cookie { position: fixed; left: 0px; right: 0px; top: 0px; height: 100%; background: rgba(15, 23, 42, 0); z-index: 50; display: flex; align-items: flex-end; }
+/* r16 */ .cookie .bar { width: 100%; background: rgb(248, 250, 252); color: rgb(15, 23, 42); padding: 16px 24px; }

@@ -1,0 +1,20 @@
+{
+  "target": "samples/defective_login.html",
+  "slug": "defective-login",
+  "viewports": {
+    "desktop": {
+      "dir": "outputs/sample_run/defective-login/desktop/fix",
+      "result": "outputs/sample_run/defective-login/desktop/fix/fix_result.json",
+      "status": "ok",
+      "error": null,
+      "visible_change": true
+    },
+    "mobile": {
+      "dir": "outputs/sample_run/defective-login/mobile/fix",
+      "result": "outputs/sample_run/defective-login/mobile/fix/fix_result.json",
+      "status": "ok",
+      "error": null,
+      "visible_change": true
+    }
+  }
+}

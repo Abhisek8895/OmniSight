@@ -1,0 +1,5 @@
+button.submit { width: auto; min-width: 160px; white-space: normal; overflow: visible; }
+
+p.hint { color: #595959; }
+
+.badge { position: static; display: inline-block; margin-bottom: 8px; }

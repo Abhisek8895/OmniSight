@@ -1,0 +1,51 @@
+{
+  "target": "samples/clean_page.html",
+  "slug": "clean-page",
+  "viewports": {
+    "desktop": {
+      "dir": "outputs/sample_run/clean-page/desktop",
+      "context": "outputs/sample_run/clean-page/desktop/context.json",
+      "summary": {
+        "viewport": "desktop",
+        "document": "1440x900",
+        "elements": 15,
+        "css_rules": 13,
+        "hints": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      }
+    },
+    "tablet": {
+      "dir": "outputs/sample_run/clean-page/tablet",
+      "context": "outputs/sample_run/clean-page/tablet/context.json",
+      "summary": {
+        "viewport": "tablet",
+        "document": "768x1024",
+        "elements": 15,
+        "css_rules": 13,
+        "hints": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      }
+    },
+    "mobile": {
+      "dir": "outputs/sample_run/clean-page/mobile",
+      "context": "outputs/sample_run/clean-page/mobile/context.json",
+      "summary": {
+        "viewport": "mobile",
+        "document": "375x812",
+        "elements": 15,
+        "css_rules": 13,
+        "hints": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      }
+    }
+  }
+}

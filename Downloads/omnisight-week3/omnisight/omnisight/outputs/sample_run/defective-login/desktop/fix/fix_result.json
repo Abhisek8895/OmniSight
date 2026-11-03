@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "version": "0.2.0",
+    "stage": "week3-after-fix-screenshot",
+    "browser": "chromium 153.0.8010.12"
+  },
+  "created_at": "2026-11-03T03:06:29+00:00",
+  "target": {
+    "input": "samples/defective_login.html",
+    "repaired": null
+  },
+  "viewport": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "is_mobile": false
+  },
+  "mode": "live-css",
+  "status": "ok",
+  "stage": "done",
+  "error": null,
+  "apply": {
+    "ok": true,
+    "all_applied": false,
+    "applied": 3,
+    "failed": 2,
+    "outcomes": [
+      {
+        "index": 0,
+        "status": "applied",
+        "selector": "button.submit",
+        "matched": 1,
+        "message": "1 rule(s) applied",
+        "element_id": 11,
+        "hint_id": 1
+      },
+      {
+        "index": 1,
+        "status": "applied",
+        "selector": "p.hint",
+        "matched": 1,
+        "message": "1 rule(s) applied",
+        "element_id": 7,
+        "hint_id": 3
+      },
+      {
+        "index": 2,
+        "status": "applied",
+        "selector": ".badge",
+        "matched": 1,
+        "message": "1 rule(s) applied",
+        "element_id": 3,
+        "hint_id": 2
+      },
+      {
+        "index": 3,
+        "status": "target_not_found",
+        "selector": ".does-not-exist",
+        "matched": 0,
+        "message": "No element matches '.does-not-exist'",
+        "element_id": null,
+        "hint_id": null
+      },
+      {
+        "index": 4,
+        "status": "invalid_css",
+        "selector": "button.submit",
+        "matched": 1,
+        "message": "Browser rejected the CSS (no valid rules parsed)",
+        "element_id": null,
+        "hint_id": null
+      }
+    ]
+  },
+  "screenshots": {
+    "before": {
+      "viewport": {
+        "path": "before_viewport.png",
+        "width": 1440,
+        "height": 900
+      },
+      "full_page": {
+        "path": "before_full.png",
+        "width": 1440,
+        "height": 900,
+        "truncated": false
+      }
+    },
+    "after": {
+      "viewport": {
+        "path": "after_viewport.png",
+        "width": 1440,
+        "height": 900
+      },
+      "full_page": {
+        "path": "after_full.png",
+        "width": 1440,
+        "height": 900,
+        "truncated": false
+      }
+    },
+    "diff": {
+      "path": "diff.png",
+      "width": 1440,
+      "height": 900
+    },
+    "comparison": {
+      "path": "comparison.png",
+      "width": 2952,
+      "height": 964
+    }
+  },
+  "comparison": {
+    "changed_pixels": 52963,
+    "changed_pixel_ratio": 0.040867,
+    "changed_region": {
+      "x": 512,
+      "y": 80,
+      "w": 620,
+      "h": 502
+    },
+    "size_changed": false,
+    "visible_change": true,
+    "compared": "full_page"
+  },
+  "diagnostics": {
+    "console_errors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    ],
+    "page_errors": [],
+    "failed_requests": [
+      {
+        "url": "file:///home/claude/abhisek8895/omnisight/omnisight/samples/does-not-exist.png",
+        "type": "image",
+        "error": "net::ERR_FILE_NOT_FOUND"
+      }
+    ],
+    "http_errors": []
+  },
+  "diagnostics_after": {
+    "console_errors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    ],
+    "page_errors": [],
+    "failed_requests": [
+      {
+        "url": "file:///home/claude/abhisek8895/omnisight/omnisight/samples/does-not-exist.png",
+        "type": "image",
+        "error": "net::ERR_FILE_NOT_FOUND"
+      }
+    ],
+    "http_errors": []
+  },
+  "dir": "outputs/sample_run/defective-login/desktop/fix"
+}
