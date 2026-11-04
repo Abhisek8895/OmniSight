@@ -2,17 +2,26 @@
 
 ## Overview
 
-The Screenshot Chunking module is responsible for dividing large UI screenshots into smaller image regions for focused Visual Language Model (VLM) analysis.
+The Screenshot Chunking module divides large UI screenshots into smaller image regions for focused Visual Language Model (VLM) analysis.
 
-When the exact coordinates of a UI defect are unavailable, the module divides the complete screenshot into smaller chunks. These chunks can later be analysed individually by the VLM to identify potential UI anomalies.
+When exact anomaly coordinates are unavailable, the module divides the full screenshot into smaller chunks that can be analysed individually to identify potential UI defects.
 
-## Objectives
+## Features
 
-- Load full UI screenshots.
-- Divide large screenshots into smaller rectangular regions.
-- Support configurable chunk width and height.
-- Save individual chunks separately.
-- Prepare smaller image regions for future VLM analysis.
+- Loads full UI screenshots.
+- Divides screenshots into configurable image chunks.
+- Supports overlapping chunks to reduce missed defects near boundaries.
+- Tracks the original coordinates of every chunk.
+- Saves individual chunks as PNG images.
+- Generates JSON metadata containing chunk information.
+- Handles invalid paths, dimensions and image-loading errors.
+
+## Technologies Used
+
+- Python
+- Pillow (PIL)
+- JSON
+- pathlib
 
 ## Project Structure
 
@@ -20,67 +29,46 @@ When the exact coordinates of a UI defect are unavailable, the module divides th
 OmniSight/
 │
 ├── image_optimization/
-│   └── screenshot_chunking.py
+│   ├── __init__.py
+│   ├── screenshot_chunking.py
+│   └── README.md
 │
 ├── screenshots/
 │   └── checkout.png
 │
 ├── chunks/
 │
-└── README.md
+└── tests/
+    └── test_screenshot_chunking.py
 ```
 
-## Technologies Used
-
-- Python
-- Pillow (PIL)
-- OS module
-
 ## Installation
-
-Install the required dependency:
 
 ```bash
 pip install Pillow
 ```
 
-## How It Works
-
-1. The module loads the original UI screenshot.
-2. It retrieves the screenshot's width and height.
-3. It divides the screenshot according to the configured chunk dimensions.
-4. Each region is extracted using image cropping.
-5. Individual chunks are saved as separate PNG images.
-6. The total number of generated chunks is displayed.
-
 ## Configuration
-
-The chunking function supports the following parameters:
 
 | Parameter | Description | Default |
 |---|---|---|
-| screenshot_path | Path of the input screenshot | Required |
-| output_dir | Directory for saving generated chunks | chunks |
-| chunk_width | Width of each chunk in pixels | 500 |
-| chunk_height | Height of each chunk in pixels | 500 |
+| screenshot_path | Input screenshot path | Required |
+| output_dir | Chunk output directory | chunks |
+| chunk_width | Chunk width in pixels | 500 |
+| chunk_height | Chunk height in pixels | 500 |
+| overlap | Shared pixels between adjacent chunks | 50 |
 
 ## Usage
 
-Place the screenshot inside the `screenshots` directory.
+Place the input screenshot inside the screenshots directory.
 
-Example:
-
-```text
-screenshots/checkout.png
-```
-
-Run the module:
+Run:
 
 ```bash
 python image_optimization/screenshot_chunking.py
 ```
 
-Alternatively, call the function from another Python file:
+Or import the function:
 
 ```python
 from image_optimization.screenshot_chunking import chunk_screenshot
@@ -89,44 +77,75 @@ chunk_screenshot(
     screenshot_path="screenshots/checkout.png",
     output_dir="chunks",
     chunk_width=500,
-    chunk_height=500
+    chunk_height=500,
+    overlap=50
 )
 ```
 
+## Overlapping Chunk Generation
+
+The module uses configurable overlap to ensure adjacent image regions share some pixels.
+
+This reduces the possibility of missing UI defects located near chunk boundaries.
+
+## Coordinate Tracking
+
+Each generated chunk stores its original screenshot coordinates:
+
+- x1: Left boundary
+- y1: Top boundary
+- x2: Right boundary
+- y2: Bottom boundary
+
+These coordinates help identify the original location of a chunk.
+
 ## Output
 
-The generated image chunks are automatically stored inside the configured output directory.
-
-Example:
+Generated files are saved in the chunks directory.
 
 ```text
 chunks/
-├── chunk_1.png
-├── chunk_2.png
-├── chunk_3.png
-├── chunk_4.png
-└── ...
+├── chunk_001_x0_y0.png
+├── chunk_002_x450_y0.png
+├── chunk_003_x700_y0.png
+└── chunk_metadata.json
 ```
 
-The number of generated chunks depends on the original screenshot dimensions and configured chunk size.
+The metadata JSON contains:
+
+- Original screenshot dimensions.
+- Configured chunk dimensions.
+- Overlap value.
+- Total number of chunks.
+- Individual chunk filenames and coordinates.
+
+## Testing
+
+Run the test suite:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests validate chunk generation, file creation, metadata, coordinate tracking and invalid input handling.
 
 ## Integration with OmniSight
 
-The generated chunks will serve as smaller input images for VLM-based UI defect analysis.
+The generated chunks can be passed individually to the VLM for focused UI defect analysis when exact anomaly coordinates are unavailable.
 
-Instead of processing an entire large screenshot, OmniSight can analyse individual image regions to focus on smaller portions of the interface.
+The module prepares image regions; it does not independently detect UI defects.
 
-## Future Improvements
+## Future Integration
 
-- Implement overlapping chunks to avoid missing defects near chunk boundaries.
-- Track the original screenshot coordinates of each chunk.
-- Add input validation and error handling.
-- Support different screenshot dimensions.
-- Integrate chunk generation with the OmniSight image optimization pipeline.
-- Evaluate chunk-based VLM analysis against full-image analysis.
+- Connect chunk generation with Playwright screenshot capture.
+- Pass generated chunks to the VLM.
+- Collect and combine anomaly detection results.
+- Evaluate chunk-based analysis against full-image analysis.
 
 ## Status
 
-**Current Status:** Basic screenshot chunking implementation.
+**Implementation:** Screenshot chunking with overlap and coordinate tracking.
 
-**Next Steps:** Overlap support, coordinate tracking, testing, and pipeline integration.
+**Testing:** Unit tests included.
+
+**Integration:** Ready for connection with the OmniSight VLM workflow.
