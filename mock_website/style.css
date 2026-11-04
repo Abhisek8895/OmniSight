@@ -615,18 +615,18 @@ footer p {
     display: none !important;
 }
 
-/* OmniSight VLM test: intentional UI bug 2 - Misalign checkout form */
+/* OmniSight VLM test: intentional UI bug 2 - Misalign checkout form 
 #checkout-form {
     margin-left: 120px !important;
 }
 
-/* OmniSight VLM test: intentional UI bug 3 - Hide search input */
+/* OmniSight VLM test: intentional UI bug 3 - Hide search input 
 #search {
     display: none !important;
 }
 
-/* OmniSight VLM test: intentional UI bug 4 - Distort checkout input fields */
+/* OmniSight VLM test: intentional UI bug 4 - Distort checkout input fields 
 #checkout-form input,
 #checkout-form textarea {
     width: 25px !important;
-}
+}*/

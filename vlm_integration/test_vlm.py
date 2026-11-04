@@ -338,6 +338,9 @@ if __name__ == "__main__":
 
     # Display the response.
     print("\n===== VLM Analysis Result =====\n")
-    print(result.encode("utf-8", errors="replace").decode("utf-8"))
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    
 
     print("\n===== Part 3 Completed =====\n")
+
+
