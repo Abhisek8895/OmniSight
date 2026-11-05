@@ -1,0 +1,42 @@
+{
+  "_note": "HAND-WRITTEN sample standing in for a VLM reply (no VLM was called). It deliberately mixes reference styles: element_id, bbox only, selector only, normalised box, and one finding that matches nothing.",
+  "anomalies": [
+    {
+      "element_id": 11,
+      "type": "text-clipped",
+      "severity": "high",
+      "confidence": 0.92,
+      "description": "The submit button is too narrow: the label 'Sign in securely' is cut off.",
+      "bbox": [556, 315, 646, 357]
+    },
+    {
+      "type": "low-contrast",
+      "severity": "high",
+      "confidence": 0.8,
+      "description": "Helper text under the email field is almost invisible against the white card.",
+      "bbox": [512, 198, 928, 219]
+    },
+    {
+      "selector": "body > div.wrap > table.wide-table",
+      "type": "container-overflow",
+      "severity": "medium",
+      "confidence": 0.75,
+      "description": "The login-history table is wider than the card and sticks out on the right."
+    },
+    {
+      "type": "image-broken",
+      "severity": "high",
+      "confidence": 0.85,
+      "description": "The avatar image failed to load and shows alt text.",
+      "coordinate_space": "normalized",
+      "bbox": [0.3556, 0.4722, 0.4231, 0.4989]
+    },
+    {
+      "type": "misalignment",
+      "severity": "low",
+      "confidence": 0.3,
+      "description": "Possible empty region where a footer might be expected.",
+      "bbox": [1000, 600, 1200, 700]
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "version": "0.2.0",
+    "stage": "week2-screenshot-html-context",
+    "browser": "chromium 153.0.8010.12"
+  },
+  "created_at": "2026-10-25T09:32:54+00:00",
+  "target": {
+    "input": "samples/clean_page.html",
+    "url": "file:///home/claude/omnisight/samples/clean_page.html"
+  },
+  "viewport": {
+    "name": "mobile",
+    "width": 375,
+    "height": 812,
+    "is_mobile": true
+  },
+  "page": {
+    "url": "file:///home/claude/omnisight/samples/clean_page.html",
+    "title": "Clean baseline page",
+    "lang": "en",
+    "viewport": {
+      "width": 375,
+      "height": 812,
+      "client_width": 375,
+      "client_height": 812
+    },
+    "document": {
+      "scroll_width": 375,
+      "scroll_height": 812
+    },
+    "device_pixel_ratio": 1,
+    "total_dom_elements": 15,
+    "rendered_elements": 15,
+    "recorded_elements": 15,
+    "images": 1,
+    "fonts_used": [
+      {
+        "family": "system-ui",
+        "text_elements": 9
+      },
+      {
+        "family": "Arial",
+        "text_elements": 1
+      }
+    ],
+    "font_faces": [],
+    "horizontal_overflow": null
+  },
+  "screenshots": {
+    "viewport": {
+      "path": "screenshot_viewport.png",
+      "width": 375,
+      "height": 812,
+      "description": "Above-the-fold view exactly as a user first sees it."
+    },
+    "full_page": {
+      "path": "screenshot_full.png",
+      "width": 375,
+      "height": 812,
+      "description": "Entire scrollable page.",
+      "truncated": false
+    },
+    "tiles": [],
+    "crops": []
+  },
+  "hints": [],
+  "elements": [
+    {
+      "id": 1,
+      "selector": "body > header",
+      "tag": "header",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 73
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {
+        "display": "flex",
+        "padding": "16px 24px",
+        "justify-content": "space-between",
+        "align-items": "center"
+      },
+      "rule_ids": [
+        2,
+        4
+      ],
+      "flags": []
+    },
+    {
+      "id": 2,
+      "selector": "body > header > strong",
+      "tag": "strong",
+      "attrs": {},
+      "text": "Acme",
+      "bbox": {
+        "x": 24,
+        "y": 24,
+        "w": 45.1,
+        "h": 24
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "block",
+        "color": "rgb(31, 41, 55)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2
+      ],
+      "flags": []
+    },
+    {
+      "id": 3,
+      "selector": "body > header > nav",
+      "tag": "nav",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 88.1,
+        "y": 16,
+        "w": 262.9,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "flex",
+        "gap": "16px"
+      },
+      "rule_ids": [
+        2,
+        5
+      ],
+      "flags": []
+    },
+    {
+      "id": 4,
+      "selector": "body > header > nav > a:nth-of-type(1)",
+      "tag": "a",
+      "attrs": {
+        "href": "#a"
+      },
+      "text": "Products",
+      "bbox": {
+        "x": 88.1,
+        "y": 16,
+        "w": 91.5,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "8px 12px",
+        "color": "rgb(29, 78, 216)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "16px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        6
+      ],
+      "flags": []
+    },
+    {
+      "id": 5,
+      "selector": "body > header > nav > a:nth-of-type(2)",
+      "tag": "a",
+      "attrs": {
+        "href": "#b"
+      },
+      "text": "Pricing",
+      "bbox": {
+        "x": 195.6,
+        "y": 16,
+        "w": 76.7,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "8px 12px",
+        "color": "rgb(29, 78, 216)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "16px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        6
+      ],
+      "flags": []
+    },
+    {
+      "id": 6,
+      "selector": "body > header > nav > a:nth-of-type(3)",
+      "tag": "a",
+      "attrs": {
+        "href": "#c"
+      },
+      "text": "Docs",
+      "bbox": {
+        "x": 288.3,
+        "y": 16,
+        "w": 62.7,
+        "h": 40
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "8px 12px",
+        "color": "rgb(29, 78, 216)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "16px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        6
+      ],
+      "flags": []
+    },
+    {
+      "id": 7,
+      "selector": "body > main",
+      "tag": "main",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 73,
+        "w": 375,
+        "h": 517.6
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {
+        "max-width": "720px",
+        "padding": "32px 24px"
+      },
+      "rule_ids": [
+        2,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 8,
+      "selector": "body > main > h1",
+      "tag": "h1",
+      "attrs": {},
+      "text": "Welcome back",
+      "bbox": {
+        "x": 24,
+        "y": 105,
+        "w": 327,
+        "h": 48
+      },
+      "in_viewport": true,
+      "parent": 7,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(31, 41, 55)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px"
+      },
+      "rule_ids": [
+        2,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 9,
+      "selector": "body > main > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Everything on this page is laid out correctly, so the layout checks should stay quiet.",
+      "bbox": {
+        "x": 24,
+        "y": 161,
+        "w": 327,
+        "h": 72
+      },
+      "in_viewport": true,
+      "parent": 7,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "color": "rgb(31, 41, 55)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        2,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 10,
+      "selector": "body > main > div.card",
+      "tag": "div",
+      "attrs": {
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 24,
+        "y": 249,
+        "w": 327,
+        "h": 211.8
+      },
+      "in_viewport": true,
+      "parent": 7,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "padding": "16px",
+        "border": "1px solid rgb(229, 231, 235)",
+        "border-radius": "8px"
+      },
+      "rule_ids": [
+        2,
+        10
+      ],
+      "flags": []
+    },
+    {
+      "id": 11,
+      "selector": "body > main > div.card > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Getting started",
+      "bbox": {
+        "x": 41,
+        "y": 285.9,
+        "w": 293,
+        "h": 36
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {
+        "margin": "19.92px 0px",
+        "color": "rgb(31, 41, 55)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "36px"
+      },
+      "rule_ids": [
+        2
+      ],
+      "flags": []
+    },
+    {
+      "id": 12,
+      "selector": "body > main > div.card > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Create a project, invite your team, and ship your first release in minutes.",
+      "bbox": {
+        "x": 41,
+        "y": 341.8,
+        "w": 293,
+        "h": 48
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "color": "rgb(31, 41, 55)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        2,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 13,
+      "selector": "body > main > div.card > button.btn",
+      "tag": "button",
+      "attrs": {
+        "class": "btn"
+      },
+      "text": "Create project",
+      "bbox": {
+        "x": 41,
+        "y": 405.8,
+        "w": 140.5,
+        "h": 38
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {
+        "display": "inline-block",
+        "padding": "10px 20px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(29, 78, 216)",
+        "font-family": "Arial",
+        "font-size": "16px",
+        "text-align": "center",
+        "border-radius": "6px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        11
+      ],
+      "flags": []
+    },
+    {
+      "id": 14,
+      "selector": "body > main > img",
+      "tag": "img",
+      "attrs": {
+        "src": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='100'%3E%3Crect width='400' height='100' fill='%23dbeafe'/%3E%3C/svg%3E",
+        "alt": "Placeholder banner"
+      },
+      "text": "",
+      "bbox": {
+        "x": 24,
+        "y": 476.8,
+        "w": 327,
+        "h": 81.8
+      },
+      "in_viewport": true,
+      "parent": 7,
+      "styles": {
+        "display": "block",
+        "max-width": "100%",
+        "overflow-x": "clip",
+        "overflow-y": "clip"
+      },
+      "rule_ids": [
+        2,
+        12
+      ],
+      "flags": []
+    },
+    {
+      "id": 15,
+      "selector": "body > footer",
+      "tag": "footer",
+      "attrs": {},
+      "text": "© 2026 Acme Inc.",
+      "bbox": {
+        "x": 0,
+        "y": 590.6,
+        "w": 375,
+        "h": 69
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {
+        "padding": "24px",
+        "color": "rgb(75, 85, 99)",
+        "font-family": "system-ui, sans-serif",
+        "font-size": "14px",
+        "line-height": "21px",
+        "text-align": "center"
+      },
+      "rule_ids": [
+        2,
+        13
+      ],
+      "flags": []
+    }
+  ],
+  "css": {
+    "rules": [
+      {
+        "id": 1,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ":root",
+        "css": "--ink: #1f2937; --brand: #1d4ed8;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 2,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "*",
+        "css": "box-sizing: border-box;",
+        "matches": 22,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 3,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "body",
+        "css": "margin: 0px; font: 16px / 1.5 system-ui, sans-serif; color: var(--ink); background: rgb(255, 255, 255);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 4,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "header",
+        "css": "display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid rgb(229, 231, 235);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 5,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "header nav",
+        "css": "display: flex; gap: 16px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 6,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "header a",
+        "css": "color: var(--brand); text-decoration: none; padding: 8px 12px;",
+        "matches": 3,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 7,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "main",
+        "css": "max-width: 720px; margin: 0px auto; padding: 32px 24px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 8,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "h1",
+        "css": "font-size: 32px; margin: 0px 0px 8px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 9,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "p",
+        "css": "margin: 0px 0px 16px;",
+        "matches": 2,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 10,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".card",
+        "css": "border: 1px solid rgb(229, 231, 235); border-radius: 8px; padding: 16px; margin-bottom: 16px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 11,
+        "source": "<style>#1",
+        "at": [],
+        "selector": ".btn",
+        "css": "display: inline-block; background: var(--brand); color: rgb(255, 255, 255); padding: 10px 20px; border-radius: 6px; border: 0px; font-size: 16px; cursor: pointer;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 12,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "img",
+        "css": "max-width: 100%; height: auto; display: block;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 13,
+        "source": "<style>#1",
+        "at": [],
+        "selector": "footer",
+        "css": "padding: 24px; text-align: center; color: rgb(75, 85, 99); font-size: 14px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      }
+    ],
+    "text": "/* ===== <style>#1 ===== */\n/* r1 */ :root { --ink: #1f2937; --brand: #1d4ed8; }\n/* r2 */ * { box-sizing: border-box; }\n/* r3 */ body { margin: 0px; font: 16px / 1.5 system-ui, sans-serif; color: var(--ink); background: rgb(255, 255, 255); }\n/* r4 */ header { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid rgb(229, 231, 235); }\n/* r5 */ header nav { display: flex; gap: 16px; }\n/* r6 */ header a { color: var(--brand); text-decoration: none; padding: 8px 12px; }\n/* r7 */ main { max-width: 720px; margin: 0px auto; padding: 32px 24px; }\n/* r8 */ h1 { font-size: 32px; margin: 0px 0px 8px; }\n/* r9 */ p { margin: 0px 0px 16px; }\n/* r10 */ .card { border: 1px solid rgb(229, 231, 235); border-radius: 8px; padding: 16px; margin-bottom: 16px; }\n/* r11 */ .btn { display: inline-block; background: var(--brand); color: rgb(255, 255, 255); padding: 10px 20px; border-radius: 6px; border: 0px; font-size: 16px; cursor: pointer; }\n/* r12 */ img { max-width: 100%; height: auto; display: block; }\n/* r13 */ footer { padding: 24px; text-align: center; color: rgb(75, 85, 99); font-size: 14px; }\n",
+    "stats": {
+      "sheets": 1,
+      "total": 13,
+      "kept": 13,
+      "matched": 13,
+      "dropped_unmatched": 0,
+      "unparsable": 0,
+      "unavailable": [],
+      "keyframes": [],
+      "font_faces": []
+    },
+    "file": "styles.css"
+  },
+  "html": {
+    "text": "<!DOCTYPE html>\n<html lang=\"en\">\n <head>\n  <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\"/>\n  <title>\n   Clean baseline page\n  </title>\n </head>\n <body>\n  <header data-omni-id=\"1\">\n   <strong data-omni-id=\"2\">\n    Acme\n   </strong>\n   <nav data-omni-id=\"3\">\n    <a data-omni-id=\"4\" href=\"#a\">\n     Products\n    </a>\n    <a data-omni-id=\"5\" href=\"#b\">\n     Pricing\n    </a>\n    <a data-omni-id=\"6\" href=\"#c\">\n     Docs\n    </a>\n   </nav>\n  </header>\n  <main data-omni-id=\"7\">\n   <h1 data-omni-id=\"8\">\n    Welcome back\n   </h1>\n   <p data-omni-id=\"9\">\n    Everything on this page is laid out correctly, so the layout checks should stay quiet.\n   </p>\n   <div class=\"card\" data-omni-id=\"10\">\n    <h2 data-omni-id=\"11\">\n     Getting started\n    </h2>\n    <p data-omni-id=\"12\">\n     Create a project, invite your team, and ship your first release in minutes.\n    </p>\n    <button class=\"btn\" data-omni-id=\"13\">\n     Create project\n    </button>\n   </div>\n   <img alt=\"Placeholder banner\" data-omni-id=\"14\" height=\"100\" src=\"data:image/svg+xml;utf8,…(132 chars)\" width=\"400\"/>\n  </main>\n  <footer data-omni-id=\"15\">\n   © 2026 Acme Inc.\n  </footer>\n </body>\n</html>\n",
+    "file": "page.cleaned.html",
+    "chars": 1180,
+    "original_chars": 1180,
+    "omitted_subtrees": 0
+  },
+  "diagnostics": {
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "http_errors": []
+  },
+  "vlm_context_file": "vlm_context.md"
+}

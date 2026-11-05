@@ -1,0 +1,1303 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "version": "0.2.0",
+    "stage": "week2-screenshot-html-context",
+    "browser": "chromium 153.0.8010.12"
+  },
+  "created_at": "2026-10-25T09:32:57+00:00",
+  "target": {
+    "input": "samples/defective_dashboard.html",
+    "url": "file:///home/claude/omnisight/samples/defective_dashboard.html"
+  },
+  "viewport": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "is_mobile": false
+  },
+  "page": {
+    "url": "file:///home/claude/omnisight/samples/defective_dashboard.html",
+    "title": "Defective dashboard (test fixture)",
+    "lang": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "client_width": 1440,
+      "client_height": 900
+    },
+    "document": {
+      "scroll_width": 1440,
+      "scroll_height": 900
+    },
+    "device_pixel_ratio": 1,
+    "total_dom_elements": 33,
+    "rendered_elements": 32,
+    "recorded_elements": 32,
+    "images": 0,
+    "fonts_used": [
+      {
+        "family": "Brand Sans",
+        "text_elements": 21
+      },
+      {
+        "family": "Arial",
+        "text_elements": 1
+      }
+    ],
+    "font_faces": [
+      {
+        "family": "Brand Sans",
+        "weight": "normal",
+        "style": "normal",
+        "status": "error"
+      }
+    ],
+    "horizontal_overflow": null
+  },
+  "screenshots": {
+    "viewport": {
+      "path": "screenshot_viewport.png",
+      "width": 1440,
+      "height": 900,
+      "description": "Above-the-fold view exactly as a user first sees it."
+    },
+    "full_page": {
+      "path": "screenshot_full.png",
+      "width": 1440,
+      "height": 900,
+      "description": "Entire scrollable page.",
+      "truncated": false
+    },
+    "tiles": [],
+    "annotated": {
+      "path": "screenshot_annotated.png",
+      "width": 1440,
+      "height": 900,
+      "description": "Same page with numbered boxes (H<n>) marking elements flagged by the layout checks. Colour: red=high, orange=medium, blue=low severity."
+    },
+    "crops": [
+      {
+        "path": "crops/h01_overlay-covers-content.png",
+        "width": 1440,
+        "height": 900,
+        "hint_id": 1,
+        "element_id": 30,
+        "hint_type": "overlay-covers-content",
+        "region": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900
+        }
+      },
+      {
+        "path": "crops/h02_low-contrast.png",
+        "width": 235,
+        "height": 56,
+        "hint_id": 2,
+        "element_id": 4,
+        "hint_type": "low-contrast",
+        "region": {
+          "x": 1205,
+          "y": 0,
+          "w": 235,
+          "h": 56
+        }
+      },
+      {
+        "path": "crops/h03_small-tap-target.png",
+        "width": 105,
+        "height": 61,
+        "hint_id": 3,
+        "element_id": 32,
+        "hint_type": "small-tap-target",
+        "region": {
+          "x": 121,
+          "y": 839,
+          "w": 105,
+          "h": 61
+        }
+      }
+    ]
+  },
+  "hints": [
+    {
+      "id": 1,
+      "type": "overlay-covers-content",
+      "severity": "high",
+      "element_id": 30,
+      "related_id": null,
+      "message": "#root > div.cookie:nth-of-type(3) is painted over 20 visible elements.",
+      "details": {
+        "covered": 20,
+        "occluder": "#root > div.cookie:nth-of-type(3)"
+      }
+    },
+    {
+      "id": 2,
+      "type": "low-contrast",
+      "severity": "high",
+      "element_id": 4,
+      "related_id": null,
+      "message": "Contrast 1.9:1 is below 4.5:1 for \"Last synced 2 minutes ago\".",
+      "details": {
+        "ratio": 1.9,
+        "required": 4.5,
+        "color": "rgb(71, 85, 105)",
+        "background": "rgb(30, 41, 59)",
+        "uncertain": false
+      }
+    },
+    {
+      "id": 3,
+      "type": "small-tap-target",
+      "severity": "low",
+      "element_id": 32,
+      "related_id": null,
+      "message": "Interactive target is only 56.8×21px (WCAG 2.2 minimum is 24×24).",
+      "details": {
+        "width": 56.8,
+        "height": 21
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": 1,
+      "selector": "#root",
+      "tag": "div",
+      "attrs": {
+        "id": "root"
+      },
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 343
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {},
+      "rule_ids": [
+        1
+      ],
+      "flags": []
+    },
+    {
+      "id": 2,
+      "selector": "#root > div.topbar:nth-of-type(1)",
+      "tag": "div",
+      "attrs": {
+        "class": "topbar"
+      },
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 47
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "flex",
+        "padding": "12px 20px",
+        "background-color": "rgb(30, 41, 59)",
+        "justify-content": "space-between",
+        "align-items": "center"
+      },
+      "rule_ids": [
+        1,
+        3
+      ],
+      "flags": []
+    },
+    {
+      "id": 3,
+      "selector": "#root > div.topbar:nth-of-type(1) > h1",
+      "tag": "h1",
+      "attrs": {},
+      "text": "Revenue dashboard",
+      "bbox": {
+        "x": 20,
+        "y": 12,
+        "w": 191.2,
+        "h": 23
+      },
+      "in_viewport": true,
+      "parent": 2,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "20px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        4,
+        13
+      ],
+      "flags": []
+    },
+    {
+      "id": 4,
+      "selector": "#root > div.topbar:nth-of-type(1) > span.status",
+      "tag": "span",
+      "attrs": {
+        "class": "status"
+      },
+      "text": "Last synced 2 minutes ago",
+      "bbox": {
+        "x": 1229.7,
+        "y": 14.5,
+        "w": 190.3,
+        "h": 18
+      },
+      "in_viewport": true,
+      "parent": 2,
+      "styles": {
+        "display": "block",
+        "color": "rgb(71, 85, 105)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        1,
+        11
+      ],
+      "flags": [
+        "low-contrast"
+      ],
+      "html_snippet": "<span class=\"status\" data-omni-id=\"4\">Last synced 2 minutes ago</span>"
+    },
+    {
+      "id": 5,
+      "selector": "#root > div.grid:nth-of-type(2)",
+      "tag": "div",
+      "attrs": {
+        "class": "grid"
+      },
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 47,
+        "w": 1440,
+        "h": 296
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "grid",
+        "padding": "20px",
+        "gap": "16px",
+        "grid-template-columns": "456px 456px 456px"
+      },
+      "rule_ids": [
+        1,
+        5,
+        12,
+        14
+      ],
+      "flags": []
+    },
+    {
+      "id": 6,
+      "selector": "#card-revenue",
+      "tag": "div",
+      "attrs": {
+        "id": "card-revenue",
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 20,
+        "y": 67,
+        "w": 456,
+        "h": 120
+      },
+      "in_viewport": true,
+      "parent": 5,
+      "styles": {
+        "padding": "16px",
+        "background-color": "rgb(30, 41, 59)",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "10px"
+      },
+      "rule_ids": [
+        1,
+        6,
+        10
+      ],
+      "flags": [],
+      "react": {
+        "components": [
+          "MetricCard",
+          "Dashboard"
+        ],
+        "source": "src/MetricCard.jsx:8"
+      }
+    },
+    {
+      "id": 7,
+      "selector": "#card-revenue > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Monthly revenue",
+      "bbox": {
+        "x": 36,
+        "y": 83,
+        "w": 424,
+        "h": 16
+      },
+      "in_viewport": true,
+      "parent": 6,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(148, 163, 184)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "14px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 8,
+      "selector": "#card-revenue > div.metric",
+      "tag": "div",
+      "attrs": {
+        "class": "metric"
+      },
+      "text": "$48,200",
+      "bbox": {
+        "x": 36,
+        "y": 107,
+        "w": 424,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 6,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 9,
+      "selector": "#card-revenue > p.notes",
+      "tag": "p",
+      "attrs": {
+        "class": "notes"
+      },
+      "text": "Up 12% on last month, driven by enterprise renewals in the EMEA region and two large expansions that closed late.",
+      "bbox": {
+        "x": 36,
+        "y": 147,
+        "w": 424,
+        "h": 36.4
+      },
+      "in_viewport": true,
+      "parent": 6,
+      "styles": {
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "13px",
+        "line-height": "18.2px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 10,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(2)",
+      "tag": "div",
+      "attrs": {
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 492,
+        "y": 67,
+        "w": 456,
+        "h": 120
+      },
+      "in_viewport": true,
+      "parent": 5,
+      "styles": {
+        "padding": "16px",
+        "background-color": "rgb(30, 41, 59)",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "10px"
+      },
+      "rule_ids": [
+        1,
+        6,
+        10
+      ],
+      "flags": []
+    },
+    {
+      "id": 11,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(2) > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "New users",
+      "bbox": {
+        "x": 508,
+        "y": 83,
+        "w": 424,
+        "h": 16
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(148, 163, 184)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "14px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 12,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(2) > div.metric",
+      "tag": "div",
+      "attrs": {
+        "class": "metric"
+      },
+      "text": "1,284",
+      "bbox": {
+        "x": 508,
+        "y": 107,
+        "w": 424,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 13,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(2) > p.notes",
+      "tag": "p",
+      "attrs": {
+        "class": "notes"
+      },
+      "text": "Steady growth.",
+      "bbox": {
+        "x": 508,
+        "y": 147,
+        "w": 424,
+        "h": 18.2
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "13px",
+        "line-height": "18.2px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 14,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(3)",
+      "tag": "div",
+      "attrs": {
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 964,
+        "y": 67,
+        "w": 456,
+        "h": 120
+      },
+      "in_viewport": true,
+      "parent": 5,
+      "styles": {
+        "padding": "16px",
+        "background-color": "rgb(30, 41, 59)",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "10px"
+      },
+      "rule_ids": [
+        1,
+        6,
+        10
+      ],
+      "flags": []
+    },
+    {
+      "id": 15,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(3) > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Churn",
+      "bbox": {
+        "x": 980,
+        "y": 83,
+        "w": 424,
+        "h": 16
+      },
+      "in_viewport": true,
+      "parent": 14,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(148, 163, 184)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "14px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 16,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(3) > div.metric",
+      "tag": "div",
+      "attrs": {
+        "class": "metric"
+      },
+      "text": "2.1%",
+      "bbox": {
+        "x": 980,
+        "y": 107,
+        "w": 424,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 14,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 17,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(3) > p.notes",
+      "tag": "p",
+      "attrs": {
+        "class": "notes"
+      },
+      "text": "Down slightly.",
+      "bbox": {
+        "x": 980,
+        "y": 147,
+        "w": 424,
+        "h": 18.2
+      },
+      "in_viewport": true,
+      "parent": 14,
+      "styles": {
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "13px",
+        "line-height": "18.2px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 18,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(4)",
+      "tag": "div",
+      "attrs": {
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 20,
+        "y": 203,
+        "w": 456,
+        "h": 120
+      },
+      "in_viewport": true,
+      "parent": 5,
+      "styles": {
+        "padding": "16px",
+        "background-color": "rgb(30, 41, 59)",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "10px"
+      },
+      "rule_ids": [
+        1,
+        6,
+        10
+      ],
+      "flags": []
+    },
+    {
+      "id": 19,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(4) > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Open tickets",
+      "bbox": {
+        "x": 36,
+        "y": 219,
+        "w": 424,
+        "h": 16
+      },
+      "in_viewport": true,
+      "parent": 18,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(148, 163, 184)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "14px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 20,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(4) > div.metric",
+      "tag": "div",
+      "attrs": {
+        "class": "metric"
+      },
+      "text": "37",
+      "bbox": {
+        "x": 36,
+        "y": 243,
+        "w": 424,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 18,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 21,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(4) > p.notes",
+      "tag": "p",
+      "attrs": {
+        "class": "notes"
+      },
+      "text": "Median response 3h.",
+      "bbox": {
+        "x": 36,
+        "y": 283,
+        "w": 424,
+        "h": 18.2
+      },
+      "in_viewport": true,
+      "parent": 18,
+      "styles": {
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "13px",
+        "line-height": "18.2px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 22,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(5)",
+      "tag": "div",
+      "attrs": {
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 492,
+        "y": 203,
+        "w": 456,
+        "h": 120
+      },
+      "in_viewport": true,
+      "parent": 5,
+      "styles": {
+        "padding": "16px",
+        "background-color": "rgb(30, 41, 59)",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "10px"
+      },
+      "rule_ids": [
+        1,
+        6,
+        10
+      ],
+      "flags": []
+    },
+    {
+      "id": 23,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(5) > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "NPS",
+      "bbox": {
+        "x": 508,
+        "y": 219,
+        "w": 424,
+        "h": 16
+      },
+      "in_viewport": true,
+      "parent": 22,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(148, 163, 184)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "14px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 24,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(5) > div.metric",
+      "tag": "div",
+      "attrs": {
+        "class": "metric"
+      },
+      "text": "61",
+      "bbox": {
+        "x": 508,
+        "y": 243,
+        "w": 424,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 22,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 25,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(5) > p.notes",
+      "tag": "p",
+      "attrs": {
+        "class": "notes"
+      },
+      "text": "Survey sample 410.",
+      "bbox": {
+        "x": 508,
+        "y": 283,
+        "w": 424,
+        "h": 18.2
+      },
+      "in_viewport": true,
+      "parent": 22,
+      "styles": {
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "13px",
+        "line-height": "18.2px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 26,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(6)",
+      "tag": "div",
+      "attrs": {
+        "class": "card"
+      },
+      "text": "",
+      "bbox": {
+        "x": 964,
+        "y": 203,
+        "w": 456,
+        "h": 120
+      },
+      "in_viewport": true,
+      "parent": 5,
+      "styles": {
+        "padding": "16px",
+        "background-color": "rgb(30, 41, 59)",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "10px"
+      },
+      "rule_ids": [
+        1,
+        6,
+        10
+      ],
+      "flags": []
+    },
+    {
+      "id": 27,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(6) > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Uptime",
+      "bbox": {
+        "x": 980,
+        "y": 219,
+        "w": 424,
+        "h": 16
+      },
+      "in_viewport": true,
+      "parent": 26,
+      "styles": {
+        "margin": "0px 0px 8px",
+        "color": "rgb(148, 163, 184)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "14px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        7
+      ],
+      "flags": []
+    },
+    {
+      "id": 28,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(6) > div.metric",
+      "tag": "div",
+      "attrs": {
+        "class": "metric"
+      },
+      "text": "99.98%",
+      "bbox": {
+        "x": 980,
+        "y": 243,
+        "w": 424,
+        "h": 32
+      },
+      "in_viewport": true,
+      "parent": 26,
+      "styles": {
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "28px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        1,
+        8
+      ],
+      "flags": []
+    },
+    {
+      "id": 29,
+      "selector": "#root > div.grid:nth-of-type(2) > div.card:nth-of-type(6) > p.notes",
+      "tag": "p",
+      "attrs": {
+        "class": "notes"
+      },
+      "text": "No incidents this week.",
+      "bbox": {
+        "x": 980,
+        "y": 283,
+        "w": 424,
+        "h": 18.2
+      },
+      "in_viewport": true,
+      "parent": 26,
+      "styles": {
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 232, 240)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "13px",
+        "line-height": "18.2px"
+      },
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": []
+    },
+    {
+      "id": 30,
+      "selector": "#root > div.cookie:nth-of-type(3)",
+      "tag": "div",
+      "attrs": {
+        "class": "cookie"
+      },
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "flex",
+        "position": "fixed",
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "z-index": "50",
+        "background-color": "rgba(15, 23, 42, 0)",
+        "align-items": "flex-end"
+      },
+      "rule_ids": [
+        1,
+        15
+      ],
+      "flags": [
+        "overlay-covers-content"
+      ],
+      "html_snippet": "<div class=\"cookie\" data-omni-id=\"30\"><div class=\"bar\" data-omni-id=\"31\">We use cookies. <button data-omni-id=\"32\">Accept</button></div></div>"
+    },
+    {
+      "id": 31,
+      "selector": "#root > div.cookie:nth-of-type(3) > div.bar",
+      "tag": "div",
+      "attrs": {
+        "class": "bar"
+      },
+      "text": "We use cookies.",
+      "bbox": {
+        "x": 0,
+        "y": 847,
+        "w": 1440,
+        "h": 53
+      },
+      "in_viewport": true,
+      "parent": 30,
+      "styles": {
+        "padding": "16px 24px",
+        "color": "rgb(15, 23, 42)",
+        "background-color": "rgb(248, 250, 252)",
+        "font-family": "\"Brand Sans\", Helvetica, Arial, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        1,
+        16
+      ],
+      "flags": []
+    },
+    {
+      "id": 32,
+      "selector": "#root > div.cookie:nth-of-type(3) > div.bar > button",
+      "tag": "button",
+      "attrs": {},
+      "text": "Accept",
+      "bbox": {
+        "x": 145.5,
+        "y": 863,
+        "w": 56.8,
+        "h": 21
+      },
+      "in_viewport": true,
+      "parent": 31,
+      "styles": {
+        "display": "inline-block",
+        "padding": "1px 6px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(239, 239, 239)",
+        "font-family": "Arial",
+        "font-size": "13.3333px",
+        "text-align": "center",
+        "border": "2px outset rgb(0, 0, 0)"
+      },
+      "rule_ids": [
+        1
+      ],
+      "flags": [
+        "small-tap-target"
+      ],
+      "html_snippet": "<button data-omni-id=\"32\">Accept</button>"
+    }
+  ],
+  "css": {
+    "rules": [
+      {
+        "id": 1,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": "*",
+        "css": "box-sizing: border-box;",
+        "matches": 40,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 2,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": "body",
+        "css": "margin: 0px; font-family: \"Brand Sans\", Helvetica, Arial, sans-serif; background: rgb(15, 23, 42); color: rgb(226, 232, 240);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 3,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".topbar",
+        "css": "display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; background: rgb(30, 41, 59);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 4,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".topbar h1",
+        "css": "font-size: 20px; margin: 0px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 5,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".grid",
+        "css": "display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 20px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 6,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".card",
+        "css": "background: rgb(30, 41, 59); border-radius: 10px; padding: 16px; height: 120px; overflow: hidden;",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 7,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".card h2",
+        "css": "font-size: 14px; margin: 0px 0px 8px; color: rgb(148, 163, 184);",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 8,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".metric",
+        "css": "font-size: 28px; font-weight: 700;",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 9,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".card .notes",
+        "css": "margin: 8px 0px 0px; font-size: 13px; line-height: 1.4;",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 10,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".card:hover",
+        "css": "background: rgb(39, 52, 73);",
+        "matches": 6,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 11,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".status",
+        "css": "color: rgb(71, 85, 105);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 12,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [
+          "@media (max-width: 600px)"
+        ],
+        "selector": ".grid",
+        "css": "grid-template-columns: 1fr;",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 13,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [
+          "@media (max-width: 600px)"
+        ],
+        "selector": ".topbar h1",
+        "css": "font-size: 16px;",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 14,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [
+          "@media (min-width: 1800px)"
+        ],
+        "selector": ".grid",
+        "css": "grid-template-columns: repeat(6, 1fr);",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 15,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".cookie",
+        "css": "position: fixed; left: 0px; right: 0px; top: 0px; height: 100%; background: rgba(15, 23, 42, 0); z-index: 50; display: flex; align-items: flex-end;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 16,
+        "source": "file:///home/claude/omnisight/samples/assets/dashboard.css",
+        "at": [],
+        "selector": ".cookie .bar",
+        "css": "width: 100%; background: rgb(248, 250, 252); color: rgb(15, 23, 42); padding: 16px 24px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      }
+    ],
+    "text": "/* ===== file:///home/claude/omnisight/samples/assets/dashboard.css ===== */\n/* r1 */ * { box-sizing: border-box; }\n/* r2 */ body { margin: 0px; font-family: \"Brand Sans\", Helvetica, Arial, sans-serif; background: rgb(15, 23, 42); color: rgb(226, 232, 240); }\n/* r3 */ .topbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; background: rgb(30, 41, 59); }\n/* r4 */ .topbar h1 { font-size: 20px; margin: 0px; }\n/* r5 */ .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 20px; }\n/* r6 */ .card { background: rgb(30, 41, 59); border-radius: 10px; padding: 16px; height: 120px; overflow: hidden; }\n/* r7 */ .card h2 { font-size: 14px; margin: 0px 0px 8px; color: rgb(148, 163, 184); }\n/* r8 */ .metric { font-size: 28px; font-weight: 700; }\n/* r9 */ .card .notes { margin: 8px 0px 0px; font-size: 13px; line-height: 1.4; }\n/* r10 */ .card:hover { background: rgb(39, 52, 73); }  /* pseudo-state/element */\n/* r11 */ .status { color: rgb(71, 85, 105); }\n/* r12 */ @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }  /* inactive at this viewport */\n/* r13 */ @media (max-width: 600px) { .topbar h1 { font-size: 16px; } }  /* inactive at this viewport */\n/* r14 */ @media (min-width: 1800px) { .grid { grid-template-columns: repeat(6, 1fr); } }  /* inactive at this viewport */\n/* r15 */ .cookie { position: fixed; left: 0px; right: 0px; top: 0px; height: 100%; background: rgba(15, 23, 42, 0); z-index: 50; display: flex; align-items: flex-end; }\n/* r16 */ .cookie .bar { width: 100%; background: rgb(248, 250, 252); color: rgb(15, 23, 42); padding: 16px 24px; }\n",
+    "stats": {
+      "sheets": 1,
+      "total": 16,
+      "kept": 16,
+      "matched": 16,
+      "dropped_unmatched": 0,
+      "unparsable": 0,
+      "unavailable": [],
+      "keyframes": [],
+      "font_faces": [
+        "@font-face { font-family: \"Brand Sans\"; src: url(\"missing-font.woff2\") format(\"woff2\"); }"
+      ]
+    },
+    "file": "styles.css"
+  },
+  "html": {
+    "text": "<!DOCTYPE html>\n<html lang=\"en\">\n <head>\n  <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\"/>\n  <title>\n   Defective dashboard (test fixture)\n  </title>\n </head>\n <body>\n  <div data-omni-id=\"1\" id=\"root\">\n   <div class=\"topbar\" data-omni-id=\"2\">\n    <h1 data-omni-id=\"3\">\n     Revenue dashboard\n    </h1>\n    <span class=\"status\" data-omni-id=\"4\">\n     Last synced 2 minutes ago\n    </span>\n   </div>\n   <div class=\"grid\" data-omni-id=\"5\">\n    <div class=\"card\" data-omni-id=\"6\" id=\"card-revenue\">\n     <h2 data-omni-id=\"7\">\n      Monthly revenue\n     </h2>\n     <div class=\"metric\" data-omni-id=\"8\">\n      $48,200\n     </div>\n     <p class=\"notes\" data-omni-id=\"9\">\n      Up 12% on last month, driven by enterprise renewals in the EMEA region and two large expansions that closed late.\n     </p>\n    </div>\n    <div class=\"card\" data-omni-id=\"10\">\n     <h2 data-omni-id=\"11\">\n      New users\n     </h2>\n     <div class=\"metric\" data-omni-id=\"12\">\n      1,284\n     </div>\n     <p class=\"notes\" data-omni-id=\"13\">\n      Steady growth.\n     </p>\n    </div>\n    <div class=\"card\" data-omni-id=\"14\">\n     <h2 data-omni-id=\"15\">\n      Churn\n     </h2>\n     <div class=\"metric\" data-omni-id=\"16\">\n      2.1%\n     </div>\n     <p class=\"notes\" data-omni-id=\"17\">\n      Down slightly.\n     </p>\n    </div>\n    <div class=\"card\" data-omni-id=\"18\">\n     <h2 data-omni-id=\"19\">\n      Open tickets\n     </h2>\n     <div class=\"metric\" data-omni-id=\"20\">\n      37\n     </div>\n     <p class=\"notes\" data-omni-id=\"21\">\n      Median response 3h.\n     </p>\n    </div>\n    <div class=\"card\" data-omni-id=\"22\">\n     <h2 data-omni-id=\"23\">\n      NPS\n     </h2>\n     <div class=\"metric\" data-omni-id=\"24\">\n      61\n     </div>\n     <p class=\"notes\" data-omni-id=\"25\">\n      Survey sample 410.\n     </p>\n    </div>\n    <div class=\"card\" data-omni-id=\"26\">\n     <h2 data-omni-id=\"27\">\n      Uptime\n     </h2>\n     <div class=\"metric\" data-omni-id=\"28\">\n      99.98%\n     </div>\n     <p class=\"notes\" data-omni-id=\"29\">\n      No incidents this week.\n     </p>\n    </div>\n   </div>\n   <div class=\"cookie\" data-omni-id=\"30\">\n    <div class=\"bar\" data-omni-id=\"31\">\n     We use cookies.\n     <button data-omni-id=\"32\">\n      Accept\n     </button>\n    </div>\n   </div>\n  </div>\n </body>\n</html>\n",
+    "file": "page.cleaned.html",
+    "chars": 2284,
+    "original_chars": 2284,
+    "omitted_subtrees": 0
+  },
+  "diagnostics": {
+    "console_errors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    ],
+    "page_errors": [],
+    "failed_requests": [
+      {
+        "url": "file:///home/claude/omnisight/samples/assets/missing-font.woff2",
+        "type": "font",
+        "error": "net::ERR_FILE_NOT_FOUND"
+      }
+    ],
+    "http_errors": []
+  },
+  "vlm_context_file": "vlm_context.md"
+}

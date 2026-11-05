@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "stage": "anomaly-detection"
+  },
+  "context_file": "outputs/sample_run/defective-dashboard/desktop/context.json",
+  "viewport": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "is_mobile": false
+  },
+  "document": {
+    "w": 1440.0,
+    "h": 900.0
+  },
+  "coordinate_system": "css_px, origin top-left of the full page (maps 1:1 onto screenshot_full.png)",
+  "mode": "vlm",
+  "primary": {
+    "id": "A1",
+    "rank": 1,
+    "type": "overlay-covers-content",
+    "severity": "high",
+    "confidence": 0.865,
+    "score": 2.595,
+    "description": "**High** - the cookie banner overlay (el#30) is painted over the entire page and blocks every control underneath it. Region: x=0 y=0 w=1440 h=900. type: overlay-covers-content.",
+    "source": "vlm",
+    "component": {
+      "element_id": 30,
+      "selector": "#root > div.cookie:nth-of-type(3)",
+      "tag": "div",
+      "text": "",
+      "html_snippet": "<div class=\"cookie\" data-omni-id=\"30\"><div class=\"bar\" data-omni-id=\"31\">We use cookies. <button data-omni-id=\"32\">Accept</button></div></div>",
+      "in_viewport": true,
+      "rule_ids": [
+        1,
+        15
+      ],
+      "flags": [
+        "overlay-covers-content"
+      ]
+    },
+    "bbox": {
+      "x": 0.0,
+      "y": 0.0,
+      "w": 1440.0,
+      "h": 900.0,
+      "x2": 1440.0,
+      "y2": 900.0
+    },
+    "bbox_normalized": {
+      "x": 0.0,
+      "y": 0.0,
+      "w": 1.0,
+      "h": 1.0
+    },
+    "bbox_source": "dom",
+    "resolution": "element_id",
+    "vlm_bbox": {
+      "x": 0.0,
+      "y": 0.0,
+      "w": 1440.0,
+      "h": 900.0,
+      "x2": 1440.0,
+      "y2": 900.0
+    },
+    "vlm_bbox_iou": 1.0,
+    "related": null,
+    "hints": [
+      {
+        "id": 1,
+        "type": "overlay-covers-content",
+        "severity": "high",
+        "message": "#root > div.cookie:nth-of-type(3) is painted over 20 visible elements."
+      }
+    ],
+    "merged_from": 1,
+    "warnings": []
+  },
+  "anomalies": [
+    {
+      "id": "A1",
+      "rank": 1,
+      "type": "overlay-covers-content",
+      "severity": "high",
+      "confidence": 0.865,
+      "score": 2.595,
+      "description": "**High** - the cookie banner overlay (el#30) is painted over the entire page and blocks every control underneath it. Region: x=0 y=0 w=1440 h=900. type: overlay-covers-content.",
+      "source": "vlm",
+      "component": {
+        "element_id": 30,
+        "selector": "#root > div.cookie:nth-of-type(3)",
+        "tag": "div",
+        "text": "",
+        "html_snippet": "<div class=\"cookie\" data-omni-id=\"30\"><div class=\"bar\" data-omni-id=\"31\">We use cookies. <button data-omni-id=\"32\">Accept</button></div></div>",
+        "in_viewport": true,
+        "rule_ids": [
+          1,
+          15
+        ],
+        "flags": [
+          "overlay-covers-content"
+        ]
+      },
+      "bbox": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1440.0,
+        "h": 900.0,
+        "x2": 1440.0,
+        "y2": 900.0
+      },
+      "bbox_normalized": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "bbox_source": "dom",
+      "resolution": "element_id",
+      "vlm_bbox": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1440.0,
+        "h": 900.0,
+        "x2": 1440.0,
+        "y2": 900.0
+      },
+      "vlm_bbox_iou": 1.0,
+      "related": null,
+      "hints": [
+        {
+          "id": 1,
+          "type": "overlay-covers-content",
+          "severity": "high",
+          "message": "#root > div.cookie:nth-of-type(3) is painted over 20 visible elements."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    },
+    {
+      "id": "A2",
+      "rank": 2,
+      "type": "low-contrast",
+      "severity": "high",
+      "confidence": 0.82,
+      "score": 2.46,
+      "description": "**High** - the \"Last synced 2 minutes ago\" label in the top bar (`#root > div.topbar:nth-of-type(1) > span.status`) is pale grey on white and hard to read (low-contrast).",
+      "source": "vlm",
+      "component": {
+        "element_id": 4,
+        "selector": "#root > div.topbar:nth-of-type(1) > span.status",
+        "tag": "span",
+        "text": "Last synced 2 minutes ago",
+        "html_snippet": "<span class=\"status\" data-omni-id=\"4\">Last synced 2 minutes ago</span>",
+        "in_viewport": true,
+        "rule_ids": [
+          1,
+          11
+        ],
+        "flags": [
+          "low-contrast"
+        ]
+      },
+      "bbox": {
+        "x": 1229.7,
+        "y": 14.5,
+        "w": 190.3,
+        "h": 18.0,
+        "x2": 1420.0,
+        "y2": 32.5
+      },
+      "bbox_normalized": {
+        "x": 0.85396,
+        "y": 0.01611,
+        "w": 0.13215,
+        "h": 0.02
+      },
+      "bbox_source": "dom",
+      "resolution": "selector",
+      "vlm_bbox": null,
+      "vlm_bbox_iou": null,
+      "related": null,
+      "hints": [
+        {
+          "id": 2,
+          "type": "low-contrast",
+          "severity": "high",
+          "message": "Contrast 1.9:1 is below 4.5:1 for \"Last synced 2 minutes ago\"."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    },
+    {
+      "id": "A3",
+      "rank": 3,
+      "type": "small-tap-target",
+      "severity": "low",
+      "confidence": 0.865,
+      "score": 0.865,
+      "description": "**Low** - the \"Accept\" button on the cookie bar, el#32 at [145, 863, 202, 884], is very small for a tap target.",
+      "source": "vlm",
+      "component": {
+        "element_id": 32,
+        "selector": "#root > div.cookie:nth-of-type(3) > div.bar > button",
+        "tag": "button",
+        "text": "Accept",
+        "html_snippet": "<button data-omni-id=\"32\">Accept</button>",
+        "in_viewport": true,
+        "rule_ids": [
+          1
+        ],
+        "flags": [
+          "small-tap-target"
+        ]
+      },
+      "bbox": {
+        "x": 145.5,
+        "y": 863.0,
+        "w": 56.8,
+        "h": 21.0,
+        "x2": 202.3,
+        "y2": 884.0
+      },
+      "bbox_normalized": {
+        "x": 0.10104,
+        "y": 0.95889,
+        "w": 0.03944,
+        "h": 0.02333
+      },
+      "bbox_source": "dom",
+      "resolution": "element_id",
+      "vlm_bbox": {
+        "x": 145.0,
+        "y": 863.0,
+        "w": 57.0,
+        "h": 21.0,
+        "x2": 202.0,
+        "y2": 884.0
+      },
+      "vlm_bbox_iou": 0.986,
+      "related": null,
+      "hints": [
+        {
+          "id": 3,
+          "type": "small-tap-target",
+          "severity": "low",
+          "message": "Interactive target is only 56.8×21px (WCAG 2.2 minimum is 24×24)."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    }
+  ],
+  "unconfirmed_hints": [],
+  "warnings": [],
+  "files": {
+    "annotated": "anomalies_annotated.png",
+    "primary_crop": "primary_anomaly.png",
+    "json": "anomalies.json"
+  },
+  "created_at": "2026-11-05T03:10:53+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "fixes": [
+    {
+      "hint_id": 1,
+      "element_id": 11,
+      "selector": "button.submit",
+      "css": "width: auto; min-width: 160px; white-space: normal; overflow: visible;"
+    },
+    {
+      "hint_id": 3,
+      "element_id": 7,
+      "selector": "p.hint",
+      "css": "color: #595959;"
+    },
+    {
+      "hint_id": 2,
+      "element_id": 3,
+      "selector": ".badge",
+      "css": ".badge { position: static; display: inline-block; margin-bottom: 8px; }"
+    },
+    {
+      "selector": ".does-not-exist",
+      "css": "color: red;"
+    },
+    {
+      "selector": "button.submit",
+      "css": "color: ;; }}} not valid"
+    }
+  ]
+}

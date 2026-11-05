@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "stage": "anomaly-detection"
+  },
+  "context_file": "outputs/sample_run/defective-login/desktop/context.json",
+  "viewport": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "is_mobile": false
+  },
+  "document": {
+    "w": 1440.0,
+    "h": 900.0
+  },
+  "coordinate_system": "css_px, origin top-left of the full page (maps 1:1 onto screenshot_full.png)",
+  "mode": "vlm",
+  "primary": {
+    "id": "A1",
+    "rank": 1,
+    "type": "text-clipped",
+    "severity": "high",
+    "confidence": 0.973,
+    "score": 2.919,
+    "description": "The submit button is too narrow: the label 'Sign in securely' is cut off.",
+    "source": "vlm",
+    "component": {
+      "element_id": 11,
+      "selector": "body > div.wrap > button.submit:nth-of-type(3)",
+      "tag": "button",
+      "text": "Sign in securely",
+      "html_snippet": "<button class=\"submit\" data-omni-id=\"11\">Sign in securely</button>",
+      "in_viewport": true,
+      "rule_ids": [
+        1,
+        9
+      ],
+      "flags": [
+        "text-clipped"
+      ]
+    },
+    "bbox": {
+      "x": 556.5,
+      "y": 315.0,
+      "w": 90.0,
+      "h": 42.0,
+      "x2": 646.5,
+      "y2": 357.0
+    },
+    "bbox_normalized": {
+      "x": 0.38646,
+      "y": 0.35,
+      "w": 0.0625,
+      "h": 0.04667
+    },
+    "bbox_source": "dom",
+    "resolution": "element_id",
+    "vlm_bbox": {
+      "x": 556.0,
+      "y": 315.0,
+      "w": 90.0,
+      "h": 42.0,
+      "x2": 646.0,
+      "y2": 357.0
+    },
+    "vlm_bbox_iou": 0.989,
+    "related": null,
+    "hints": [
+      {
+        "id": 1,
+        "type": "text-clipped",
+        "severity": "high",
+        "message": "Text is cut off by its own box: \"Sign in securely\"."
+      }
+    ],
+    "merged_from": 1,
+    "warnings": []
+  },
+  "anomalies": [
+    {
+      "id": "A1",
+      "rank": 1,
+      "type": "text-clipped",
+      "severity": "high",
+      "confidence": 0.973,
+      "score": 2.919,
+      "description": "The submit button is too narrow: the label 'Sign in securely' is cut off.",
+      "source": "vlm",
+      "component": {
+        "element_id": 11,
+        "selector": "body > div.wrap > button.submit:nth-of-type(3)",
+        "tag": "button",
+        "text": "Sign in securely",
+        "html_snippet": "<button class=\"submit\" data-omni-id=\"11\">Sign in securely</button>",
+        "in_viewport": true,
+        "rule_ids": [
+          1,
+          9
+        ],
+        "flags": [
+          "text-clipped"
+        ]
+      },
+      "bbox": {
+        "x": 556.5,
+        "y": 315.0,
+        "w": 90.0,
+        "h": 42.0,
+        "x2": 646.5,
+        "y2": 357.0
+      },
+      "bbox_normalized": {
+        "x": 0.38646,
+        "y": 0.35,
+        "w": 0.0625,
+        "h": 0.04667
+      },
+      "bbox_source": "dom",
+      "resolution": "element_id",
+      "vlm_bbox": {
+        "x": 556.0,
+        "y": 315.0,
+        "w": 90.0,
+        "h": 42.0,
+        "x2": 646.0,
+        "y2": 357.0
+      },
+      "vlm_bbox_iou": 0.989,
+      "related": null,
+      "hints": [
+        {
+          "id": 1,
+          "type": "text-clipped",
+          "severity": "high",
+          "message": "Text is cut off by its own box: \"Sign in securely\"."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    },
+    {
+      "id": "A2",
+      "rank": 2,
+      "type": "image-broken",
+      "severity": "high",
+      "confidence": 0.928,
+      "score": 2.785,
+      "description": "The avatar image failed to load and shows alt text.",
+      "source": "vlm",
+      "component": {
+        "element_id": 15,
+        "selector": "body > div.wrap > div.avatar:nth-of-type(2) > img",
+        "tag": "img",
+        "text": "",
+        "html_snippet": "<img alt=\"Your avatar\" data-omni-id=\"15\" src=\"does-not-exist.png\"/>",
+        "in_viewport": true,
+        "rule_ids": [
+          1,
+          14
+        ],
+        "flags": [
+          "image-broken"
+        ]
+      },
+      "bbox": {
+        "x": 512.0,
+        "y": 425.0,
+        "w": 97.3,
+        "h": 24.0,
+        "x2": 609.3,
+        "y2": 449.0
+      },
+      "bbox_normalized": {
+        "x": 0.35556,
+        "y": 0.47222,
+        "w": 0.06757,
+        "h": 0.02667
+      },
+      "bbox_source": "dom",
+      "resolution": "bbox_iou",
+      "vlm_bbox": {
+        "x": 512.06,
+        "y": 424.98,
+        "w": 97.2,
+        "h": 24.03,
+        "x2": 609.26,
+        "y2": 449.01
+      },
+      "vlm_bbox_iou": 0.998,
+      "related": null,
+      "hints": [
+        {
+          "id": 4,
+          "type": "image-broken",
+          "severity": "high",
+          "message": "Image failed to load."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    },
+    {
+      "id": "A3",
+      "rank": 3,
+      "type": "low-contrast",
+      "severity": "high",
+      "confidence": 0.904,
+      "score": 2.713,
+      "description": "Helper text under the email field is almost invisible against the white card.",
+      "source": "vlm",
+      "component": {
+        "element_id": 7,
+        "selector": "body > div.wrap > p.hint:nth-of-type(1)",
+        "tag": "p",
+        "text": "We'll never share your email with anyone.",
+        "html_snippet": "<p class=\"hint\" data-omni-id=\"7\">We'll never share your email with anyone.</p>",
+        "in_viewport": true,
+        "rule_ids": [
+          1,
+          8
+        ],
+        "flags": [
+          "low-contrast"
+        ]
+      },
+      "bbox": {
+        "x": 512.0,
+        "y": 198.0,
+        "w": 416.0,
+        "h": 21.0,
+        "x2": 928.0,
+        "y2": 219.0
+      },
+      "bbox_normalized": {
+        "x": 0.35556,
+        "y": 0.22,
+        "w": 0.28889,
+        "h": 0.02333
+      },
+      "bbox_source": "dom",
+      "resolution": "bbox_iou",
+      "vlm_bbox": {
+        "x": 512.0,
+        "y": 198.0,
+        "w": 416.0,
+        "h": 21.0,
+        "x2": 928.0,
+        "y2": 219.0
+      },
+      "vlm_bbox_iou": 1.0,
+      "related": null,
+      "hints": [
+        {
+          "id": 3,
+          "type": "low-contrast",
+          "severity": "high",
+          "message": "Contrast 1.7:1 is below 4.5:1 for \"We'll never share your email with anyon…\"."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    },
+    {
+      "id": "A4",
+      "rank": 4,
+      "type": "container-overflow",
+      "severity": "medium",
+      "confidence": 0.887,
+      "score": 1.775,
+      "description": "The login-history table is wider than the card and sticks out on the right.",
+      "source": "vlm",
+      "component": {
+        "element_id": 17,
+        "selector": "body > div.wrap > table.wide-table",
+        "tag": "table",
+        "text": "",
+        "html_snippet": "<table class=\"wide-table\" data-omni-id=\"17\"> <tbody data-omni-id=\"18\"><tr data-omni-id=\"19\"><td data-omni-id=\"20\">Last login</td><td data-omni-id=\"21\">Today 09:14</td><td data-omni-id=\"22\">Chrome on macOS</td><td data-omni-id=\"23\">Hyderabad, IN</td></tr> </tbody></table>",
+        "in_viewport": true,
+        "rule_ids": [
+          1,
+          16
+        ],
+        "flags": [
+          "container-overflow"
+        ]
+      },
+      "bbox": {
+        "x": 512.0,
+        "y": 494.5,
+        "w": 620.0,
+        "h": 38.0,
+        "x2": 1132.0,
+        "y2": 532.5
+      },
+      "bbox_normalized": {
+        "x": 0.35556,
+        "y": 0.54944,
+        "w": 0.43056,
+        "h": 0.04222
+      },
+      "bbox_source": "dom",
+      "resolution": "selector",
+      "vlm_bbox": null,
+      "vlm_bbox_iou": null,
+      "related": {
+        "element_id": 1,
+        "bbox": {
+          "x": 480.0,
+          "y": 40.0,
+          "w": 480.0,
+          "h": 524.5,
+          "x2": 960.0,
+          "y2": 564.5
+        }
+      },
+      "hints": [
+        {
+          "id": 5,
+          "type": "container-overflow",
+          "severity": "medium",
+          "message": "Sticks out 172px beyond its parent body > div.wrap, which has a visible background/border."
+        }
+      ],
+      "merged_from": 1,
+      "warnings": []
+    },
+    {
+      "id": "A5",
+      "rank": 5,
+      "type": "misalignment",
+      "severity": "low",
+      "confidence": 0.18,
+      "score": 0.18,
+      "description": "Possible empty region where a footer might be expected.",
+      "source": "vlm",
+      "component": null,
+      "bbox": {
+        "x": 1000.0,
+        "y": 600.0,
+        "w": 200.0,
+        "h": 100.0,
+        "x2": 1200.0,
+        "y2": 700.0
+      },
+      "bbox_normalized": {
+        "x": 0.69444,
+        "y": 0.66667,
+        "w": 0.13889,
+        "h": 0.11111
+      },
+      "bbox_source": "vlm",
+      "resolution": "unresolved",
+      "vlm_bbox": {
+        "x": 1000.0,
+        "y": 600.0,
+        "w": 200.0,
+        "h": 100.0,
+        "x2": 1200.0,
+        "y2": 700.0
+      },
+      "vlm_bbox_iou": null,
+      "related": null,
+      "hints": [],
+      "merged_from": 1,
+      "warnings": [
+        "No recorded element matches; reporting the VLM's own box (unverified)."
+      ]
+    }
+  ],
+  "unconfirmed_hints": [
+    {
+      "id": 2,
+      "type": "overlap",
+      "severity": "high",
+      "message": "Overlaps body > div.wrap > span.badge (100% of the smaller element).",
+      "element_id": 3,
+      "selector": "body > div.wrap > h1",
+      "bbox": {
+        "x": 512.0,
+        "y": 72.0,
+        "w": 416.0,
+        "h": 42.0,
+        "x2": 928.0,
+        "y2": 114.0
+      }
+    },
+    {
+      "id": 6,
+      "type": "small-tap-target",
+      "severity": "medium",
+      "message": "Interactive target is only 14×14px (WCAG 2.2 minimum is 24×24).",
+      "element_id": 2,
+      "selector": "body > div.wrap > button.close:nth-of-type(1)",
+      "bbox": {
+        "x": 938.0,
+        "y": 48.0,
+        "w": 14.0,
+        "h": 14.0,
+        "x2": 952.0,
+        "y2": 62.0
+      }
+    },
+    {
+      "id": 7,
+      "type": "empty-interactive",
+      "severity": "medium",
+      "message": "Interactive element has no visible text or accessible name.",
+      "element_id": 10,
+      "selector": "body > div.wrap > button.icon-btn:nth-of-type(2)",
+      "bbox": {
+        "x": 520.0,
+        "y": 311.0,
+        "w": 32.0,
+        "h": 32.0,
+        "x2": 552.0,
+        "y2": 343.0
+      }
+    },
+    {
+      "id": 8,
+      "type": "image-distorted",
+      "severity": "medium",
+      "message": "Image is stretched: natural size 300×300, rendered 416×40.",
+      "element_id": 13,
+      "selector": "body > div.wrap > div.hero:nth-of-type(1) > img",
+      "bbox": {
+        "x": 512.0,
+        "y": 373.0,
+        "w": 416.0,
+        "h": 40.0,
+        "x2": 928.0,
+        "y2": 413.0
+      }
+    },
+    {
+      "id": 9,
+      "type": "tiny-text",
+      "severity": "medium",
+      "message": "Font size 9px is hard to read: \"By continuing you agree to the Terms of…\".",
+      "element_id": 16,
+      "selector": "body > div.wrap > p.fine-print:nth-of-type(2)",
+      "bbox": {
+        "x": 512.0,
+        "y": 465.0,
+        "w": 416.0,
+        "h": 13.5,
+        "x2": 928.0,
+        "y2": 478.5
+      }
+    }
+  ],
+  "warnings": [],
+  "files": {
+    "annotated": "anomalies_annotated.png",
+    "primary_crop": "primary_anomaly.png",
+    "json": "anomalies.json"
+  },
+  "created_at": "2026-11-05T03:10:53+00:00"
+}
