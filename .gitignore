@@ -1,14 +1,48 @@
-<<<<<<< HEAD
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and API keys
 .env
 *.env
 **/.env
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Playwright outputs
+test-results/
+playwright-report/
+blob-report/
+
+# Screenshots
+screenshots/
+**/screenshot.png
+**/post_fix_screenshot.png
+
+# Generated outputs
+css_application/outputs/
 vlm_integration/outputs/
-vlm_integration/screenshot.png
-=======
+verification/verification_results/
+outputs/generated_fixes/
 
-.env
-*.env
-
-.env
-*.env
->>>>>>> 8491e45b8cd174930db442ce8b228d9195c71e4e
+# Python testing
+.pytest_cache/
+.coverage
+htmlcov/
