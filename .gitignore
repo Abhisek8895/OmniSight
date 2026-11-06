@@ -1,0 +1,48 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and API keys
+.env
+*.env
+**/.env
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Playwright outputs
+test-results/
+playwright-report/
+blob-report/
+
+# Screenshots
+screenshots/
+**/screenshot.png
+**/post_fix_screenshot.png
+
+# Generated outputs
+css_application/outputs/
+vlm_integration/outputs/
+verification/verification_results/
+outputs/generated_fixes/
+
+# Python testing
+.pytest_cache/
+.coverage
+htmlcov/
