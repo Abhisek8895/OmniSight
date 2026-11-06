@@ -1,0 +1,231 @@
+{
+    "original_screenshot": "screenshots\\updated_screenshot.png",
+    "original_dimensions": {
+        "width": 1280,
+        "height": 2325
+    },
+    "chunk_dimensions": {
+        "width": 500,
+        "height": 500
+    },
+    "overlap": 50,
+    "total_chunks": 18,
+    "chunks": [
+        {
+            "chunk_id": 1,
+            "filename": "chunk_001_x0_y0.png",
+            "coordinates": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 500,
+                "y2": 500
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 2,
+            "filename": "chunk_002_x450_y0.png",
+            "coordinates": {
+                "x1": 450,
+                "y1": 0,
+                "x2": 950,
+                "y2": 500
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 3,
+            "filename": "chunk_003_x780_y0.png",
+            "coordinates": {
+                "x1": 780,
+                "y1": 0,
+                "x2": 1280,
+                "y2": 500
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 4,
+            "filename": "chunk_004_x0_y450.png",
+            "coordinates": {
+                "x1": 0,
+                "y1": 450,
+                "x2": 500,
+                "y2": 950
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 5,
+            "filename": "chunk_005_x450_y450.png",
+            "coordinates": {
+                "x1": 450,
+                "y1": 450,
+                "x2": 950,
+                "y2": 950
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 6,
+            "filename": "chunk_006_x780_y450.png",
+            "coordinates": {
+                "x1": 780,
+                "y1": 450,
+                "x2": 1280,
+                "y2": 950
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 7,
+            "filename": "chunk_007_x0_y900.png",
+            "coordinates": {
+                "x1": 0,
+                "y1": 900,
+                "x2": 500,
+                "y2": 1400
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 8,
+            "filename": "chunk_008_x450_y900.png",
+            "coordinates": {
+                "x1": 450,
+                "y1": 900,
+                "x2": 950,
+                "y2": 1400
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 9,
+            "filename": "chunk_009_x780_y900.png",
+            "coordinates": {
+                "x1": 780,
+                "y1": 900,
+                "x2": 1280,
+                "y2": 1400
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 10,
+            "filename": "chunk_010_x0_y1350.png",
+            "coordinates": {
+                "x1": 0,
+                "y1": 1350,
+                "x2": 500,
+                "y2": 1850
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 11,
+            "filename": "chunk_011_x450_y1350.png",
+            "coordinates": {
+                "x1": 450,
+                "y1": 1350,
+                "x2": 950,
+                "y2": 1850
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 12,
+            "filename": "chunk_012_x780_y1350.png",
+            "coordinates": {
+                "x1": 780,
+                "y1": 1350,
+                "x2": 1280,
+                "y2": 1850
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 13,
+            "filename": "chunk_013_x0_y1800.png",
+            "coordinates": {
+                "x1": 0,
+                "y1": 1800,
+                "x2": 500,
+                "y2": 2300
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 14,
+            "filename": "chunk_014_x450_y1800.png",
+            "coordinates": {
+                "x1": 450,
+                "y1": 1800,
+                "x2": 950,
+                "y2": 2300
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 15,
+            "filename": "chunk_015_x780_y1800.png",
+            "coordinates": {
+                "x1": 780,
+                "y1": 1800,
+                "x2": 1280,
+                "y2": 2300
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 16,
+            "filename": "chunk_016_x0_y1825.png",
+            "coordinates": {
+                "x1": 0,
+                "y1": 1825,
+                "x2": 500,
+                "y2": 2325
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 17,
+            "filename": "chunk_017_x450_y1825.png",
+            "coordinates": {
+                "x1": 450,
+                "y1": 1825,
+                "x2": 950,
+                "y2": 2325
+            },
+            "width": 500,
+            "height": 500
+        },
+        {
+            "chunk_id": 18,
+            "filename": "chunk_018_x780_y1825.png",
+            "coordinates": {
+                "x1": 780,
+                "y1": 1825,
+                "x2": 1280,
+                "y2": 2325
+            },
+            "width": 500,
+            "height": 500
+        }
+    ]
+}
