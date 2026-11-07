@@ -307,7 +307,7 @@ The pipeline executes the seven stages and stores its generated outputs in the c
 From the repository root:
 
 ```bash
-python -m uvicorn ui.server:app --reload --port 9000
+python -m uvicorn UI.server:app --reload --port 9000
 ```
 
 Open:

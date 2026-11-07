@@ -20,7 +20,7 @@ from pydantic import BaseModel, HttpUrl
 
 ROOT = Path(__file__).resolve().parents[1]
 
-UI_DIR = ROOT / "ui"
+UI_DIR = ROOT / "UI"
 PIPELINE_FILE = ROOT / "run_pipeline.py"
 
 OUTPUT_DIR = ROOT / "outputs" / "integrated_pipeline"
