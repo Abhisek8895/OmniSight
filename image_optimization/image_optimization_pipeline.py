@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from .screenshot_chunking import chunk_screenshot
+from .screenshot_cropping import crop_image
 
 
 def optimize_screenshot(
@@ -11,7 +12,7 @@ def optimize_screenshot(
     """
     Select the appropriate image optimization method.
 
-    Coordinates available: Cropping (pending integration).
+    Coordinates available: Screenshot cropping.
     Coordinates unavailable: Screenshot chunking.
     """
 
@@ -24,13 +25,42 @@ def optimize_screenshot(
             f"Screenshot not found: {screenshot_path}"
         )
 
-    # Cropping integration is pending
+    # Route 1: Crop when defect coordinates are available
     if coordinates is not None:
-        raise NotImplementedError(
-            "Screenshot cropping module is pending integration."
-        )
 
-    # Perform screenshot chunking
+        try:
+            result = crop_image(
+                image_path=str(screenshot_path),
+                coordinates=coordinates,
+                padding=20,
+                output_dir=str(output_dir)
+            )
+
+            image_path = output_dir / result["filename"]
+
+            if not image_path.is_file():
+                raise FileNotFoundError(
+                    f"Cropped image not found: {image_path}"
+                )
+
+            images = [{
+                "path": str(image_path),
+                "coordinates": result["coordinates"]
+            }]
+
+            return {
+                "status": "success",
+                "method": "cropping",
+                "total_images": len(images),
+                "images": images
+            }
+
+        except Exception as error:
+            raise RuntimeError(
+                f"Screenshot cropping failed: {error}"
+            ) from error
+
+    # Route 2: Use chunking when coordinates are unavailable
     try:
         chunks = chunk_screenshot(
             screenshot_path=str(screenshot_path),
@@ -85,8 +115,10 @@ def optimize_screenshot(
 
 if __name__ == "__main__":
 
+    # Test cropping by supplying coordinates
     result = optimize_screenshot(
-        screenshot_path="screenshots/updated_screenshot.png"
+        screenshot_path="screenshots/updated_screenshot.png",
+        coordinates=(500, 300, 800, 400)
     )
 
     print(result)
