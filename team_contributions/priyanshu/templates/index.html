@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI-assisted website screenshot review for visible UI defects.">
+  <title>UI Defect Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="UI Defect Detector home">
+      <span class="brand-mark">UI</span>
+      <span>Defect Detector</span>
+    </a>
+    <span class="top-note">AI-assisted visual QA</span>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">SCREENSHOT REVIEW</p>
+      <h1>Find the UI issues<br><span>before your users do.</span></h1>
+      <p class="hero-copy">Upload a website screenshot. The vision model will look for visible layout problems and suggest practical fixes.</p>
+    </section>
+
+    <section class="workspace">
+      <form id="analyze-form" class="panel form-panel">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">STEP 01</p>
+            <h2>Add a screenshot</h2>
+          </div>
+          <span class="tiny-pill">PNG · JPG · WEBP</span>
+        </div>
+
+        <label class="upload-zone" for="screenshot">
+          <input id="screenshot" name="screenshot" type="file" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" required>
+          <span class="upload-icon" aria-hidden="true">↑</span>
+          <strong id="upload-title">Choose a screenshot</strong>
+          <span id="upload-subtitle">Click to browse files · Maximum 8 MB</span>
+        </label>
+
+        <div id="preview-wrap" class="preview-wrap hidden">
+          <div class="preview-title">
+            <span>Screenshot preview</span>
+            <button id="remove-image" class="text-button" type="button">Remove</button>
+          </div>
+          <img id="preview-image" alt="Selected website screenshot">
+        </div>
+
+        <div class="section-heading prompt-heading">
+          <div>
+            <p class="step-label">STEP 02</p>
+            <h2>Write your prompt</h2>
+          </div>
+        </div>
+        <label class="field-label" for="prompt">What should the AI inspect?</label>
+        <textarea id="prompt" name="prompt" rows="5" maxlength="1500" required>Inspect this screenshot for visible UI defects. Check alignment, spacing, overlapping elements, clipped text, button appearance, typography, contrast, and responsive layout clues. For each issue, explain the visual evidence, give its approximate location, assign severity, and suggest a practical fix. Do not invent defects.</textarea>
+        <div class="prompt-footer">
+          <span>Be specific for more useful results.</span>
+          <span id="char-count">0 / 1500</span>
+        </div>
+
+        <button id="analyze-button" class="primary-button" type="submit">
+          <span id="button-text">Analyze screenshot</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+        <p class="privacy-note">Your screenshot is processed in memory and is not saved by this app. It is sent to the AI provider for analysis.</p>
+      </form>
+
+      <section class="panel results-panel" aria-live="polite">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">STEP 03</p>
+            <h2>Defect report</h2>
+          </div>
+          <span id="finding-count" class="count-pill">Waiting for scan</span>
+        </div>
+
+        <div id="empty-state" class="empty-state">
+          <div class="empty-graphic" aria-hidden="true">
+            <span class="graphic-window"></span>
+            <span class="graphic-check">✓</span>
+          </div>
+          <h3>Your report will appear here</h3>
+          <p>Upload a screenshot and run the scan to see findings, severity, evidence, and suggested fixes.</p>
+        </div>
+
+        <div id="loading-state" class="loading-state hidden">
+          <span class="spinner" aria-hidden="true"></span>
+          <h3>Inspecting your screenshot…</h3>
+          <p>The AI is reviewing visible layout details. This may take a little while.</p>
+        </div>
+
+        <div id="error-box" class="error-box hidden" role="alert"></div>
+        <div id="report" class="report hidden"></div>
+        <button id="download-report" class="secondary-button hidden" type="button">Download JSON report</button>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span>Built for learning and visual QA.</span>
+      <span>AI findings can be wrong. Verify before changing code.</span>
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

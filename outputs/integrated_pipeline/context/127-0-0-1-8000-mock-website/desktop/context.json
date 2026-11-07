@@ -1,0 +1,3442 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "version": "0.2.0",
+    "stage": "week2-screenshot-html-context",
+    "browser": "chromium 156.0.8078.4"
+  },
+  "created_at": "2026-11-07T15:28:07+00:00",
+  "target": {
+    "input": "http://127.0.0.1:8000/Mock-Website/",
+    "url": "http://127.0.0.1:8000/Mock-Website/"
+  },
+  "viewport": {
+    "name": "desktop",
+    "width": 1366,
+    "height": 768,
+    "is_mobile": false
+  },
+  "page": {
+    "url": "http://127.0.0.1:8000/Mock-Website/",
+    "title": "OmniSight - Demo Store",
+    "lang": "en",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "client_width": 1366,
+      "client_height": 768
+    },
+    "document": {
+      "scroll_width": 1366,
+      "scroll_height": 2325
+    },
+    "device_pixel_ratio": 1,
+    "total_dom_elements": 87,
+    "rendered_elements": 82,
+    "recorded_elements": 82,
+    "images": 0,
+    "fonts_used": [
+      {
+        "family": "Segoe UI",
+        "text_elements": 27
+      },
+      {
+        "family": "Sora",
+        "text_elements": 13
+      },
+      {
+        "family": "Arial",
+        "text_elements": 11
+      }
+    ],
+    "font_faces": [
+      {
+        "family": "Sora",
+        "weight": "500",
+        "style": "normal",
+        "status": "unloaded"
+      },
+      {
+        "family": "Sora",
+        "weight": "500",
+        "style": "normal",
+        "status": "unloaded"
+      },
+      {
+        "family": "Sora",
+        "weight": "700",
+        "style": "normal",
+        "status": "unloaded"
+      },
+      {
+        "family": "Sora",
+        "weight": "700",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Sora",
+        "weight": "800",
+        "style": "normal",
+        "status": "unloaded"
+      },
+      {
+        "family": "Sora",
+        "weight": "800",
+        "style": "normal",
+        "status": "unloaded"
+      }
+    ],
+    "horizontal_overflow": null
+  },
+  "screenshots": {
+    "viewport": {
+      "path": "screenshot_viewport.png",
+      "width": 1366,
+      "height": 768,
+      "description": "Above-the-fold view exactly as a user first sees it."
+    },
+    "full_page": {
+      "path": "screenshot_full.png",
+      "width": 1366,
+      "height": 2325,
+      "description": "Entire scrollable page.",
+      "truncated": false
+    },
+    "tiles": [
+      {
+        "path": "tiles/tile_01.png",
+        "width": 1366,
+        "height": 1100,
+        "y_start": 0,
+        "y_end": 1100
+      },
+      {
+        "path": "tiles/tile_02.png",
+        "width": 1366,
+        "height": 1100,
+        "y_start": 1000,
+        "y_end": 2100
+      },
+      {
+        "path": "tiles/tile_03.png",
+        "width": 1366,
+        "height": 325,
+        "y_start": 2000,
+        "y_end": 2325
+      }
+    ],
+    "crops": []
+  },
+  "hints": [],
+  "elements": [
+    {
+      "id": 1,
+      "selector": "#top",
+      "tag": "header",
+      "attrs": {
+        "id": "top"
+      },
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1366,
+        "h": 69.6
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {
+        "display": "flex",
+        "position": "sticky",
+        "top": "0px",
+        "z-index": "20",
+        "padding": "16px 109.266px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(14, 19, 48)",
+        "flex-wrap": "wrap",
+        "justify-content": "space-between",
+        "align-items": "center",
+        "gap": "12px"
+      },
+      "rule_ids": [
+        2,
+        6,
+        58,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 2,
+      "selector": "#top > h1",
+      "tag": "h1",
+      "attrs": {},
+      "text": "OmniSight Store",
+      "bbox": {
+        "x": 109.3,
+        "y": 17.2,
+        "w": 190,
+        "h": 35.2
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "22px",
+        "font-weight": "700",
+        "line-height": "35.2px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        7,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 3,
+      "selector": "#top > nav",
+      "tag": "nav",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 905.9,
+        "y": 16,
+        "w": 350.8,
+        "h": 37.6
+      },
+      "in_viewport": true,
+      "parent": 1,
+      "styles": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "6px"
+      },
+      "rule_ids": [
+        2,
+        8,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 4,
+      "selector": "#top > nav > a.active:nth-of-type(1)",
+      "tag": "a",
+      "attrs": {
+        "class": "active",
+        "href": "#home"
+      },
+      "text": "Home",
+      "bbox": {
+        "x": 905.9,
+        "y": 16,
+        "w": 68,
+        "h": 37.6
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "6px 12px",
+        "color": "rgb(47, 212, 232)",
+        "background-color": "rgb(27, 33, 80)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "600",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        9,
+        10,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 5,
+      "selector": "#top > nav > a:nth-of-type(2)",
+      "tag": "a",
+      "attrs": {
+        "href": "#products"
+      },
+      "text": "Products",
+      "bbox": {
+        "x": 979.9,
+        "y": 16,
+        "w": 87.9,
+        "h": 37.6
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "6px 12px",
+        "color": "rgb(255, 255, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "600",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        9,
+        10,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 6,
+      "selector": "#top > nav > a:nth-of-type(3)",
+      "tag": "a",
+      "attrs": {
+        "href": "#cart"
+      },
+      "text": "Cart",
+      "bbox": {
+        "x": 1073.8,
+        "y": 16,
+        "w": 84.9,
+        "h": 37.6
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "6px 12px",
+        "color": "rgb(255, 255, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "600",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        9,
+        10,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 7,
+      "selector": "#cart-count",
+      "tag": "span",
+      "attrs": {
+        "id": "cart-count",
+        "class": "badge"
+      },
+      "text": "0",
+      "bbox": {
+        "x": 1124.7,
+        "y": 26,
+        "w": 22,
+        "h": 20.8
+      },
+      "in_viewport": true,
+      "parent": 6,
+      "styles": {
+        "display": "inline-block",
+        "min-width": "22px",
+        "margin": "0px 0px 0px 4px",
+        "padding": "0px 6px",
+        "color": "rgb(14, 19, 48)",
+        "background-color": "rgb(47, 212, 232)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "13px",
+        "font-weight": "600",
+        "line-height": "20.8px",
+        "text-align": "center",
+        "border-radius": "999px"
+      },
+      "rule_ids": [
+        2,
+        11,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 8,
+      "selector": "#top > nav > a:nth-of-type(4)",
+      "tag": "a",
+      "attrs": {
+        "href": "#checkout"
+      },
+      "text": "Checkout",
+      "bbox": {
+        "x": 1164.7,
+        "y": 16,
+        "w": 92.1,
+        "h": 37.6
+      },
+      "in_viewport": true,
+      "parent": 3,
+      "styles": {
+        "display": "block",
+        "padding": "6px 12px",
+        "color": "rgb(255, 255, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "600",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        9,
+        10,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 9,
+      "selector": "body > main",
+      "tag": "main",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 83,
+        "y": 99.6,
+        "w": 1200,
+        "h": 2083.6
+      },
+      "in_viewport": true,
+      "parent": null,
+      "styles": {
+        "max-width": "1200px",
+        "margin": "30px 83px"
+      },
+      "rule_ids": [
+        2,
+        12,
+        59,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 10,
+      "selector": "#home",
+      "tag": "section",
+      "attrs": {
+        "id": "home"
+      },
+      "text": "",
+      "bbox": {
+        "x": 83,
+        "y": 99.6,
+        "w": 1200,
+        "h": 397.6
+      },
+      "in_viewport": true,
+      "parent": 9,
+      "styles": {
+        "position": "relative",
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "margin": "0px 0px 25px",
+        "padding": "70px 40px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(14, 19, 48)",
+        "background-image": "radial-gradient(220px at 70% 40%, rgba(47, 212, 232, 0.35), rgba(0, 0, 0, 0) 70%), radial-gradient(1.5px, rgba(255, 255…",
+        "overflow-x": "hidden",
+        "overflow-y": "hidden",
+        "border-radius": "14px"
+      },
+      "rule_ids": [
+        2,
+        13,
+        16,
+        60,
+        61,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 11,
+      "selector": "#home > div.hero-text",
+      "tag": "div",
+      "attrs": {
+        "class": "hero-text"
+      },
+      "text": "",
+      "bbox": {
+        "x": 123,
+        "y": 169.6,
+        "w": 1120,
+        "h": 257.6
+      },
+      "in_viewport": true,
+      "parent": 10,
+      "styles": {},
+      "rule_ids": [
+        2,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 12,
+      "selector": "#home > div.hero-text > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Welcome to OmniSight",
+      "bbox": {
+        "x": 123,
+        "y": 169.6,
+        "w": 560,
+        "h": 110.4
+      },
+      "in_viewport": true,
+      "parent": 11,
+      "styles": {
+        "max-width": "560px",
+        "margin": "0px 0px 16px",
+        "color": "rgb(255, 255, 255)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "55.2px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        14,
+        17,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 13,
+      "selector": "#home > div.hero-text > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Move your cursor around. Pick up gear you can see clearly, and check out in under a minute.",
+      "bbox": {
+        "x": 123,
+        "y": 296,
+        "w": 480,
+        "h": 57.6
+      },
+      "in_viewport": true,
+      "parent": 11,
+      "styles": {
+        "max-width": "480px",
+        "margin": "14px 0px 24px",
+        "color": "rgb(197, 203, 232)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        18,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 14,
+      "selector": "#home > div.hero-text > a.cta",
+      "tag": "a",
+      "attrs": {
+        "class": "cta",
+        "href": "#products"
+      },
+      "text": "Shop products",
+      "bbox": {
+        "x": 123,
+        "y": 377.6,
+        "w": 157.3,
+        "h": 49.6
+      },
+      "in_viewport": true,
+      "parent": 11,
+      "styles": {
+        "display": "inline-block",
+        "padding": "12px 24px",
+        "color": "rgb(14, 19, 48)",
+        "background-color": "rgb(47, 212, 232)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        19,
+        20,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 15,
+      "selector": "#products",
+      "tag": "section",
+      "attrs": {
+        "id": "products"
+      },
+      "text": "",
+      "bbox": {
+        "x": 83,
+        "y": 522.2,
+        "w": 1200,
+        "h": 697.1
+      },
+      "in_viewport": true,
+      "parent": 9,
+      "styles": {
+        "margin": "0px 0px 25px",
+        "padding": "30px",
+        "background-color": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "14px"
+      },
+      "rule_ids": [
+        2,
+        13,
+        60,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 16,
+      "selector": "#products > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Our Products",
+      "bbox": {
+        "x": 114,
+        "y": 553.2,
+        "w": 1138,
+        "h": 38.4
+      },
+      "in_viewport": true,
+      "parent": 15,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "38.4px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        14,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 17,
+      "selector": "#products > div.tools:nth-of-type(1)",
+      "tag": "div",
+      "attrs": {
+        "class": "tools"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 607.5,
+        "w": 1138,
+        "h": 51.6
+      },
+      "in_viewport": true,
+      "parent": 15,
+      "styles": {
+        "display": "flex",
+        "margin": "0px 0px 20px",
+        "flex-wrap": "wrap",
+        "align-items": "center",
+        "gap": "12px"
+      },
+      "rule_ids": [
+        2,
+        21,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 18,
+      "selector": "#search",
+      "tag": "input",
+      "attrs": {
+        "id": "search",
+        "type": "search",
+        "placeholder": "Search products",
+        "aria-label": "Search products"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 607.5,
+        "w": 596.2,
+        "h": 51.6
+      },
+      "in_viewport": true,
+      "parent": 17,
+      "styles": {
+        "display": "block",
+        "padding": "12px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "border": "1px solid rgb(201, 208, 230)",
+        "border-radius": "8px",
+        "cursor": "text"
+      },
+      "rule_ids": [
+        2,
+        22,
+        44,
+        46,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 19,
+      "selector": "#chips",
+      "tag": "div",
+      "attrs": {
+        "id": "chips",
+        "class": "chips",
+        "role": "group",
+        "aria-label": "Filter by category"
+      },
+      "text": "",
+      "bbox": {
+        "x": 722.2,
+        "y": 616.3,
+        "w": 353.8,
+        "h": 34
+      },
+      "in_viewport": true,
+      "parent": 17,
+      "styles": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "8px"
+      },
+      "rule_ids": [
+        2,
+        23,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 20,
+      "selector": "#chips > button.chip.active:nth-of-type(1)",
+      "tag": "button",
+      "attrs": {
+        "class": "chip active",
+        "type": "button"
+      },
+      "text": "All",
+      "bbox": {
+        "x": 722.2,
+        "y": 616.3,
+        "w": 47.9,
+        "h": 34
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "block",
+        "padding": "8px 14px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(14, 19, 48)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "text-align": "center",
+        "border": "1px solid rgb(14, 19, 48)",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        24,
+        25,
+        26,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 21,
+      "selector": "#chips > button.chip:nth-of-type(2)",
+      "tag": "button",
+      "attrs": {
+        "class": "chip",
+        "type": "button"
+      },
+      "text": "Audio",
+      "bbox": {
+        "x": 778,
+        "y": 616.3,
+        "w": 69.7,
+        "h": 34
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "block",
+        "padding": "8px 14px",
+        "color": "rgb(35, 40, 70)",
+        "background-color": "rgb(255, 255, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        24,
+        25,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 22,
+      "selector": "#chips > button.chip:nth-of-type(3)",
+      "tag": "button",
+      "attrs": {
+        "class": "chip",
+        "type": "button"
+      },
+      "text": "Wearables",
+      "bbox": {
+        "x": 855.7,
+        "y": 616.3,
+        "w": 99.8,
+        "h": 34
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "block",
+        "padding": "8px 14px",
+        "color": "rgb(35, 40, 70)",
+        "background-color": "rgb(255, 255, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        24,
+        25,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 23,
+      "selector": "#chips > button.chip:nth-of-type(4)",
+      "tag": "button",
+      "attrs": {
+        "class": "chip",
+        "type": "button"
+      },
+      "text": "Accessories",
+      "bbox": {
+        "x": 963.5,
+        "y": 616.3,
+        "w": 112.5,
+        "h": 34
+      },
+      "in_viewport": true,
+      "parent": 19,
+      "styles": {
+        "display": "block",
+        "padding": "8px 14px",
+        "color": "rgb(35, 40, 70)",
+        "background-color": "rgb(255, 255, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "999px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        24,
+        25,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 24,
+      "selector": "#sort",
+      "tag": "select",
+      "attrs": {
+        "id": "sort",
+        "aria-label": "Sort products"
+      },
+      "text": "",
+      "bbox": {
+        "x": 1088,
+        "y": 610.8,
+        "w": 164,
+        "h": 45
+      },
+      "in_viewport": true,
+      "parent": 17,
+      "styles": {
+        "display": "block",
+        "padding": "10px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "white-space": "pre",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "align-items": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "8px"
+      },
+      "rule_ids": [
+        2,
+        27,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 25,
+      "selector": "#product-grid",
+      "tag": "div",
+      "attrs": {
+        "id": "product-grid"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 679.1,
+        "w": 1138,
+        "h": 509.2
+      },
+      "in_viewport": true,
+      "parent": 15,
+      "styles": {
+        "display": "grid",
+        "gap": "18px",
+        "grid-template-columns": "271px 271px 271px 271px"
+      },
+      "rule_ids": [
+        2,
+        28,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 26,
+      "selector": "#product-grid > article:nth-of-type(1)",
+      "tag": "article",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 679.1,
+        "w": 271,
+        "h": 245.6
+      },
+      "in_viewport": true,
+      "parent": 25,
+      "styles": {
+        "padding": "20px 16px",
+        "background-color": "rgb(242, 244, 250)",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        29,
+        30,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 27,
+      "selector": "#product-grid > article:nth-of-type(1) > span.icon",
+      "tag": "span",
+      "attrs": {
+        "class": "icon"
+      },
+      "text": "🎧",
+      "bbox": {
+        "x": 131,
+        "y": 700.1,
+        "w": 237,
+        "h": 83.2
+      },
+      "in_viewport": true,
+      "parent": 26,
+      "styles": {
+        "display": "block",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "52px",
+        "line-height": "83.2px"
+      },
+      "rule_ids": [
+        2,
+        31,
+        32,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 28,
+      "selector": "#product-grid > article:nth-of-type(1) > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "Wireless Headphones",
+      "bbox": {
+        "x": 131,
+        "y": 793.3,
+        "w": 237,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 26,
+      "styles": {
+        "margin": "10px 0px 4px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        5,
+        33,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 29,
+      "selector": "#product-grid > article:nth-of-type(1) > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Price: ₹2,499",
+      "bbox": {
+        "x": 131,
+        "y": 822.9,
+        "w": 237,
+        "h": 28.8
+      },
+      "in_viewport": false,
+      "parent": 26,
+      "styles": {
+        "margin": "0px 0px 14px",
+        "color": "rgb(91, 75, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        34,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 30,
+      "selector": "#product-grid > article:nth-of-type(1) > button",
+      "tag": "button",
+      "attrs": {
+        "type": "button"
+      },
+      "text": "Add to Cart",
+      "bbox": {
+        "x": 193.4,
+        "y": 865.7,
+        "w": 112.2,
+        "h": 38
+      },
+      "in_viewport": false,
+      "parent": 26,
+      "styles": {
+        "display": "inline-block",
+        "padding": "11px 18px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 31,
+      "selector": "#product-grid > article:nth-of-type(2)",
+      "tag": "article",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 403,
+        "y": 679.1,
+        "w": 271,
+        "h": 245.6
+      },
+      "in_viewport": true,
+      "parent": 25,
+      "styles": {
+        "padding": "20px 16px",
+        "background-color": "rgb(242, 244, 250)",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        29,
+        30,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 32,
+      "selector": "#product-grid > article:nth-of-type(2) > span.icon",
+      "tag": "span",
+      "attrs": {
+        "class": "icon"
+      },
+      "text": "⌚",
+      "bbox": {
+        "x": 420,
+        "y": 700.1,
+        "w": 237,
+        "h": 83.2
+      },
+      "in_viewport": true,
+      "parent": 31,
+      "styles": {
+        "display": "block",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "52px",
+        "line-height": "83.2px"
+      },
+      "rule_ids": [
+        2,
+        31,
+        32,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 33,
+      "selector": "#product-grid > article:nth-of-type(2) > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "Smart Watch",
+      "bbox": {
+        "x": 420,
+        "y": 793.3,
+        "w": 237,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 31,
+      "styles": {
+        "margin": "10px 0px 4px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        5,
+        33,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 34,
+      "selector": "#product-grid > article:nth-of-type(2) > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Price: ₹3,299",
+      "bbox": {
+        "x": 420,
+        "y": 822.9,
+        "w": 237,
+        "h": 28.8
+      },
+      "in_viewport": false,
+      "parent": 31,
+      "styles": {
+        "margin": "0px 0px 14px",
+        "color": "rgb(91, 75, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        34,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 35,
+      "selector": "#product-grid > article:nth-of-type(2) > button",
+      "tag": "button",
+      "attrs": {
+        "type": "button"
+      },
+      "text": "Add to Cart",
+      "bbox": {
+        "x": 482.4,
+        "y": 865.7,
+        "w": 112.2,
+        "h": 38
+      },
+      "in_viewport": false,
+      "parent": 31,
+      "styles": {
+        "display": "inline-block",
+        "padding": "11px 18px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 36,
+      "selector": "#product-grid > article:nth-of-type(3)",
+      "tag": "article",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 692,
+        "y": 679.1,
+        "w": 271,
+        "h": 245.6
+      },
+      "in_viewport": true,
+      "parent": 25,
+      "styles": {
+        "padding": "20px 16px",
+        "background-color": "rgb(242, 244, 250)",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        29,
+        30,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 37,
+      "selector": "#product-grid > article:nth-of-type(3) > span.icon",
+      "tag": "span",
+      "attrs": {
+        "class": "icon"
+      },
+      "text": "🔊",
+      "bbox": {
+        "x": 709,
+        "y": 700.1,
+        "w": 237,
+        "h": 83.2
+      },
+      "in_viewport": true,
+      "parent": 36,
+      "styles": {
+        "display": "block",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "52px",
+        "line-height": "83.2px"
+      },
+      "rule_ids": [
+        2,
+        31,
+        32,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 38,
+      "selector": "#product-grid > article:nth-of-type(3) > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "Bluetooth Speaker",
+      "bbox": {
+        "x": 709,
+        "y": 793.3,
+        "w": 237,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 36,
+      "styles": {
+        "margin": "10px 0px 4px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        5,
+        33,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 39,
+      "selector": "#product-grid > article:nth-of-type(3) > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Price: ₹1,799",
+      "bbox": {
+        "x": 709,
+        "y": 822.9,
+        "w": 237,
+        "h": 28.8
+      },
+      "in_viewport": false,
+      "parent": 36,
+      "styles": {
+        "margin": "0px 0px 14px",
+        "color": "rgb(91, 75, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        34,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 40,
+      "selector": "#product-grid > article:nth-of-type(3) > button",
+      "tag": "button",
+      "attrs": {
+        "type": "button"
+      },
+      "text": "Add to Cart",
+      "bbox": {
+        "x": 771.4,
+        "y": 865.7,
+        "w": 112.2,
+        "h": 38
+      },
+      "in_viewport": false,
+      "parent": 36,
+      "styles": {
+        "display": "inline-block",
+        "padding": "11px 18px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 41,
+      "selector": "#product-grid > article:nth-of-type(4)",
+      "tag": "article",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 981,
+        "y": 679.1,
+        "w": 271,
+        "h": 245.6
+      },
+      "in_viewport": true,
+      "parent": 25,
+      "styles": {
+        "padding": "20px 16px",
+        "background-color": "rgb(242, 244, 250)",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        29,
+        30,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 42,
+      "selector": "#product-grid > article:nth-of-type(4) > span.icon",
+      "tag": "span",
+      "attrs": {
+        "class": "icon"
+      },
+      "text": "💪",
+      "bbox": {
+        "x": 998,
+        "y": 700.1,
+        "w": 237,
+        "h": 83.2
+      },
+      "in_viewport": true,
+      "parent": 41,
+      "styles": {
+        "display": "block",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "52px",
+        "line-height": "83.2px"
+      },
+      "rule_ids": [
+        2,
+        31,
+        32,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 43,
+      "selector": "#product-grid > article:nth-of-type(4) > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "Fitness Band",
+      "bbox": {
+        "x": 998,
+        "y": 793.3,
+        "w": 237,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 41,
+      "styles": {
+        "margin": "10px 0px 4px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        5,
+        33,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 44,
+      "selector": "#product-grid > article:nth-of-type(4) > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Price: ₹1,999",
+      "bbox": {
+        "x": 998,
+        "y": 822.9,
+        "w": 237,
+        "h": 28.8
+      },
+      "in_viewport": false,
+      "parent": 41,
+      "styles": {
+        "margin": "0px 0px 14px",
+        "color": "rgb(91, 75, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        34,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 45,
+      "selector": "#product-grid > article:nth-of-type(4) > button",
+      "tag": "button",
+      "attrs": {
+        "type": "button"
+      },
+      "text": "Add to Cart",
+      "bbox": {
+        "x": 1060.4,
+        "y": 865.7,
+        "w": 112.2,
+        "h": 38
+      },
+      "in_viewport": false,
+      "parent": 41,
+      "styles": {
+        "display": "inline-block",
+        "padding": "11px 18px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 46,
+      "selector": "#product-grid > article:nth-of-type(5)",
+      "tag": "article",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 942.7,
+        "w": 271,
+        "h": 245.6
+      },
+      "in_viewport": false,
+      "parent": 25,
+      "styles": {
+        "padding": "20px 16px",
+        "background-color": "rgb(242, 244, 250)",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        29,
+        30,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 47,
+      "selector": "#product-grid > article:nth-of-type(5) > span.icon",
+      "tag": "span",
+      "attrs": {
+        "class": "icon"
+      },
+      "text": "🎵",
+      "bbox": {
+        "x": 131,
+        "y": 963.7,
+        "w": 237,
+        "h": 83.2
+      },
+      "in_viewport": false,
+      "parent": 46,
+      "styles": {
+        "display": "block",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "52px",
+        "line-height": "83.2px"
+      },
+      "rule_ids": [
+        2,
+        31,
+        32,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 48,
+      "selector": "#product-grid > article:nth-of-type(5) > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "True Wireless Earbuds",
+      "bbox": {
+        "x": 131,
+        "y": 1056.9,
+        "w": 237,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 46,
+      "styles": {
+        "margin": "10px 0px 4px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        5,
+        33,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 49,
+      "selector": "#product-grid > article:nth-of-type(5) > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Price: ₹2,199",
+      "bbox": {
+        "x": 131,
+        "y": 1086.5,
+        "w": 237,
+        "h": 28.8
+      },
+      "in_viewport": false,
+      "parent": 46,
+      "styles": {
+        "margin": "0px 0px 14px",
+        "color": "rgb(91, 75, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        34,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 50,
+      "selector": "#product-grid > article:nth-of-type(5) > button",
+      "tag": "button",
+      "attrs": {
+        "type": "button"
+      },
+      "text": "Add to Cart",
+      "bbox": {
+        "x": 193.4,
+        "y": 1129.3,
+        "w": 112.2,
+        "h": 38
+      },
+      "in_viewport": false,
+      "parent": 46,
+      "styles": {
+        "display": "inline-block",
+        "padding": "11px 18px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 51,
+      "selector": "#product-grid > article:nth-of-type(6)",
+      "tag": "article",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 403,
+        "y": 942.7,
+        "w": 271,
+        "h": 245.6
+      },
+      "in_viewport": false,
+      "parent": 25,
+      "styles": {
+        "padding": "20px 16px",
+        "background-color": "rgb(242, 244, 250)",
+        "text-align": "center",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        29,
+        30,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 52,
+      "selector": "#product-grid > article:nth-of-type(6) > span.icon",
+      "tag": "span",
+      "attrs": {
+        "class": "icon"
+      },
+      "text": "🔋",
+      "bbox": {
+        "x": 420,
+        "y": 963.7,
+        "w": 237,
+        "h": 83.2
+      },
+      "in_viewport": false,
+      "parent": 51,
+      "styles": {
+        "display": "block",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "52px",
+        "line-height": "83.2px"
+      },
+      "rule_ids": [
+        2,
+        31,
+        32,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 53,
+      "selector": "#product-grid > article:nth-of-type(6) > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "Power Bank 20000mAh",
+      "bbox": {
+        "x": 420,
+        "y": 1056.9,
+        "w": 237,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 51,
+      "styles": {
+        "margin": "10px 0px 4px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        5,
+        33,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 54,
+      "selector": "#product-grid > article:nth-of-type(6) > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Price: ₹1,499",
+      "bbox": {
+        "x": 420,
+        "y": 1086.5,
+        "w": 237,
+        "h": 28.8
+      },
+      "in_viewport": false,
+      "parent": 51,
+      "styles": {
+        "margin": "0px 0px 14px",
+        "color": "rgb(91, 75, 255)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "28.8px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        34,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 55,
+      "selector": "#product-grid > article:nth-of-type(6) > button",
+      "tag": "button",
+      "attrs": {
+        "type": "button"
+      },
+      "text": "Add to Cart",
+      "bbox": {
+        "x": 482.4,
+        "y": 1129.3,
+        "w": 112.2,
+        "h": 38
+      },
+      "in_viewport": false,
+      "parent": 51,
+      "styles": {
+        "display": "inline-block",
+        "padding": "11px 18px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": "700",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 56,
+      "selector": "#cart",
+      "tag": "section",
+      "attrs": {
+        "id": "cart"
+      },
+      "text": "",
+      "bbox": {
+        "x": 83,
+        "y": 1244.3,
+        "w": 1200,
+        "h": 154
+      },
+      "in_viewport": false,
+      "parent": 9,
+      "styles": {
+        "min-height": "150px",
+        "margin": "0px 0px 25px",
+        "padding": "30px",
+        "background-color": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "14px"
+      },
+      "rule_ids": [
+        2,
+        13,
+        40,
+        60,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 57,
+      "selector": "#cart > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Shopping Cart",
+      "bbox": {
+        "x": 114,
+        "y": 1275.3,
+        "w": 1138,
+        "h": 38.4
+      },
+      "in_viewport": false,
+      "parent": 56,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "38.4px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        14,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 58,
+      "selector": "#cart > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Your cart is empty. Add a product above to get started.",
+      "bbox": {
+        "x": 114,
+        "y": 1329.7,
+        "w": 1138,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 56,
+      "styles": {
+        "margin": "0px 0px 12px",
+        "color": "rgb(102, 109, 143)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        41,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 59,
+      "selector": "#checkout",
+      "tag": "section",
+      "attrs": {
+        "id": "checkout"
+      },
+      "text": "",
+      "bbox": {
+        "x": 83,
+        "y": 1423.3,
+        "w": 1200,
+        "h": 578
+      },
+      "in_viewport": false,
+      "parent": 9,
+      "styles": {
+        "margin": "0px 0px 25px",
+        "padding": "30px",
+        "background-color": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "14px"
+      },
+      "rule_ids": [
+        2,
+        13,
+        60,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 60,
+      "selector": "#checkout > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Checkout",
+      "bbox": {
+        "x": 114,
+        "y": 1454.3,
+        "w": 1138,
+        "h": 38.4
+      },
+      "in_viewport": false,
+      "parent": 59,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "38.4px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        14,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 61,
+      "selector": "#checkout > div.checkout-layout",
+      "tag": "div",
+      "attrs": {
+        "class": "checkout-layout"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1508.7,
+        "w": 1138,
+        "h": 461.6
+      },
+      "in_viewport": false,
+      "parent": 59,
+      "styles": {
+        "display": "grid",
+        "align-items": "start",
+        "gap": "28px",
+        "grid-template-columns": "605.453px 504.531px"
+      },
+      "rule_ids": [
+        2,
+        42,
+        57,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 62,
+      "selector": "#checkout-form",
+      "tag": "form",
+      "attrs": {
+        "id": "checkout-form"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1508.7,
+        "w": 605.5,
+        "h": 461.6
+      },
+      "in_viewport": false,
+      "parent": 61,
+      "styles": {},
+      "rule_ids": [
+        2,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 63,
+      "selector": "#checkout-form > label:nth-of-type(1)",
+      "tag": "label",
+      "attrs": {
+        "for": "name"
+      },
+      "text": "Full Name:",
+      "bbox": {
+        "x": 114,
+        "y": 1522.7,
+        "w": 605.5,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "block",
+        "margin": "14px 0px 6px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        43,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 64,
+      "selector": "#name",
+      "tag": "input",
+      "attrs": {
+        "id": "name",
+        "type": "text",
+        "name": "name"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1554.3,
+        "w": 605.5,
+        "h": 51.6
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "inline-block",
+        "padding": "12px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "border": "1px solid rgb(201, 208, 230)",
+        "border-radius": "8px",
+        "cursor": "text"
+      },
+      "rule_ids": [
+        2,
+        44,
+        46,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 65,
+      "selector": "#checkout-form > small.error:nth-of-type(1)",
+      "tag": "small",
+      "attrs": {
+        "class": "error"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1605.9,
+        "w": 605.5,
+        "h": 20
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "block",
+        "min-height": "20px",
+        "color": "rgb(198, 42, 71)",
+        "font-size": "13px",
+        "line-height": "20.8px"
+      },
+      "rule_ids": [
+        2,
+        47,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 66,
+      "selector": "#checkout-form > label:nth-of-type(2)",
+      "tag": "label",
+      "attrs": {
+        "for": "email"
+      },
+      "text": "Email:",
+      "bbox": {
+        "x": 114,
+        "y": 1639.9,
+        "w": 605.5,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "block",
+        "margin": "14px 0px 6px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        43,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 67,
+      "selector": "#email",
+      "tag": "input",
+      "attrs": {
+        "id": "email",
+        "type": "email",
+        "name": "email"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1671.5,
+        "w": 605.5,
+        "h": 51.6
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "inline-block",
+        "padding": "12px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "overflow-x": "clip",
+        "overflow-y": "clip",
+        "border": "1px solid rgb(201, 208, 230)",
+        "border-radius": "8px",
+        "cursor": "text"
+      },
+      "rule_ids": [
+        2,
+        44,
+        46,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 68,
+      "selector": "#checkout-form > small.error:nth-of-type(2)",
+      "tag": "small",
+      "attrs": {
+        "class": "error"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1723,
+        "w": 605.5,
+        "h": 20
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "block",
+        "min-height": "20px",
+        "color": "rgb(198, 42, 71)",
+        "font-size": "13px",
+        "line-height": "20.8px"
+      },
+      "rule_ids": [
+        2,
+        47,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 69,
+      "selector": "#checkout-form > label:nth-of-type(3)",
+      "tag": "label",
+      "attrs": {
+        "for": "address"
+      },
+      "text": "Delivery Address:",
+      "bbox": {
+        "x": 114,
+        "y": 1757,
+        "w": 605.5,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "block",
+        "margin": "14px 0px 6px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px",
+        "font-weight": "700"
+      },
+      "rule_ids": [
+        2,
+        43,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 70,
+      "selector": "#address",
+      "tag": "textarea",
+      "attrs": {
+        "id": "address",
+        "name": "address"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1788.6,
+        "w": 605.5,
+        "h": 100
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "inline-block",
+        "min-height": "100px",
+        "padding": "12px",
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 255, 255)",
+        "white-space": "pre-wrap",
+        "overflow-x": "auto",
+        "overflow-y": "auto",
+        "border": "1px solid rgb(201, 208, 230)",
+        "border-radius": "8px",
+        "cursor": "text"
+      },
+      "rule_ids": [
+        2,
+        44,
+        45,
+        46,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 71,
+      "selector": "#checkout-form > small.error:nth-of-type(3)",
+      "tag": "small",
+      "attrs": {
+        "class": "error"
+      },
+      "text": "",
+      "bbox": {
+        "x": 114,
+        "y": 1895.2,
+        "w": 605.5,
+        "h": 20
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "block",
+        "min-height": "20px",
+        "color": "rgb(198, 42, 71)",
+        "font-size": "13px",
+        "line-height": "20.8px"
+      },
+      "rule_ids": [
+        2,
+        47,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 72,
+      "selector": "#checkout-form > button.place",
+      "tag": "button",
+      "attrs": {
+        "class": "place",
+        "type": "submit"
+      },
+      "text": "Place Demo Order",
+      "bbox": {
+        "x": 114,
+        "y": 1925.2,
+        "w": 605.5,
+        "h": 45
+      },
+      "in_viewport": false,
+      "parent": 62,
+      "styles": {
+        "display": "inline-block",
+        "margin": "10px 0px 0px",
+        "padding": "14px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(91, 75, 255)",
+        "font-family": "Arial",
+        "font-size": "15px",
+        "font-weight": "700",
+        "text-align": "center",
+        "border-radius": "8px",
+        "cursor": "pointer"
+      },
+      "rule_ids": [
+        2,
+        36,
+        37,
+        38,
+        39,
+        48,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 73,
+      "selector": "#summary",
+      "tag": "aside",
+      "attrs": {
+        "id": "summary"
+      },
+      "text": "",
+      "bbox": {
+        "x": 747.5,
+        "y": 1508.7,
+        "w": 504.5,
+        "h": 116.8
+      },
+      "in_viewport": false,
+      "parent": 61,
+      "styles": {
+        "padding": "20px",
+        "background-color": "rgb(242, 244, 250)",
+        "border": "1px solid rgb(221, 226, 240)",
+        "border-radius": "12px"
+      },
+      "rule_ids": [
+        2,
+        49,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 74,
+      "selector": "#summary > h3",
+      "tag": "h3",
+      "attrs": {},
+      "text": "Order summary",
+      "bbox": {
+        "x": 768.5,
+        "y": 1529.7,
+        "w": 462.5,
+        "h": 27.2
+      },
+      "in_viewport": false,
+      "parent": 73,
+      "styles": {
+        "margin": "0px 0px 10px",
+        "color": "rgb(14, 19, 48)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "17px",
+        "font-weight": "700",
+        "line-height": "27.2px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        50,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 75,
+      "selector": "#summary > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Nothing here yet. Add a product to see your order.",
+      "bbox": {
+        "x": 768.5,
+        "y": 1566.9,
+        "w": 462.5,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 73,
+      "styles": {
+        "margin": "0px 0px 12px",
+        "color": "rgb(102, 109, 143)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        51,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 76,
+      "selector": "#confirmation",
+      "tag": "section",
+      "attrs": {
+        "id": "confirmation"
+      },
+      "text": "",
+      "bbox": {
+        "x": 83,
+        "y": 2026.2,
+        "w": 1200,
+        "h": 157
+      },
+      "in_viewport": false,
+      "parent": 9,
+      "styles": {
+        "margin": "0px 0px 25px",
+        "padding": "30px",
+        "background-color": "rgb(255, 255, 255)",
+        "text-align": "center",
+        "border-radius": "14px"
+      },
+      "rule_ids": [
+        2,
+        13,
+        52,
+        60,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 77,
+      "selector": "#confirmation > h2",
+      "tag": "h2",
+      "attrs": {},
+      "text": "Order Confirmation",
+      "bbox": {
+        "x": 114,
+        "y": 2060.2,
+        "w": 1138,
+        "h": 38.4
+      },
+      "in_viewport": false,
+      "parent": 76,
+      "styles": {
+        "margin": "0px 0px 16px",
+        "color": "rgb(18, 148, 90)",
+        "font-family": "Sora, Arial, sans-serif",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "38.4px"
+      },
+      "rule_ids": [
+        2,
+        5,
+        14,
+        53,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 78,
+      "selector": "#confirmation > p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Your order confirmation message will appear here.",
+      "bbox": {
+        "x": 114,
+        "y": 2114.6,
+        "w": 1138,
+        "h": 25.6
+      },
+      "in_viewport": false,
+      "parent": 76,
+      "styles": {
+        "margin": "0px 0px 12px",
+        "color": "rgb(35, 40, 70)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "16px"
+      },
+      "rule_ids": [
+        2,
+        15,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 79,
+      "selector": "body > footer",
+      "tag": "footer",
+      "attrs": {},
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 2218.2,
+        "w": 1366,
+        "h": 106.8
+      },
+      "in_viewport": false,
+      "parent": null,
+      "styles": {
+        "margin": "35px 0px 0px",
+        "padding": "25px 15px",
+        "color": "rgb(197, 203, 232)",
+        "background-color": "rgb(14, 19, 48)",
+        "text-align": "center"
+      },
+      "rule_ids": [
+        2,
+        55,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 80,
+      "selector": "body > footer > p:nth-of-type(1)",
+      "tag": "p",
+      "attrs": {},
+      "text": "© 2026 OmniSight Demo Store",
+      "bbox": {
+        "x": 15,
+        "y": 2247.2,
+        "w": 1336,
+        "h": 22.4
+      },
+      "in_viewport": false,
+      "parent": 79,
+      "styles": {
+        "margin": "4px 0px",
+        "color": "rgb(197, 203, 232)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "14px",
+        "line-height": "22.4px"
+      },
+      "rule_ids": [
+        2,
+        56,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 81,
+      "selector": "body > footer > p:nth-of-type(2)",
+      "tag": "p",
+      "attrs": {},
+      "text": "This is a mock e-commerce website for testing purposes.",
+      "bbox": {
+        "x": 15,
+        "y": 2273.6,
+        "w": 1336,
+        "h": 22.4
+      },
+      "in_viewport": false,
+      "parent": 79,
+      "styles": {
+        "margin": "4px 0px",
+        "color": "rgb(197, 203, 232)",
+        "font-family": "\"Segoe UI\", Arial, sans-serif",
+        "font-size": "14px",
+        "line-height": "22.4px"
+      },
+      "rule_ids": [
+        2,
+        56,
+        62
+      ],
+      "flags": []
+    },
+    {
+      "id": 82,
+      "selector": "#toast",
+      "tag": "div",
+      "attrs": {
+        "id": "toast",
+        "role": "status"
+      },
+      "text": "",
+      "bbox": {
+        "x": 661,
+        "y": 840,
+        "w": 44,
+        "h": 24
+      },
+      "in_viewport": false,
+      "parent": null,
+      "styles": {
+        "position": "fixed",
+        "top": "720px",
+        "right": "639px",
+        "bottom": "24px",
+        "left": "683px",
+        "z-index": "50",
+        "padding": "12px 22px",
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(14, 19, 48)",
+        "font-weight": "600",
+        "border-radius": "10px",
+        "transform": "matrix(1, 0, 0, 1, -22, 120)"
+      },
+      "rule_ids": [
+        2,
+        54,
+        62
+      ],
+      "flags": []
+    }
+  ],
+  "css": {
+    "rules": [
+      {
+        "id": 1,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ":root",
+        "css": "--ink: #0e1330; --ink-2: #1b2150; --paper: #f2f4fa; --line: #dde2f0; --text: #232846; --muted: #666d8f; --accent: #5b4bff; --accent-d: #4636e0; --lens: #2fd4e8; --ok: #12945a; --err: #c62a47;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 2,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "*",
+        "css": "margin: 0px; padding: 0px; box-sizing: border-box;",
+        "matches": 97,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 3,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "html",
+        "css": "scroll-behavior: smooth;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 4,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "body",
+        "css": "font-family: \"Segoe UI\", Arial, sans-serif; background: var(--paper); color: var(--text); line-height: 1.6;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 5,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "h1, h2, h3",
+        "css": "font-family: Sora, Arial, sans-serif;",
+        "matches": 13,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 6,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "header",
+        "css": "position: sticky; top: 0px; z-index: 20; background: var(--ink); color: rgb(255, 255, 255); padding: 16px 8%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 7,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "header h1",
+        "css": "font-size: 22px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 8,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "nav",
+        "css": "display: flex; flex-wrap: wrap; gap: 6px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 9,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "nav a",
+        "css": "color: rgb(255, 255, 255); text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 999px; transition: background 0.2s;",
+        "matches": 4,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 10,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "nav a:hover, nav a.active",
+        "css": "background: var(--ink-2); color: var(--lens);",
+        "matches": 5,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 11,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".badge",
+        "css": "display: inline-block; min-width: 22px; padding: 0px 6px; margin-left: 4px; background: var(--lens); color: var(--ink); border-radius: 999px; font-size: 13px; text-align: center;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 12,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "main",
+        "css": "width: 88%; max-width: 1200px; margin: 30px auto;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 13,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "section",
+        "css": "background: rgb(255, 255, 255); padding: 30px; margin-bottom: 25px; border-radius: 14px; border: 1px solid var(--line); scroll-margin-top: 80px;",
+        "matches": 5,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 14,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "section h2",
+        "css": "font-size: 24px; color: var(--ink); margin-bottom: 16px;",
+        "matches": 5,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 15,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "section p",
+        "css": "margin-bottom: 12px;",
+        "matches": 11,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 16,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#home",
+        "css": "--x: 70%; --y: 40%; position: relative; overflow: hidden; border: 0px; padding: 70px 40px; color: rgb(255, 255, 255); background: radial-gradient(circle 220px at var(--x) var(--y), rgba(47, 212, 232, .35), transparent 70%),\r\n        radial-gradient(circle 1.5px, rgba(255, 255, 255, .22) 98%, transparent) 0 0 / 26px 26px,\r\n        var(--ink);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 17,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#home h2",
+        "css": "color: rgb(255, 255, 255); font-size: clamp(30px, 5vw, 48px); line-height: 1.15; max-width: 560px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 18,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#home p",
+        "css": "color: rgb(197, 203, 232); font-size: 18px; max-width: 480px; margin: 14px 0px 24px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 19,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".cta",
+        "css": "display: inline-block; background: var(--lens); color: var(--ink); text-decoration: none; font-weight: 700; padding: 12px 24px; border-radius: 8px; transition: transform 0.2s;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 20,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".cta:hover",
+        "css": "transform: translateY(-2px);",
+        "matches": 1,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 21,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".tools",
+        "css": "display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 20px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 22,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".tools input[type=\"search\"]",
+        "css": "flex: 1 1 200px; width: auto;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 23,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".chips",
+        "css": "display: flex; flex-wrap: wrap; gap: 8px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 24,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".chip",
+        "css": "background: rgb(255, 255, 255); color: var(--text); border: 1px solid var(--line); padding: 8px 14px; border-radius: 999px;",
+        "matches": 4,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 25,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".chip:hover",
+        "css": "background: rgb(238, 240, 255);",
+        "matches": 4,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 26,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".chip.active",
+        "css": "background: var(--ink); color: rgb(255, 255, 255); border-color: var(--ink);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 27,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "select",
+        "css": "padding: 10px; border: 1px solid var(--line); border-radius: 8px; font: inherit; background: rgb(255, 255, 255);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 28,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#product-grid",
+        "css": "display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 29,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#products article",
+        "css": "background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 20px 16px; text-align: center; transition: transform 0.2s, border-color 0.2s;",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 30,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#products article:hover",
+        "css": "transform: translateY(-4px); border-color: var(--accent);",
+        "matches": 6,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 31,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".icon",
+        "css": "font-size: 52px; display: block; transition: transform 0.3s;",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 32,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#products article:hover .icon",
+        "css": "transform: scale(1.15) rotate(-6deg);",
+        "matches": 6,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 33,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#products article h3",
+        "css": "font-size: 16px; margin: 10px 0px 4px; color: var(--ink);",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 34,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#products article p",
+        "css": "color: var(--accent); font-weight: 700; font-size: 18px; margin-bottom: 14px;",
+        "matches": 6,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 35,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#no-results",
+        "css": "color: var(--muted);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 36,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "button",
+        "css": "background: var(--accent); color: rgb(255, 255, 255); border: 0px; padding: 11px 18px; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; transition: background 0.2s, transform 0.1s;",
+        "matches": 11,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 37,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "button:hover",
+        "css": "background: var(--accent-d);",
+        "matches": 11,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 38,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "button:active",
+        "css": "transform: scale(0.96);",
+        "matches": 11,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 39,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "button:focus-visible, nav a:focus-visible, .cta:focus-visible",
+        "css": "outline: rgb(245, 158, 11) solid 3px; outline-offset: 3px;",
+        "matches": 16,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 40,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#cart",
+        "css": "min-height: 150px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 41,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#cart p",
+        "css": "color: var(--muted);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 42,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".checkout-layout",
+        "css": "display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: start;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 43,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "label",
+        "css": "display: block; margin: 14px 0px 6px; font-weight: 700; color: var(--ink);",
+        "matches": 3,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 44,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "input, textarea",
+        "css": "width: 100%; padding: 12px; border: 1px solid rgb(201, 208, 230); border-radius: 8px; font: inherit; background: rgb(255, 255, 255); transition: border-color 0.2s, box-shadow 0.2s;",
+        "matches": 4,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 45,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "textarea",
+        "css": "min-height: 100px; resize: vertical;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 46,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "input:focus, textarea:focus",
+        "css": "outline: none; border-color: var(--accent); box-shadow: rgba(91, 75, 255, 0.2) 0px 0px 0px 3px;",
+        "matches": 4,
+        "media_active": true,
+        "states": true
+      },
+      {
+        "id": 47,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".error",
+        "css": "display: block; min-height: 20px; color: var(--err); font-size: 13px;",
+        "matches": 3,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 48,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": ".place",
+        "css": "margin-top: 10px; width: 100%; padding: 14px; font-size: 15px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 49,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#summary",
+        "css": "background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 20px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 50,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#summary h3",
+        "css": "color: var(--ink); margin-bottom: 10px; font-size: 17px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 51,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#summary p",
+        "css": "color: var(--muted);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 52,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#confirmation",
+        "css": "text-align: center; border-top: 4px solid var(--ok);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 53,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#confirmation h2",
+        "css": "color: var(--ok);",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 54,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "#toast",
+        "css": "position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 120px); background: var(--ink); color: rgb(255, 255, 255); padding: 12px 22px; border-radius: 10px; font-weight: 600; transition: transform 0.3s; z-index: 50;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 55,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "footer",
+        "css": "background: var(--ink); color: rgb(197, 203, 232); text-align: center; padding: 25px 15px; margin-top: 35px;",
+        "matches": 1,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 56,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [],
+        "selector": "footer p",
+        "css": "margin: 4px 0px; font-size: 14px;",
+        "matches": 2,
+        "media_active": true,
+        "states": false
+      },
+      {
+        "id": 57,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [
+          "@media (max-width: 800px)"
+        ],
+        "selector": ".checkout-layout",
+        "css": "grid-template-columns: 1fr;",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 58,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [
+          "@media (max-width: 600px)"
+        ],
+        "selector": "header",
+        "css": "flex-direction: column; text-align: center;",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 59,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [
+          "@media (max-width: 600px)"
+        ],
+        "selector": "main",
+        "css": "width: 94%; margin: 20px auto;",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 60,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [
+          "@media (max-width: 600px)"
+        ],
+        "selector": "section",
+        "css": "padding: 20px 15px;",
+        "matches": 5,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 61,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [
+          "@media (max-width: 600px)"
+        ],
+        "selector": "#home",
+        "css": "padding: 44px 20px;",
+        "matches": 1,
+        "media_active": false,
+        "states": false
+      },
+      {
+        "id": 62,
+        "source": "http://127.0.0.1:8000/Mock-Website/style.css",
+        "at": [
+          "@media (prefers-reduced-motion: reduce)"
+        ],
+        "selector": "*",
+        "css": "animation: auto ease 0s 1 normal none running none !important; transition: none !important; scroll-behavior: auto !important;",
+        "matches": 97,
+        "media_active": true,
+        "states": false
+      }
+    ],
+    "text": "/* ===== http://127.0.0.1:8000/Mock-Website/style.css ===== */\n/* r1 */ :root { --ink: #0e1330; --ink-2: #1b2150; --paper: #f2f4fa; --line: #dde2f0; --text: #232846; --muted: #666d8f; --accent: #5b4bff; --accent-d: #4636e0; --lens: #2fd4e8; --ok: #12945a; --err: #c62a47; }\n/* r2 */ * { margin: 0px; padding: 0px; box-sizing: border-box; }\n/* r3 */ html { scroll-behavior: smooth; }\n/* r4 */ body { font-family: \"Segoe UI\", Arial, sans-serif; background: var(--paper); color: var(--text); line-height: 1.6; }\n/* r5 */ h1, h2, h3 { font-family: Sora, Arial, sans-serif; }\n/* r6 */ header { position: sticky; top: 0px; z-index: 20; background: var(--ink); color: rgb(255, 255, 255); padding: 16px 8%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }\n/* r7 */ header h1 { font-size: 22px; }\n/* r8 */ nav { display: flex; flex-wrap: wrap; gap: 6px; }\n/* r9 */ nav a { color: rgb(255, 255, 255); text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 999px; transition: background 0.2s; }\n/* r10 */ nav a:hover, nav a.active { background: var(--ink-2); color: var(--lens); }  /* pseudo-state/element */\n/* r11 */ .badge { display: inline-block; min-width: 22px; padding: 0px 6px; margin-left: 4px; background: var(--lens); color: var(--ink); border-radius: 999px; font-size: 13px; text-align: center; }\n/* r12 */ main { width: 88%; max-width: 1200px; margin: 30px auto; }\n/* r13 */ section { background: rgb(255, 255, 255); padding: 30px; margin-bottom: 25px; border-radius: 14px; border: 1px solid var(--line); scroll-margin-top: 80px; }\n/* r14 */ section h2 { font-size: 24px; color: var(--ink); margin-bottom: 16px; }\n/* r15 */ section p { margin-bottom: 12px; }\n/* r16 */ #home { --x: 70%; --y: 40%; position: relative; overflow: hidden; border: 0px; padding: 70px 40px; color: rgb(255, 255, 255); background: radial-gradient(circle 220px at var(--x) var(--y), rgba(47, 212, 232, .35), transparent 70%),\r\n        radial-gradient(circle 1.5px, rgba(255, 255, 255, .22) 98%, transparent) 0 0 / 26px 26px,\r\n        var(--ink); }\n/* r17 */ #home h2 { color: rgb(255, 255, 255); font-size: clamp(30px, 5vw, 48px); line-height: 1.15; max-width: 560px; }\n/* r18 */ #home p { color: rgb(197, 203, 232); font-size: 18px; max-width: 480px; margin: 14px 0px 24px; }\n/* r19 */ .cta { display: inline-block; background: var(--lens); color: var(--ink); text-decoration: none; font-weight: 700; padding: 12px 24px; border-radius: 8px; transition: transform 0.2s; }\n/* r20 */ .cta:hover { transform: translateY(-2px); }  /* pseudo-state/element */\n/* r21 */ .tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 20px; }\n/* r22 */ .tools input[type=\"search\"] { flex: 1 1 200px; width: auto; }\n/* r23 */ .chips { display: flex; flex-wrap: wrap; gap: 8px; }\n/* r24 */ .chip { background: rgb(255, 255, 255); color: var(--text); border: 1px solid var(--line); padding: 8px 14px; border-radius: 999px; }\n/* r25 */ .chip:hover { background: rgb(238, 240, 255); }  /* pseudo-state/element */\n/* r26 */ .chip.active { background: var(--ink); color: rgb(255, 255, 255); border-color: var(--ink); }\n/* r27 */ select { padding: 10px; border: 1px solid var(--line); border-radius: 8px; font: inherit; background: rgb(255, 255, 255); }\n/* r28 */ #product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }\n/* r29 */ #products article { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 20px 16px; text-align: center; transition: transform 0.2s, border-color 0.2s; }\n/* r30 */ #products article:hover { transform: translateY(-4px); border-color: var(--accent); }  /* pseudo-state/element */\n/* r31 */ .icon { font-size: 52px; display: block; transition: transform 0.3s; }\n/* r32 */ #products article:hover .icon { transform: scale(1.15) rotate(-6deg); }  /* pseudo-state/element */\n/* r33 */ #products article h3 { font-size: 16px; margin: 10px 0px 4px; color: var(--ink); }\n/* r34 */ #products article p { color: var(--accent); font-weight: 700; font-size: 18px; margin-bottom: 14px; }\n/* r35 */ #no-results { color: var(--muted); }\n/* r36 */ button { background: var(--accent); color: rgb(255, 255, 255); border: 0px; padding: 11px 18px; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; transition: background 0.2s, transform 0.1s; }\n/* r37 */ button:hover { background: var(--accent-d); }  /* pseudo-state/element */\n/* r38 */ button:active { transform: scale(0.96); }  /* pseudo-state/element */\n/* r39 */ button:focus-visible, nav a:focus-visible, .cta:focus-visible { outline: rgb(245, 158, 11) solid 3px; outline-offset: 3px; }  /* pseudo-state/element */\n/* r40 */ #cart { min-height: 150px; }\n/* r41 */ #cart p { color: var(--muted); }\n/* r42 */ .checkout-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: start; }\n/* r43 */ label { display: block; margin: 14px 0px 6px; font-weight: 700; color: var(--ink); }\n/* r44 */ input, textarea { width: 100%; padding: 12px; border: 1px solid rgb(201, 208, 230); border-radius: 8px; font: inherit; background: rgb(255, 255, 255); transition: border-color 0.2s, box-shadow 0.2s; }\n/* r45 */ textarea { min-height: 100px; resize: vertical; }\n/* r46 */ input:focus, textarea:focus { outline: none; border-color: var(--accent); box-shadow: rgba(91, 75, 255, 0.2) 0px 0px 0px 3px; }  /* pseudo-state/element */\n/* r47 */ .error { display: block; min-height: 20px; color: var(--err); font-size: 13px; }\n/* r48 */ .place { margin-top: 10px; width: 100%; padding: 14px; font-size: 15px; }\n/* r49 */ #summary { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }\n/* r50 */ #summary h3 { color: var(--ink); margin-bottom: 10px; font-size: 17px; }\n/* r51 */ #summary p { color: var(--muted); }\n/* r52 */ #confirmation { text-align: center; border-top: 4px solid var(--ok); }\n/* r53 */ #confirmation h2 { color: var(--ok); }\n/* r54 */ #toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 120px); background: var(--ink); color: rgb(255, 255, 255); padding: 12px 22px; border-radius: 10px; font-weight: 600; transition: transform 0.3s; z-index: 50; }\n/* r55 */ footer { background: var(--ink); color: rgb(197, 203, 232); text-align: center; padding: 25px 15px; margin-top: 35px; }\n/* r56 */ footer p { margin: 4px 0px; font-size: 14px; }\n/* r57 */ @media (max-width: 800px) { .checkout-layout { grid-template-columns: 1fr; } }  /* inactive at this viewport */\n/* r58 */ @media (max-width: 600px) { header { flex-direction: column; text-align: center; } }  /* inactive at this viewport */\n/* r59 */ @media (max-width: 600px) { main { width: 94%; margin: 20px auto; } }  /* inactive at this viewport */\n/* r60 */ @media (max-width: 600px) { section { padding: 20px 15px; } }  /* inactive at this viewport */\n/* r61 */ @media (max-width: 600px) { #home { padding: 44px 20px; } }  /* inactive at this viewport */\n/* r62 */ @media (prefers-reduced-motion: reduce) { * { animation: auto ease 0s 1 normal none running none !important; transition: none !important; scroll-behavior: auto !important; } }\n",
+    "stats": {
+      "sheets": 2,
+      "total": 88,
+      "kept": 62,
+      "matched": 62,
+      "dropped_unmatched": 26,
+      "unparsable": 0,
+      "unavailable": [],
+      "keyframes": [
+        "bump",
+        "pop",
+        "shake",
+        "draw"
+      ],
+      "font_faces": [
+        "@font-face { font-family: Sora; font-style: normal; font-weight: 500; font-display: swap; src: url(\"https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwWa-xsaQ.woff2\"…",
+        "@font-face { font-family: Sora; font-style: normal; font-weight: 500; font-display: swap; src: url(\"https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2\") f…",
+        "@font-face { font-family: Sora; font-style: normal; font-weight: 700; font-display: swap; src: url(\"https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwWa-xsaQ.woff2\"…",
+        "@font-face { font-family: Sora; font-style: normal; font-weight: 700; font-display: swap; src: url(\"https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2\") f…",
+        "@font-face { font-family: Sora; font-style: normal; font-weight: 800; font-display: swap; src: url(\"https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwWa-xsaQ.woff2\"…",
+        "@font-face { font-family: Sora; font-style: normal; font-weight: 800; font-display: swap; src: url(\"https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2\") f…"
+      ]
+    },
+    "file": "styles.css"
+  },
+  "html": {
+    "text": "<!DOCTYPE html>\n<html lang=\"en\">\n <head>\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\"/>\n  <title>\n   OmniSight - Demo Store\n  </title>\n </head>\n <body>\n  <header data-omni-id=\"1\" id=\"top\">\n   <h1 data-omni-id=\"2\">\n    OmniSight Store\n   </h1>\n   <nav data-omni-id=\"3\">\n    <a class=\"active\" data-omni-id=\"4\" href=\"#home\">\n     Home\n    </a>\n    <a data-omni-id=\"5\" href=\"#products\">\n     Products\n    </a>\n    <a data-omni-id=\"6\" href=\"#cart\">\n     Cart\n     <span aria-live=\"polite\" class=\"badge\" data-omni-id=\"7\" id=\"cart-count\">\n      0\n     </span>\n    </a>\n    <a data-omni-id=\"8\" href=\"#checkout\">\n     Checkout\n    </a>\n   </nav>\n  </header>\n  <main data-omni-id=\"9\">\n   <section data-omni-id=\"10\" id=\"home\">\n    <div class=\"hero-text\" data-omni-id=\"11\">\n     <h2 data-omni-id=\"12\">\n      Welcome to OmniSight\n     </h2>\n     <p data-omni-id=\"13\">\n      Move your cursor around. Pick up gear you can see clearly, and check out in under a minute.\n     </p>\n     <a class=\"cta\" data-omni-id=\"14\" href=\"#products\">\n      Shop products\n     </a>\n    </div>\n   </section>\n   <section data-omni-id=\"15\" id=\"products\">\n    <h2 data-omni-id=\"16\">\n     Our Products\n    </h2>\n    <div class=\"tools\" data-omni-id=\"17\">\n     <input aria-label=\"Search products\" data-omni-id=\"18\" id=\"search\" placeholder=\"Search products\" type=\"search\"/>\n     <div aria-label=\"Filter by category\" class=\"chips\" data-omni-id=\"19\" id=\"chips\" role=\"group\">\n      <button class=\"chip active\" data-cat=\"all\" data-omni-id=\"20\" type=\"button\">\n       All\n      </button>\n      <button class=\"chip\" data-cat=\"audio\" data-omni-id=\"21\" type=\"button\">\n       Audio\n      </button>\n      <button class=\"chip\" data-cat=\"wearables\" data-omni-id=\"22\" type=\"button\">\n       Wearables\n      </button>\n      <button class=\"chip\" data-cat=\"accessories\" data-omni-id=\"23\" type=\"button\">\n       Accessories\n      </button>\n     </div>\n     <select aria-label=\"Sort products\" data-omni-id=\"24\" id=\"sort\">\n      <option value=\"default\">\n       Sort: Featured\n      </option>\n      <option value=\"low\">\n       Price: low to high\n      </option>\n      <option value=\"high\">\n       Price: high to low\n      </option>\n     </select>\n    </div>\n    <div data-omni-id=\"25\" id=\"product-grid\">\n     <article data-id=\"1\" data-omni-id=\"26\">\n      <span aria-hidden=\"true\" class=\"icon\" data-omni-id=\"27\">\n       🎧\n      </span>\n      <h3 data-omni-id=\"28\">\n       Wireless Headphones\n      </h3>\n      <p data-omni-id=\"29\">\n       Price: ₹2,499\n      </p>\n      <button data-omni-id=\"30\" type=\"button\">\n       Add to Cart\n      </button>\n     </article>\n     <article data-id=\"2\" data-omni-id=\"31\">\n      <span aria-hidden=\"true\" class=\"icon\" data-omni-id=\"32\">\n       ⌚\n      </span>\n      <h3 data-omni-id=\"33\">\n       Smart Watch\n      </h3>\n      <p data-omni-id=\"34\">\n       Price: ₹3,299\n      </p>\n      <button data-omni-id=\"35\" type=\"button\">\n       Add to Cart\n      </button>\n     </article>\n     <article data-id=\"3\" data-omni-id=\"36\">\n      <span aria-hidden=\"true\" class=\"icon\" data-omni-id=\"37\">\n       🔊\n      </span>\n      <h3 data-omni-id=\"38\">\n       Bluetooth Speaker\n      </h3>\n      <p data-omni-id=\"39\">\n       Price: ₹1,799\n      </p>\n      <button data-omni-id=\"40\" type=\"button\">\n       Add to Cart\n      </button>\n     </article>\n     <article data-id=\"4\" data-omni-id=\"41\">\n      <span aria-hidden=\"true\" class=\"icon\" data-omni-id=\"42\">\n       💪\n      </span>\n      <h3 data-omni-id=\"43\">\n       Fitness Band\n      </h3>\n      <p data-omni-id=\"44\">\n       Price: ₹1,999\n      </p>\n      <button data-omni-id=\"45\" type=\"button\">\n       Add to Cart\n      </button>\n     </article>\n     <article data-id=\"5\" data-omni-id=\"46\">\n      <span aria-hidden=\"true\" class=\"icon\" data-omni-id=\"47\">\n       🎵\n      </span>\n      <h3 data-omni-id=\"48\">\n       True Wireless Earbuds\n      </h3>\n      <p data-omni-id=\"49\">\n       Price: ₹2,199\n      </p>\n      <button data-omni-id=\"50\" type=\"button\">\n       Add to Cart\n      </button>\n     </article>\n     <article data-id=\"6\" data-omni-id=\"51\">\n      <span aria-hidden=\"true\" class=\"icon\" data-omni-id=\"52\">\n       🔋\n      </span>\n      <h3 data-omni-id=\"53\">\n       Power Bank 20000mAh\n      </h3>\n      <p data-omni-id=\"54\">\n       Price: ₹1,499\n      </p>\n      <button data-omni-id=\"55\" type=\"button\">\n       Add to Cart\n      </button>\n     </article>\n    </div>\n    <p hidden=\"\" id=\"no-results\">\n     No products match your search. Try a different word or category.\n    </p>\n   </section>\n   <section data-omni-id=\"56\" id=\"cart\">\n    <h2 data-omni-id=\"57\">\n     Shopping Cart\n    </h2>\n    <p data-omni-id=\"58\">\n     Your cart is empty. Add a product above to get started.\n    </p>\n   </section>\n   <section data-omni-id=\"59\" id=\"checkout\">\n    <h2 data-omni-id=\"60\">\n     Checkout\n    </h2>\n    <div class=\"checkout-layout\" data-omni-id=\"61\">\n     <form data-omni-id=\"62\" id=\"checkout-form\" novalidate=\"\">\n      <label data-omni-id=\"63\" for=\"name\">\n       Full Name:\n      </label>\n      <input autocomplete=\"name\" data-omni-id=\"64\" id=\"name\" name=\"name\" required=\"\" type=\"text\"/>\n      <small class=\"error\" data-for=\"name\" data-omni-id=\"65\">\n      </small>\n      <label data-omni-id=\"66\" for=\"email\">\n       Email:\n      </label>\n      <input autocomplete=\"email\" data-omni-id=\"67\" id=\"email\" name=\"email\" required=\"\" type=\"email\"/>\n      <small class=\"error\" data-for=\"email\" data-omni-id=\"68\">\n      </small>\n      <label data-omni-id=\"69\" for=\"address\">\n       Delivery Address:\n      </label>\n      <textarea data-omni-id=\"70\" id=\"address\" name=\"address\" required=\"\"></textarea>\n      <small class=\"error\" data-for=\"address\" data-omni-id=\"71\">\n      </small>\n      <button class=\"place\" data-omni-id=\"72\" type=\"submit\">\n       Place Demo Order\n      </button>\n     </form>\n     <aside aria-live=\"polite\" data-omni-id=\"73\" id=\"summary\">\n      <h3 data-omni-id=\"74\">\n       Order summary\n      </h3>\n      <p data-omni-id=\"75\">\n       Nothing here yet. Add a product to see your order.\n      </p>\n     </aside>\n    </div>\n   </section>\n   <section data-omni-id=\"76\" id=\"confirmation\">\n    <h2 data-omni-id=\"77\">\n     Order Confirmation\n    </h2>\n    <p data-omni-id=\"78\">\n     Your order confirmation message will appear here.\n    </p>\n   </section>\n  </main>\n  <footer data-omni-id=\"79\">\n   <p data-omni-id=\"80\">\n    © 2026 OmniSight Demo Store\n   </p>\n   <p data-omni-id=\"81\">\n    This is a mock e-commerce website for testing purposes.\n   </p>\n  </footer>\n  <div aria-live=\"polite\" data-omni-id=\"82\" id=\"toast\" role=\"status\">\n  </div>\n </body>\n</html>\n",
+    "file": "page.cleaned.html",
+    "chars": 6602,
+    "original_chars": 6602,
+    "omitted_subtrees": 0
+  },
+  "diagnostics": {
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "http_errors": []
+  },
+  "vlm_context_file": "vlm_context.md"
+}

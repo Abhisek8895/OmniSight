@@ -1,0 +1,10 @@
+HAND-WRITTEN sample standing in for a free-text VLM reply (no VLM was called).
+
+Here is what I see on the dashboard:
+
+1. **High** - the cookie banner overlay (el#30) is painted over the entire page and blocks every
+   control underneath it. Region: x=0 y=0 w=1440 h=900. type: overlay-covers-content.
+2. **High** - the "Last synced 2 minutes ago" label in the top bar (`#root > div.topbar:nth-of-type(1) > span.status`)
+   is pale grey on white and hard to read (low-contrast).
+3. **Low** - the "Accept" button on the cookie bar, el#32 at [145, 863, 202, 884], is very small
+   for a tap target.

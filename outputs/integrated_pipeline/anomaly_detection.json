@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "tool": {
+    "name": "omnisight",
+    "stage": "anomaly-detection"
+  },
+  "context_file": "",
+  "viewport": {
+    "name": "desktop",
+    "width": 1366,
+    "height": 768,
+    "is_mobile": false
+  },
+  "document": {
+    "w": 1366.0,
+    "h": 2325.0
+  },
+  "coordinate_system": "css_px, origin top-left of the full page (maps 1:1 onto screenshot_full.png)",
+  "mode": "vlm",
+  "primary": {
+    "id": "A1",
+    "rank": 1,
+    "type": "text-clipped",
+    "severity": "medium",
+    "confidence": 0.872,
+    "score": 1.745,
+    "description": "Order summary text is cut off: 'Nothing here yet. Add a product to see your or...' is truncated at the right edge of the container.",
+    "source": "vlm",
+    "component": {
+      "element_id": 73,
+      "selector": "#summary",
+      "tag": "aside",
+      "text": "",
+      "html_snippet": null,
+      "in_viewport": false,
+      "rule_ids": [
+        2,
+        49,
+        62
+      ],
+      "flags": []
+    },
+    "bbox": {
+      "x": 747.5,
+      "y": 1508.7,
+      "w": 504.5,
+      "h": 116.8,
+      "x2": 1252.0,
+      "y2": 1625.5
+    },
+    "bbox_normalized": {
+      "x": 0.54722,
+      "y": 0.6489,
+      "w": 0.36933,
+      "h": 0.05024
+    },
+    "bbox_source": "dom",
+    "resolution": "bbox_center",
+    "vlm_bbox": {
+      "x": 700.0,
+      "y": 1400.0,
+      "w": 400.0,
+      "h": 400.0,
+      "x2": 1100.0,
+      "y2": 1800.0
+    },
+    "vlm_bbox_iou": 0.232,
+    "related": null,
+    "hints": [],
+    "merged_from": 1,
+    "warnings": [
+      "VLM box only loosely matches this element (matched by box centre)."
+    ]
+  },
+  "anomalies": [
+    {
+      "id": "A1",
+      "rank": 1,
+      "type": "text-clipped",
+      "severity": "medium",
+      "confidence": 0.872,
+      "score": 1.745,
+      "description": "Order summary text is cut off: 'Nothing here yet. Add a product to see your or...' is truncated at the right edge of the container.",
+      "source": "vlm",
+      "component": {
+        "element_id": 73,
+        "selector": "#summary",
+        "tag": "aside",
+        "text": "",
+        "html_snippet": null,
+        "in_viewport": false,
+        "rule_ids": [
+          2,
+          49,
+          62
+        ],
+        "flags": []
+      },
+      "bbox": {
+        "x": 747.5,
+        "y": 1508.7,
+        "w": 504.5,
+        "h": 116.8,
+        "x2": 1252.0,
+        "y2": 1625.5
+      },
+      "bbox_normalized": {
+        "x": 0.54722,
+        "y": 0.6489,
+        "w": 0.36933,
+        "h": 0.05024
+      },
+      "bbox_source": "dom",
+      "resolution": "bbox_center",
+      "vlm_bbox": {
+        "x": 700.0,
+        "y": 1400.0,
+        "w": 400.0,
+        "h": 400.0,
+        "x2": 1100.0,
+        "y2": 1800.0
+      },
+      "vlm_bbox_iou": 0.232,
+      "related": null,
+      "hints": [],
+      "merged_from": 1,
+      "warnings": [
+        "VLM box only loosely matches this element (matched by box centre)."
+      ]
+    },
+    {
+      "id": "A2",
+      "rank": 2,
+      "type": "overlap",
+      "severity": "high",
+      "confidence": 0.549,
+      "score": 1.647,
+      "description": "Two identical 'Checkout' form cards are rendered overlapping each other, offset diagonally, causing their headings, labels, and input fields to collide and become unreadable.",
+      "source": "vlm",
+      "component": {
+        "element_id": 65,
+        "selector": "#checkout-form > small.error:nth-of-type(1)",
+        "tag": "small",
+        "text": "",
+        "html_snippet": null,
+        "in_viewport": false,
+        "rule_ids": [
+          2,
+          47,
+          62
+        ],
+        "flags": []
+      },
+      "bbox": {
+        "x": 114.0,
+        "y": 1605.9,
+        "w": 605.5,
+        "h": 20.0,
+        "x2": 719.5,
+        "y2": 1625.9
+      },
+      "bbox_normalized": {
+        "x": 0.08346,
+        "y": 0.69071,
+        "w": 0.44327,
+        "h": 0.0086
+      },
+      "bbox_source": "dom",
+      "resolution": "bbox_center",
+      "vlm_bbox": {
+        "x": 80.0,
+        "y": 1440.0,
+        "w": 320.0,
+        "h": 360.0,
+        "x2": 400.0,
+        "y2": 1800.0
+      },
+      "vlm_bbox_iou": 0.047,
+      "related": null,
+      "hints": [],
+      "merged_from": 1,
+      "warnings": [
+        "VLM box only loosely matches this element (matched by box centre).",
+        "VLM box and el#65 barely overlap (IoU 0.05); using the DOM box. The model may have mis-quoted the element id or the box."
+      ]
+    },
+    {
+      "id": "A3",
+      "rank": 3,
+      "type": "text-clipped",
+      "severity": "medium",
+      "confidence": 0.447,
+      "score": 0.894,
+      "description": "Heading text 'Order Confirmation' is cut off on the right edge, showing only 'Order Confirma'.",
+      "source": "vlm",
+      "component": {
+        "element_id": 79,
+        "selector": "body > footer",
+        "tag": "footer",
+        "text": "",
+        "html_snippet": null,
+        "in_viewport": false,
+        "rule_ids": [
+          2,
+          55,
+          62
+        ],
+        "flags": []
+      },
+      "bbox": {
+        "x": 0.0,
+        "y": 2218.2,
+        "w": 1366.0,
+        "h": 106.8,
+        "x2": 1366.0,
+        "y2": 2325.0
+      },
+      "bbox_normalized": {
+        "x": 0.0,
+        "y": 0.95406,
+        "w": 1.0,
+        "h": 0.04594
+      },
+      "bbox_source": "dom",
+      "resolution": "bbox_center",
+      "vlm_bbox": {
+        "x": 550.0,
+        "y": 2280.0,
+        "w": 200.0,
+        "h": 40.0,
+        "x2": 750.0,
+        "y2": 2320.0
+      },
+      "vlm_bbox_iou": 0.055,
+      "related": null,
+      "hints": [],
+      "merged_from": 1,
+      "warnings": [
+        "VLM box only loosely matches this element (matched by box centre).",
+        "VLM box and el#79 barely overlap (IoU 0.05); using the DOM box. The model may have mis-quoted the element id or the box."
+      ]
+    }
+  ],
+  "unconfirmed_hints": [],
+  "warnings": [
+    "Finding #4 could not be located and was dropped: \"Body text 'Your order confirmation message w...' is cut off on the right edge.\"",
+    "Finding #5 could not be located and was dropped: \"Footer copyright text '© 2026 OmniSight Demo S...' is cut off on the right edge.\"",
+    "Finding #6 could not be located and was dropped: \"Footer disclaimer text 'This is a mock e-commerce website for...' is cut off on \""
+  ],
+  "files": {}
+}

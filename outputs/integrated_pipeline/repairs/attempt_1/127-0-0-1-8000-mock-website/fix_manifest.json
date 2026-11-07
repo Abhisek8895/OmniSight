@@ -1,0 +1,13 @@
+{
+  "target": "http://127.0.0.1:8000/Mock-Website/",
+  "slug": "127-0-0-1-8000-mock-website",
+  "viewports": {
+    "desktop": {
+      "dir": "E:/Infotact Project/OmniSight/outputs/integrated_pipeline/repairs/attempt_1/127-0-0-1-8000-mock-website/desktop/fix",
+      "result": "E:/Infotact Project/OmniSight/outputs/integrated_pipeline/repairs/attempt_1/127-0-0-1-8000-mock-website/desktop/fix/fix_result.json",
+      "status": "ok",
+      "error": null,
+      "visible_change": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "target": "http://127.0.0.1:8000/Mock-Website/",
+  "slug": "127-0-0-1-8000-mock-website",
+  "viewports": {
+    "desktop": {
+      "dir": "E:/Infotact Project/OmniSight/outputs/integrated_pipeline/context/127-0-0-1-8000-mock-website/desktop",
+      "context": "E:/Infotact Project/OmniSight/outputs/integrated_pipeline/context/127-0-0-1-8000-mock-website/desktop/context.json",
+      "summary": {
+        "viewport": "desktop",
+        "document": "1366x2325",
+        "elements": 82,
+        "css_rules": 62,
+        "hints": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      }
+    }
+  }
+}
